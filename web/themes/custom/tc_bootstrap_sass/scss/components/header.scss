@@ -26,6 +26,10 @@
     margin-right: 1rem;
 }
 
+#CollapsingNavbar {
+  margin-top: 75px;
+}
+
 @media (max-width: 33.9em) {
     .navbar-toggleable-xs .navbar-nav .nav-item+.nav-item,
     .navbar-toggleable-xs.collapse.in .navbar-nav .nav-item {

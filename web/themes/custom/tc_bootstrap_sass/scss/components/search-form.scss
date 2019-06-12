@@ -3,15 +3,34 @@
  * The visual styles for Bootstrap Barrio's search form(s).
  */
 
-input[type="search"] {
-    box-sizing: border-box;
-}
-
 header #search-block-form {
+    margin-top: .2rem;
     padding: 5px 15px;
     flex-flow: row wrap;
+    input[type="search"] {
+        box-sizing: border-box;
+        width: 5rem;
+        transition: width 0.5s, opacity 0.5s;
+        opacity: 0;
+        &:focus, &:hover {
+          width: 100%;
+          opacity: 1;
+        }
+    }
 }
 
 #search-block-form {
-    display: flex;
+  display: flex;
 }
+
+.search-button {
+    box-sizing: content-box;
+    color: $primary-shade;
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: initial;
+    font-size: 1.2rem;
+    line-height: 2rem !important;
+    margin: 0 2rem 0 -3rem;
+    pointer-events: none;
+  }
