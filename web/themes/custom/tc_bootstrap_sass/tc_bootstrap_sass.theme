@@ -32,7 +32,7 @@ function tc_bootstrap_sass_form_system_theme_settings_alter(&$form, FormStateInt
 }
 
 function tc_bootstrap_sass_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-  if (in_array($form_id, ['search_block_form', 'search_form'])) {
+  if (in_array($form_id, ['search_block_form', 'search_form', 'exposedformsearch_contentpage_1'])) {
     $form['keys']['#attributes']['placeholder'][] = t('Search');
     $form['actions']['submit']['#value'] = html_entity_decode("&#xf002;", ENT_COMPAT, 'UTF-8');
     $form['actions']['submit']['#attributes']['class'][] = 'search-button fas';

@@ -44,14 +44,14 @@ function styles () {
     .pipe(cleanCss())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(paths.scss.dest))
-    .pipe(browserSync.stream())
+    .pipe(browserSync.stream());
 }
 
 // Move the javascript files into our js folder
 function js () {
   return gulp.src([paths.js.bootstrap, paths.js.jquery, paths.js.popper])
     .pipe(gulp.dest(paths.js.dest))
-    .pipe(browserSync.stream())
+    .pipe(browserSync.stream());
 }
 
 // Static Server + watching scss/html files

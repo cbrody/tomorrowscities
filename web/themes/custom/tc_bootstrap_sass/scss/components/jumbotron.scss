@@ -1,0 +1,17 @@
+.jumbotron {
+  background: $white;
+  color: $charcoal;
+  margin-left: -2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.jumbotron .container {
+  margin-top: 1rem;
+}
+
+.jumbotron .col {
+  background: $white;
+  padding: 1rem;
+}
