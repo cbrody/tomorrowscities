@@ -4,7 +4,7 @@
  */
 
 header #search-block-form {
-    margin-top: .2rem;
+    margin-top: 0;
     padding: 5px 15px;
     flex-flow: row wrap;
     input[type="search"] {
@@ -25,12 +25,12 @@ header #search-block-form {
 
 .search-button {
     box-sizing: content-box;
-    color: $primary-shade;
+    color: $jade;
     border: none;
     background-color: transparent;
     -webkit-appearance: initial;
-    font-size: 1.2rem;
-    line-height: 2rem !important;
+    font-size: 1.5rem;
+    line-height: 1.75rem !important;
     margin: 0 2rem 0 -3rem;
     pointer-events: none;
   }

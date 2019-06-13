@@ -12,6 +12,7 @@ Description: Bootstrap 4 with Sass
 body {
     background: $white;
     font-family: $font-lato;
+    line-height: $line-height-base;
 }
 
 
@@ -31,11 +32,11 @@ a {
 }
 
 .menu--main li a {
-    color: $primary-shade;
+    color: $charcoal-dark;
 }
 
 .menu--account li a {
-    color: $primary-shade;
+    color: $charcoal-dark;
 }
 
 .site-name-slogan a {
@@ -58,4 +59,20 @@ a {
 
 .slick>div {
     margin: 0 15px;
+}
+
+/* Home page specific
+--------------------------------------------------*/
+
+#block-homebanner {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  section {
+    background-color: transparent !important;
+  }
+}
+
+/* Nodes */
+.node--view-mode-teaser h2 a {
+  color: inherit;
 }

@@ -22,26 +22,46 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
-.navbar-brand .site-logo {
+.navbar-brand {
     margin-right: 1rem;
+    @include media-breakpoint-down(sm) {
+      max-width: 66.67%;
+      height: auto;
+    }
 }
 
 #CollapsingNavbar {
-  margin-top: 75px;
+  @include media-breakpoint-up(lg) {
+    margin-top: 75px;
+  }
 }
 
-@media (max-width: 33.9em) {
+.navbar-toggler-icon:before {
+    content: "\f0c9";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: $font-weight-bold;
+}
+
+.navbar-toggler-icon {
+  color: $primary-shade;
+  font-size: 2rem;
+}
+
+@media (max-width: 540px) {
     .navbar-toggleable-xs .navbar-nav .nav-item+.nav-item,
-    .navbar-toggleable-xs.collapse.in .navbar-nav .nav-item {
+    .navbar-toggleable-xs.collapse.in .navbar-nav .nav-item,
+    .navbar-form {
         margin-left: 0;
-        float: none;
+        float: none !important;
     }
 }
 
-@media (max-width: 47.9em) {
+@media (max-width: 990px) {
     .navbar-toggleable-sm .navbar-nav .nav-item+.nav-item,
-    .navbar-toggleable-xs.collapse.in .navbar-nav .nav-item {
+    .navbar-toggleable-xs.collapse.in .navbar-nav .nav-item,
+    .navbar-form {
         margin-left: 0;
-        float: none;
+        float: none !important;
     }
+
 }

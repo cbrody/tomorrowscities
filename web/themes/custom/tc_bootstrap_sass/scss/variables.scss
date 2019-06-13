@@ -1,7 +1,7 @@
 /* VARIABLES */
 
 // colors
-$primary-shade: #A8CF45;
+$primary-shade: #008931;
 $primary-light: lighten($primary-shade, 37%);
 $primary-dark: darken($primary-shade, 12%);
 $accent-shade: #0079C0;
@@ -10,13 +10,16 @@ $accent-dark: darken($accent-shade, 12%);
 // Reassign color vars to semantic color scheme
 $red: #dc3545;
 $yellow: #ffc107;
-$green: #28a745;
+$green: #008931;
 $cyan: #17a2b8;
+$charcoal: #333333;
+$charcoal-dark: #212121;
 $gray-100: #f8f9fa !default;
 $gray-800: #343a40 !default;
-$theme-colors: ( primary: $accent-shade, secondary: $primary-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
+$theme-colors: ( primary: $primary-shade, secondary: $accent-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
 $brand-primary: $accent-shade;
 $gray-lighter: #dddddd;
+$jade: #21A696;
 //$brand-success: $green;
 //$brand-info: $teal;
 //$brand-warning: $orange;
@@ -25,8 +28,8 @@ $brand-inverse: $primary-shade;
 // Body
 //
 // Settings for the `<body>` element.
-//$body-bg: $white;
-//$body-color: $gray-dark;
+$body-bg: white;
+$body-color: $charcoal;
 $inverse-bg: $primary-shade;
 //$inverse-color: $gray-lighter;
 // Links
