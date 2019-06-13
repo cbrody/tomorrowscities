@@ -3,23 +3,26 @@
  * The visual styles for Bootstrap Barrio's search form(s).
  */
 
-header #search-block-form {
-    margin-top: 0;
+header #views-exposed-form-search-content-page-1 {
+    margin-top: -.5rem;
     padding: 5px 15px;
     flex-flow: row wrap;
-    input[type="search"] {
+    input[type="text"] {
         box-sizing: border-box;
         width: 5rem;
         transition: width 0.5s, opacity 0.5s;
         opacity: 0;
         &:focus, &:hover {
-          width: 100%;
+          width: 8rem;
           opacity: 1;
         }
     }
+    label {
+      display: none;
+    }
 }
 
-#search-block-form {
+#views-exposed-form-search-content-page-1 {
   display: flex;
 }
 
