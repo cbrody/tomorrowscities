@@ -5,6 +5,9 @@
  * Functions to support theming in the SASS Starterkit subtheme.
  */
 
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Link;
+use Drupal\Component\Utility\Html;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
@@ -12,24 +15,6 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * Replace Barrio setting options with subtheme ones.
  */
-function tc_bootstrap_sass_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
-  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
-      'bg-primary' => t('Primary'),
-      'bg-secondary' => t('Secondary'),
-      'bg-light' => t('Light'),
-      'bg-dark' => t('Dark'),
-      'bg-white' => t('White'),
-      'bg-transparent' => t('Transparent'),
-  );
-  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
-      'bg-primary' => t('Primary'),
-      'bg-secondary' => t('Secondary'),
-      'bg-light' => t('Light'),
-      'bg-dark' => t('Dark'),
-      'bg-white' => t('White'),
-      'bg-transparent' => t('Transparent'),
-  );
-}
 
 function tc_bootstrap_sass_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   if (in_array($form_id, ['search_block_form', 'search_form', 'views_exposed_form'])) {
@@ -37,4 +22,164 @@ function tc_bootstrap_sass_form_alter(&$form, \Drupal\Core\Form\FormStateInterfa
     $form['actions']['submit']['#value'] = html_entity_decode("&#xf002;", ENT_COMPAT, 'UTF-8');
     $form['actions']['submit']['#attributes']['class'][] = 'search-button fas';
   }
+}
+
+function tc_bootstrap_sass_preprocess_page(&$variables) {
+  if (\Drupal::moduleHandler()->moduleExists('bootstrap_library')) {
+    $library = theme_get_setting('bootstrap_barrio_library');
+    switch ($library) {
+      case 'cdn' :
+        $variables['#attached']['library'][] = 'bootstrap_library/bootstrap-cdn';
+        break;
+      case 'production':
+        $variables['#attached']['library'][] = 'bootstrap_library/bootstrap';
+        break;
+      case 'development':
+        $variables['#attached']['library'][] = 'bootstrap_library/bootstrap-dev';
+        break;
+    }
+  }
+
+  $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
+  if ($fonts) {
+    $variables['#attached']['library'][] = 'bootstrap_barrio/' . $fonts;
+  }
+
+  $icons = theme_get_setting('bootstrap_barrio_icons');
+  if ($icons) {
+    $variables['#attached']['library'][] = 'bootstrap_barrio/' . $icons;
+  }
+
+  $system_messages = theme_get_setting('bootstrap_barrio_system_messages');
+  if ($system_messages) {
+    $variables['#attached']['library'][] = 'bootstrap_barrio/' . $system_messages;
+  }
+
+//  $width = _bootstrap_barrio_content_width(!empty($variables['page']['sidebar_first']), !empty($variables['page']['sidebar_second']));
+//  $content_width = 'col-md-' . $width;
+  $content_width = 'col';
+  $sidebar_first_width = 'col-md-' . theme_get_setting('bootstrap_barrio_sidebar_first_width');
+  $sidebar_second_width = 'col-md-' . theme_get_setting('bootstrap_barrio_sidebar_second_width');
+
+  // Define default classes for containers
+  $variables['navbar_top_attributes'] = [
+    'class' => [ 'navbar' ],
+	  'id' => ['navbar-top' ],
+  ];
+  $variables['navbar_attributes'] = [
+    'class' => [ 'navbar' ],
+	  'id' => [ 'navbar-main' ],
+  ];
+  $variables['content_attributes'] = [
+    'class' => [ 'main-content', $content_width ],
+	  'id' => [ 'content' ],
+	  'role' => [ 'main' ],
+  ];
+  $variables['sidebar_first_attributes'] = [
+    'class' =>  [ 'sidebar', $sidebar_first_width ],
+	  'id' => [ 'sidebar_first' ],
+  ];
+  $variables['sidebar_second_attributes'] = [
+    'class' => [ 'sidebar', $sidebar_second_width ],
+	  'id' => [ 'sidebar_second' ],
+  ];
+
+  // Affix
+  $affix_navbar_top = theme_get_setting('bootstrap_barrio_navbar_top_affix');
+  $affix_navbar = theme_get_setting('bootstrap_barrio_navbar_affix');
+  $affix_sidebar_first = theme_get_setting('bootstrap_barrio_sidebar_first_affix');
+  $affix_sidebar_second = theme_get_setting('bootstrap_barrio_sidebar_second_affix');
+  if ($affix_navbar_top || $affix_navbar || $affix_sidebar_first || $affix_sidebar_second) {
+    $variables['#attached']['library'][] = 'bootstrap_barrio/affix';
+    if ($affix_navbar_top) {
+       $variables['navbar_top_attributes']['data-toggle'] = 'affix';
+    }
+    if ($affix_navbar) {
+       $variables['navbar_attributes']['data-toggle'] = 'affix';
+    }
+    if ($affix_sidebar_first) {
+       $variables['sidebar_first_attributes']['data-toggle'] = 'affix';
+    }
+    if ($affix_sidebar_second) {
+       $variables['sidebar_second_attributes']['data-toggle'] = 'affix';
+    }
+  }
+
+  // Calculate widths
+  if (theme_get_setting('bootstrap_barrio_content_offset')) {
+    $variables['content_attributes']['class'][] =  'offset-md-' . theme_get_setting('bootstrap_barrio_content_offset');
+  }
+  if (theme_get_setting('bootstrap_barrio_sidebar_first_offset')) {
+    $variables['sidebar_first_attributes']['class'][] =  'offset-md-' . theme_get_setting('bootstrap_barrio_sidebar_first_offset');
+  }
+  if (theme_get_setting('bootstrap_barrio_sidebar_second_offset')) {
+    $variables['sidebar_second_attributes']['class'][] =  'offset-md-' . theme_get_setting('bootstrap_barrio_sidebar_second_offset');
+  }
+
+  // Define column layout classes
+  switch (theme_get_setting('bootstrap_barrio_sidebar_position')) {
+	case 'left':
+    $variables['sidebar_first_attributes']['class'][] = 'order-first';
+    $variables['content_attributes']['class'][] = 'order-last';
+	  break;
+	case 'both':
+    $variables['sidebar_first_attributes']['class'][] = 'order-first';
+    $variables['sidebar_second_attributes']['class'][] = 'order-last';
+	  break;
+	case 'right':
+    $variables['content_attributes']['class'][] = 'order-first';
+    $variables['sidebar_second_attributes']['class'][] = 'order-last';
+	  break;
+  }
+
+  // Define navigation position
+  $variables['navbar_top_attributes']['class'][] = theme_get_setting('bootstrap_barrio_navbar_top_position');
+  $variables['navbar_attributes']['class'][] = theme_get_setting('bootstrap_barrio_navbar_position');
+
+  // Define navigation color scheme
+  $variables['navbar_top_attributes']['class'][] = theme_get_setting('bootstrap_barrio_navbar_top_color');
+  $variables['navbar_attributes']['class'][] = theme_get_setting('bootstrap_barrio_navbar_color');
+
+  // Define navigation background classes
+  $variables['navbar_top_attributes']['class'][] = theme_get_setting('bootstrap_barrio_navbar_top_background');
+  $variables['navbar_attributes']['class'][] = theme_get_setting('bootstrap_barrio_navbar_background');
+
+  // Define navigation toggle size
+  switch (theme_get_setting('bootstrap_barrio_navbar_toggle')) {
+    case 'navbar-toggleable-xl':
+      $variables['navbar_attributes']['class'][] = 'navbar-expand-xl';
+      break;
+    case 'navbar-toggleable-lg':
+      $variables['navbar_attributes']['class'][] = 'navbar-expand-lg';
+      break;
+    case 'navbar-toggleable-md':
+      $variables['navbar_attributes']['class'][] = 'navbar-expand-md';
+      break;
+    case 'navbar-toggleable-sm':
+      $variables['navbar_attributes']['class'][] = 'navbar-expand-sm';
+      break;
+    case 'navbar-toggleable-xs':
+      $variables['navbar_attributes']['class'][] = 'navbar-expand-xs';
+      break;
+    default:
+      $variables['navbar_attributes']['class'][] = 'navbar-expand-md';
+      break;
+  }
+
+  if (theme_get_setting('bootstrap_barrio_sidebar_collapse')) {
+	  $variables['content_attributes']['class'][] = 'sidebar-offcanvas';
+	  $variables['sidebar_collapse'] = TRUE;
+    $variables['#attached']['library'][] = 'bootstrap_barrio/sidebar_collapse';
+  }
+
+  // Declare region attributes
+  $variables['navbar_top_attributes'] = new Attribute($variables['navbar_top_attributes']);
+  $variables['navbar_attributes'] = new Attribute($variables['navbar_attributes']);
+  $variables['content_attributes'] = new Attribute($variables['content_attributes']);
+  $variables['sidebar_first_attributes'] = new Attribute($variables['sidebar_first_attributes']);
+  $variables['sidebar_second_attributes'] = new Attribute($variables['sidebar_second_attributes']);
+
+  // Declare container layout
+  $variables['container_navbar'] = theme_get_setting('bootstrap_barrio_navbar_container');
+  $variables['container'] = theme_get_setting('bootstrap_barrio_fluid_container') ? 'container-fluid' : 'container';
 }
