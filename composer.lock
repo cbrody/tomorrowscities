@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e797792664174d37f3c7b3412d2263e6",
+    "content-hash": "d1b36927e6545f1a6a13bdda5b55f35a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3379,17 +3379,17 @@
         },
         {
             "name": "drupal/field_group",
-            "version": "1.0.0",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_group.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-3.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "e8aa3fae5c3c5dec84644bb577996938d638a611"
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.0-rc1.zip",
+                "reference": "8.x-3.0-rc1",
+                "shasum": "e291b5468c834a344e9aa6cafd3a76171d473a22"
             },
             "require": {
                 "drupal/core": "*"
@@ -3397,14 +3397,14 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1510352885",
+                    "version": "8.x-3.0-rc1",
+                    "datestamp": "1558647185",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4619,17 +4619,17 @@
         },
         {
             "name": "drupal/twitter_block",
-            "version": "2.1.0",
+            "version": "3.0.0-alpha0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/twitter_block.git",
-                "reference": "8.x-2.1"
+                "reference": "8.x-3.0-alpha0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twitter_block-8.x-2.1.zip",
-                "reference": "8.x-2.1",
-                "shasum": "374eff45b257ca112177b38ef040fd2d920c5d16"
+                "url": "https://ftp.drupal.org/files/projects/twitter_block-8.x-3.0-alpha0.zip",
+                "reference": "8.x-3.0-alpha0",
+                "shasum": "f959bec1332f2bd45e813eefa3b982df4eb129bb"
             },
             "require": {
                 "drupal/core": "*"
@@ -4637,14 +4637,14 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1463644739",
+                    "version": "8.x-3.0-alpha0",
+                    "datestamp": "1489574283",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -10923,6 +10923,11 @@
         {
             "name": "webflo/drupal-core-require-dev",
             "version": "8.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webflo/drupal-core-require-dev.git",
+                "reference": "75d11db587237934914a1cd150e81462665a19aa"
+            },
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",
