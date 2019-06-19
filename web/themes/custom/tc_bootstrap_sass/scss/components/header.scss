@@ -56,12 +56,11 @@
     }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1200px) {
     .navbar-toggleable-sm .navbar-nav .nav-item+.nav-item,
     .navbar-toggleable-xs.collapse.in .navbar-nav .nav-item,
     .navbar-form {
         margin-left: 0;
         float: none !important;
     }
-
 }
