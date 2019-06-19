@@ -50,6 +50,7 @@
         "drupal/twitter_embed": "^1.0@alpha",
         "drupal/video_embed_field": "^2.1",
         "drupal/views_field_view": "^1.0@beta",
+        "drupal/views_taxonomy_term_name_depth": "6.x-dev",
         "drupal/views_taxonomy_term_name_into_id": "^1.0@alpha",
         "drupal/xmlsitemap": "^1.0@alpha",
         "drush/drush": "^9.0.0",
@@ -107,6 +108,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+          "drupal/core": {
+            "View titles do not have translation support": "https://www.drupal.org/files/issues/2019-04-30/2716019_62.patch"
+          }
         }
     }
 }
