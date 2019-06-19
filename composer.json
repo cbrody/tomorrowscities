@@ -51,7 +51,6 @@
         "drupal/video_embed_field": "^2.1",
         "drupal/views_field_view": "^1.0@beta",
         "drupal/views_taxonomy_term_name_depth": "6.x-dev",
-        "drupal/views_taxonomy_term_name_into_id": "^1.0@alpha",
         "drupal/xmlsitemap": "^1.0@alpha",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
