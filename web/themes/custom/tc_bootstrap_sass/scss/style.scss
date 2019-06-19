@@ -76,3 +76,13 @@ a {
 .node--view-mode-teaser h2 a {
   color: inherit;
 }
+
+/* Cards */
+.card {
+  h2 {
+    font-size: $font-size-lg;
+  }
+  .image-style-card-cover-270x130- {
+    @extend .img-fluid;
+  }
+}
