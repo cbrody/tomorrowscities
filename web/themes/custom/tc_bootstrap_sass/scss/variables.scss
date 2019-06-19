@@ -16,10 +16,16 @@ $charcoal: #333333;
 $charcoal-dark: #212121;
 $gray-100: #f8f9fa !default;
 $gray-800: #343a40 !default;
-$theme-colors: ( primary: $primary-shade, secondary: $accent-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
-$brand-primary: $accent-shade;
 $gray-lighter: #dddddd;
 $jade: #21A696;
+$quito: #4796A8;
+$kathmandu: #995966;
+$nairobi: #BA5C0F;
+$istanbul: #9C8200;
+
+$theme-colors: ( primary: $primary-shade, secondary: $accent-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
+$brand-primary: $accent-shade;
+
 //$brand-success: $green;
 //$brand-info: $teal;
 //$brand-warning: $orange;
