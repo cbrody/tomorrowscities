@@ -35,6 +35,7 @@
         "drupal/google_analytics": "^3.0",
         "drupal/honeypot": "^1.29",
         "drupal/label_help": "1.x-dev",
+        "drupal/libraries": "^3.0@alpha",
         "drupal/metatag": "^1.8",
         "drupal/paragraphs": "^1.8",
         "drupal/pathauto": "^1.4",
