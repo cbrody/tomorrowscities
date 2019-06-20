@@ -18,6 +18,21 @@ body {
 
 /* COLORS
 --------------------------------------------------*/
+.bg-quito {
+  background: $quito;
+}
+
+.bg-nairobi {
+  background: $nairobi;
+}
+
+.bg-kathmandu {
+  background: $kathmandu;
+}
+
+.bg-istanbul {
+  background: $istanbul;
+}
 
 a {
     color: $accent-shade;
@@ -41,16 +56,6 @@ a {
 
 .site-name-slogan a {
     text-decoration: none;
-}
-
-.card-group img {
-    margin: 0;
-    width: 100%;
-    height: auto;
-}
-
-.card-group .field--type-image {
-    margin: 0
 }
 
 .slick {
@@ -78,6 +83,17 @@ a {
 }
 
 /* Cards */
+
+.card-group img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-group .field--type-image {
+    margin: 0
+}
+
 .card {
   h2 {
     font-size: $font-size-lg;
