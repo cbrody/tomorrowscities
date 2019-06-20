@@ -44,3 +44,10 @@
 .views-ui-display-tab-actions .dropbutton .form-submit:focus {
     color: $link-color;
 }
+
+/* Reinsert row class as necessary */
+.view-id-city-team {
+  .view-content {
+    @extend .row;
+  }
+}
