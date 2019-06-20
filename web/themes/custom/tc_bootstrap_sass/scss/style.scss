@@ -34,16 +34,20 @@ body {
   background: $istanbul;
 }
 
+.bg-primary-light {
+  background: $primary-light;
+}
+
+.bg-jade-light {
+  background: $jade-light;
+}
+
 a {
     color: $accent-shade;
 }
 
 .bg-inverse {
     background: $primary-shade !important;
-}
-
-.site-footer {
-    background: $accent-shade !important;
 }
 
 .menu--main li a {
@@ -69,17 +73,27 @@ a {
 /* Home page specific
 --------------------------------------------------*/
 
-#block-homebanner {
+#block-homebanner .banner {
   background-image: url(../images/banner.png);
   background-repeat: no-repeat;
+  border-radius: 0.25rem;
   section {
     background-color: transparent !important;
   }
 }
 
+.region-featured-bottom-second {
+  background: black;
+}
+
 /* Nodes */
 .node--view-mode-teaser h2 a {
   color: inherit;
+}
+
+.skyline {
+    position: absolute;
+    bottom: 0;
 }
 
 /* Cards */
@@ -98,7 +112,26 @@ a {
   h2 {
     font-size: $font-size-lg;
   }
-  .image-style-card-cover-270x130- {
+  .image-style-card-cover-270x130-, .image-style-card-270x130-, .image-style-wide-1200x412-, media.img {
     @extend .img-fluid;
   }
+}
+.card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border-top: none;
+}
+
+.card .badge {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  background: #ffffff;
+  border-radius: 0px 6px 6px 0px;
+  color: #000;
+  padding: 5px 10px;
+}
+
+h4.card-title {
+  @extend h5;
 }
