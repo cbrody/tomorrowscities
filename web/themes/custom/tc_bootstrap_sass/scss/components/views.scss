@@ -44,3 +44,19 @@
 .views-ui-display-tab-actions .dropbutton .form-submit:focus {
     color: $link-color;
 }
+
+/* Reinsert row class as necessary */
+
+.path-city {
+  .view-id-city_team {
+    .view-content {
+      @extend .row;
+    }
+  }
+  #main {
+    margin-top: -7rem;
+    #block-tc-bootstrap-sass-page-title h1 {
+      display: none;
+    }
+   }
+}
