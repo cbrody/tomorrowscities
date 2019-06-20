@@ -8,8 +8,13 @@
     .layout-container {
         padding: 0 $spacer;
     }
+    background: #CCEBE7 !important;
 }
 
+
+.logo-tab img {
+    max-width: 440px;
+}
 
 /* Footer Top Styling. */
 
@@ -25,6 +30,10 @@
 }
 
 .site-footer__bottom .content {
-    padding: ($spacer / 2) 0;
+    /*padding: ($spacer / 2) 0;*/
     margin-top: 0;
+}
+
+.logo-tab {
+  border-radius: 0 1rem 1rem 0;
 }

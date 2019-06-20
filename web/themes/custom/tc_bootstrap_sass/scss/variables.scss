@@ -2,7 +2,7 @@
 
 // colors
 $primary-shade: #008931;
-$primary-light: lighten($primary-shade, 37%);
+$primary-light: lighten($primary-shade, 26%);
 $primary-dark: darken($primary-shade, 12%);
 $accent-shade: #0079C0;
 $accent-light: lighten($accent-shade, 37%);
@@ -18,6 +18,7 @@ $gray-100: #f8f9fa !default;
 $gray-800: #343a40 !default;
 $gray-lighter: #dddddd;
 $jade: #21A696;
+$jade-light: lighten($jade, 24%);
 $quito: #4796A8;
 $kathmandu: #995966;
 $nairobi: #BA5C0F;
