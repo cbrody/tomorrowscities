@@ -135,3 +135,9 @@ a {
 h4.card-title {
   @extend h5;
 }
+
+/* Hover links */
+.view-id-search_content .row,
+.card {
+  cursor: pointer;
+}
