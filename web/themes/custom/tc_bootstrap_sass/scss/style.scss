@@ -138,6 +138,9 @@ h4.card-title {
 
 /* Hover links */
 .view-id-search_content .row,
-.card {
+.card, {
   cursor: pointer;
+  &:hover {
+    background: $gray-lighter !important;
+  }
 }
