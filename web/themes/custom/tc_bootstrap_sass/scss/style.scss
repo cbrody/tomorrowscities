@@ -83,7 +83,7 @@ a {
 }
 
 .region-featured-bottom-second {
-  background: black;
+  background: #BBE7CA;
 }
 
 /* Nodes */
@@ -93,7 +93,20 @@ a {
 
 .skyline {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
+    left: 0;
+}
+
+.city-title {
+    min-height: 130px;
+}
+
+.section .nav-tabs {
+  border-bottom: none;
+}
+
+.path-resources h1.title {
+  display: none;
 }
 
 /* Cards */
@@ -116,6 +129,11 @@ a {
     @extend .img-fluid;
   }
 }
+
+.image-style-card-cover-270x130-, .image-style-card-270x130- {
+    margin-bottom: 0;
+}
+
 .card-footer {
     padding: 0.75rem 1.25rem;
     background-color: #fff;
@@ -132,6 +150,18 @@ a {
   padding: 5px 10px;
 }
 
+.card.h-100 {
+    min-height: 24rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-footer {
+    padding: 0.75rem 1rem;
+  }
+
 h4.card-title {
   @extend h5;
 }
@@ -146,4 +176,8 @@ h4.card-title {
   .media {
     width: 100%;
   }
+}
+
+.field--name-field-contact-form .field__label {
+  @extend h2;
 }
