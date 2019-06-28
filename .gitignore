@@ -25,3 +25,6 @@
 
 # Ignore node.js files
 node_modules
+
+# Ignore error log
+/web/error_log
