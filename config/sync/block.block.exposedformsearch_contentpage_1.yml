@@ -1,0 +1,23 @@
+uuid: daa96482-7aa6-4e9e-a8c8-ec08d4a9861a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_content
+  module:
+    - views
+  theme:
+    - tc_bootstrap_sass
+id: exposedformsearch_contentpage_1
+theme: tc_bootstrap_sass
+region: header_form
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search_content-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_content-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

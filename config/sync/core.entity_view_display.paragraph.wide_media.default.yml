@@ -1,0 +1,22 @@
+uuid: e430a4de-af40-4d16-aef2-285b5cc0c35e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wide_media.field_text
+    - paragraphs.paragraphs_type.wide_media
+  module:
+    - text
+id: paragraph.wide_media.default
+targetEntityType: paragraph
+bundle: wide_media
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

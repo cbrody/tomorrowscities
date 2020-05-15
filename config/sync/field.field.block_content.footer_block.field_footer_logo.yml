@@ -1,0 +1,24 @@
+uuid: 27e6b661-ae51-4258-8ed1-e9dc4882f1e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.storage.block_content.field_footer_logo
+  module:
+    - text
+id: block_content.footer_block.field_footer_logo
+field_name: field_footer_logo
+entity_type: block_content
+bundle: footer_block
+label: 'footer logo'
+description: 'Don''t edit this field'
+required: false
+translatable: false
+default_value:
+  -
+    value: "<div class=\"col-md-6 pl-0 mb-4\">\r\n<div class=\"bg-white logo-tab\"><img alt=\"logo\" class=\"img-fluid p-4\" src=\"/sites/default/files/2019-06/tomorrows-cities-logo-footer.svg\" /></div>\r\n</div>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

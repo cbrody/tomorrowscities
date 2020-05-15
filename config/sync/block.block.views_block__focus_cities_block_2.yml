@@ -1,0 +1,31 @@
+uuid: a2453c43-7159-4764-8acd-dd226efab3b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.focus_cities
+  module:
+    - system
+    - views
+  theme:
+    - tc_bootstrap_sass
+id: views_block__focus_cities_block_2
+theme: tc_bootstrap_sass
+region: featured_bottom_first
+weight: -13
+provider: null
+plugin: 'views_block:focus_cities-block_2'
+settings:
+  id: 'views_block:focus_cities-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

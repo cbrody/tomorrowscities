@@ -1,0 +1,11 @@
+uuid: f28552de-d439-4143-ab27-60594aa8996a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:39ffe01a-134c-419b-b604-4ea7fa391b0f'
+id: publication_link
+label: 'Publication link'
+icon_uuid: 39ffe01a-134c-419b-b604-4ea7fa391b0f
+description: 'Link to original source'
+behavior_plugins: {  }

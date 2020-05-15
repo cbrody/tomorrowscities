@@ -1,0 +1,19 @@
+uuid: 39f3033b-2228-46ec-80d7-e09b2ff5af63
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_card_header
+field_name: field_card_header
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

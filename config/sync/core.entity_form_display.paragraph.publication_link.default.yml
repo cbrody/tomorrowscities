@@ -1,0 +1,31 @@
+uuid: 85da0b9f-04d7-453c-ba93-732c2e58e4d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.publication_link.field_source_link
+    - paragraphs.paragraphs_type.publication_link
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.publication_link.default
+targetEntityType: paragraph
+bundle: publication_link
+mode: default
+content:
+  field_source_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

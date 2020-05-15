@@ -1,0 +1,30 @@
+uuid: ad48a1b3-91ce-46ac-be57-674c1f6b791c
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.istanbul
+  module:
+    - system
+  theme:
+    - tc_bootstrap_sass
+id: istanbul
+theme: tc_bootstrap_sass
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'system_menu_block:istanbul'
+settings:
+  id: 'system_menu_block:istanbul'
+  label: Istanbul
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/19\r\n*/istanbul*"
+    negate: false
+    context_mapping: {  }

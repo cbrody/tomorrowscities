@@ -1,0 +1,34 @@
+uuid: bdfacc69-12d3-4257-834b-767ee7daa501
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_slider
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'col-lg-9 col-md-12 mb-5 p-0'
+id: views_block__home_slider_block_1
+theme: tc_bootstrap_sass
+region: featured_top
+weight: -15
+provider: null
+plugin: 'views_block:home_slider-block_1'
+settings:
+  id: 'views_block:home_slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

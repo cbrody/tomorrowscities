@@ -1,0 +1,30 @@
+uuid: 2401309a-fca9-4295-85bb-b809b5ecba63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.publication.field_file_upload
+    - paragraphs.paragraphs_type.publication
+  module:
+    - field_layout
+    - file
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.publication.default
+targetEntityType: paragraph
+bundle: publication
+mode: default
+content:
+  field_file_upload:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+hidden:
+  created: true
+  status: true

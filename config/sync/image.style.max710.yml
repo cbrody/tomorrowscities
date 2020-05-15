@@ -1,0 +1,15 @@
+uuid: c41fb259-440c-441f-ab35-b7ccd3a99735
+langcode: en
+status: true
+dependencies: {  }
+name: max710
+label: Max710
+effects:
+  8e78e92e-dfeb-4655-9432-396ba0b7e2d4:
+    uuid: 8e78e92e-dfeb-4655-9432-396ba0b7e2d4
+    id: image_scale
+    weight: 1
+    data:
+      width: 710
+      height: null
+      upscale: false

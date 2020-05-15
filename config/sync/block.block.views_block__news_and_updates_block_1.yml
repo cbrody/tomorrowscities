@@ -1,0 +1,30 @@
+uuid: db9e3596-d269-4118-957a-d001035ba298
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_and_updates
+  module:
+    - system
+    - views
+  theme:
+    - tc_bootstrap_sass
+id: views_block__news_and_updates_block_1
+theme: tc_bootstrap_sass
+region: featured_bottom_first
+weight: -15
+provider: null
+plugin: 'views_block:news_and_updates-block_1'
+settings:
+  id: 'views_block:news_and_updates-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

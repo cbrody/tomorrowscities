@@ -1,0 +1,35 @@
+uuid: 40d6db66-0f59-4661-b12a-476f55ef8548
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:55995aa1-222b-4f30-ac28-43eac42f3b19'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: bg-istanbul
+id: istanbulheader
+theme: tc_bootstrap_sass
+region: highlighted
+weight: -10
+provider: null
+plugin: 'block_content:55995aa1-222b-4f30-ac28-43eac42f3b19'
+settings:
+  id: 'block_content:55995aa1-222b-4f30-ac28-43eac42f3b19'
+  label: 'Istanbul header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/19\r\n/*/istanbul*"
+    negate: false
+    context_mapping: {  }

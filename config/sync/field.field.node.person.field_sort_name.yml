@@ -1,0 +1,19 @@
+uuid: f8c1114d-8a89-4440-b213-31896fc92bb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_name
+    - node.type.person
+id: node.person.field_sort_name
+field_name: field_sort_name
+entity_type: node
+bundle: person
+label: Surname
+description: 'Name for sorting'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,104 @@
+uuid: 1bb9d5b6-5ece-4916-8b9f-e68e23f6e29c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.organisation.body
+    - field.field.node.organisation.field_address
+    - field.field.node.organisation.field_city
+    - field.field.node.organisation.field_image
+    - field.field.node.organisation.field_local_research_partner_org
+    - field.field.node.organisation.field_url
+    - image.style.thumbnail
+    - node.type.organisation
+  module:
+    - ds
+    - field_layout
+    - svg_image
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  ds:
+    layout:
+      id: bb_media
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          first: div
+          second: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: content
+        link_custom: '"[node:field_url:uri]"'
+        classes:
+          layout_class: {  }
+          first: {  }
+          second: {  }
+    regions:
+      first:
+        - field_image
+      second:
+        - node_title
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h4
+          class: ''
+          link: false
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.organisation.search_result
+targetEntityType: node
+bundle: organisation
+mode: search_result
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: second
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: first
+hidden:
+  addtoany: true
+  field_address: true
+  field_city: true
+  field_local_research_partner_org: true
+  field_url: true
+  langcode: true
+  links: true

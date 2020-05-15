@@ -1,0 +1,14 @@
+uuid: 228a1b28-83b9-4d05-8645-68d62ef437bb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - info@tomorrowscities.org
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

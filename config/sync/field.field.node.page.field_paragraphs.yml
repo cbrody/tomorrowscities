@@ -1,0 +1,57 @@
+uuid: b008bbc4-0a5a-4e6f-8c40-fb34c04d6285
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.page
+    - paragraphs.paragraphs_type.basic_text
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.wide_image
+    - paragraphs.paragraphs_type.wide_media
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: page
+label: Paragraphs
+description: 'Add image, media or block of text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image: image
+      video: video
+      basic_text: basic_text
+      wide_image: wide_image
+      wide_media: wide_media
+    target_bundles_drag_drop:
+      image:
+        enabled: true
+        weight: -13
+      video:
+        enabled: true
+        weight: -12
+      basic_text:
+        enabled: true
+        weight: -11
+      publication:
+        weight: -10
+        enabled: false
+      publication_link:
+        weight: -9
+        enabled: false
+      wide_image:
+        enabled: true
+        weight: -8
+      wide_media:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

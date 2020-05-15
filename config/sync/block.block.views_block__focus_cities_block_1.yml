@@ -1,0 +1,31 @@
+uuid: 29fe8a70-e8f8-45b6-b96b-656e1c7222d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.focus_cities
+  module:
+    - system
+    - views
+  theme:
+    - tc_bootstrap_sass
+id: views_block__focus_cities_block_1
+theme: tc_bootstrap_sass
+region: featured_bottom_third
+weight: -13
+provider: null
+plugin: 'views_block:focus_cities-block_1'
+settings:
+  id: 'views_block:focus_cities-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /update-homepage-rotating-images
+    negate: false
+    context_mapping: {  }

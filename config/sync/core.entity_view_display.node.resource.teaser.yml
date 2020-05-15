@@ -1,0 +1,57 @@
+uuid: 421e4b80-3b0b-4ed7-928b-c9d1a4ab8fff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.resource.body
+    - field.field.node.resource.field_author_s_
+    - field.field.node.resource.field_file_upload
+    - field.field.node.resource.field_image
+    - field.field.node.resource.field_material_type
+    - field.field.node.resource.field_publication_date
+    - field.field.node.resource.field_publication_upload_or_link
+    - field.field.node.resource.field_publisher
+    - field.field.node.resource.field_research_area
+    - field.field.node.resource.field_theme
+    - field.field.node.resource.field_url
+    - node.type.resource
+  module:
+    - field_layout
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.resource.teaser
+targetEntityType: node
+bundle: resource
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_author_s_: true
+  field_file_upload: true
+  field_image: true
+  field_material_type: true
+  field_publication_date: true
+  field_publication_upload_or_link: true
+  field_publisher: true
+  field_research_area: true
+  field_theme: true
+  field_url: true
+  langcode: true

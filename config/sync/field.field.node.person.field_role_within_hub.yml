@@ -1,0 +1,19 @@
+uuid: 1fae76be-a900-488c-8e6a-124a22d2ce4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_role_within_hub
+    - node.type.person
+id: node.person.field_role_within_hub
+field_name: field_role_within_hub
+entity_type: node
+bundle: person
+label: 'Role within hub'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

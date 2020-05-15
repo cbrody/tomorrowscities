@@ -1,0 +1,54 @@
+uuid: ebdb0921-dda1-407f-b92f-917295bb6ae1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.organisation.body
+    - field.field.node.organisation.field_address
+    - field.field.node.organisation.field_city
+    - field.field.node.organisation.field_image
+    - field.field.node.organisation.field_local_research_partner_org
+    - field.field.node.organisation.field_url
+    - node.type.organisation
+  module:
+    - field_layout
+    - link
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.organisation.search_index
+targetEntityType: node
+bundle: organisation
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_url:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  addtoany: true
+  field_address: true
+  field_city: true
+  field_image: true
+  field_local_research_partner_org: true
+  langcode: true
+  links: true

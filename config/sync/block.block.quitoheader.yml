@@ -1,0 +1,35 @@
+uuid: 04528141-f2f6-479c-baef-faf46904cf1b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3588c4ea-f070-4c3f-ba70-8ed1dac97dc1'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: bg-quito
+id: quitoheader
+theme: tc_bootstrap_sass
+region: highlighted
+weight: -8
+provider: null
+plugin: 'block_content:3588c4ea-f070-4c3f-ba70-8ed1dac97dc1'
+settings:
+  id: 'block_content:3588c4ea-f070-4c3f-ba70-8ed1dac97dc1'
+  label: 'Quito header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/20\r\n*/quito*"
+    negate: false
+    context_mapping: {  }

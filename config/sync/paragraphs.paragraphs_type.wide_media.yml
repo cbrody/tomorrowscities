@@ -1,0 +1,11 @@
+uuid: bc37f4b6-877b-42ca-b5d5-0226f6d0fd38
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:54a7f203-6a32-4aba-95d0-49ff79a84b0e'
+id: wide_media
+label: 'Wide media'
+icon_uuid: 54a7f203-6a32-4aba-95d0-49ff79a84b0e
+description: 'Full width media. Use with caution'
+behavior_plugins: {  }

@@ -1,0 +1,8 @@
+uuid: 8f77deae-3755-4cdb-b722-1aaed27e876b
+langcode: en
+status: true
+dependencies: {  }
+id: footer_block
+label: 'Footer block'
+revision: 0
+description: 'Single use for footer'

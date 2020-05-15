@@ -1,0 +1,27 @@
+uuid: 108c5e3c-188d-408a-b43c-886cc540c176
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_hub_role
+field_name: field_hub_role
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Co-Investigator
+      label: Co-Investigator
+    -
+      value: 'Principal Investigator'
+      label: 'Principal Investigator'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

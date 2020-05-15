@@ -1,0 +1,11 @@
+uuid: a615def1-f083-4c17-a168-f81b8a0f29f7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:40df6aa5-67e0-476d-8b63-d083814d47af'
+id: publication
+label: 'Publication upload'
+icon_uuid: 40df6aa5-67e0-476d-8b63-d083814d47af
+description: 'Add a new document'
+behavior_plugins: {  }

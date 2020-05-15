@@ -1,0 +1,31 @@
+uuid: 6fa878cc-2f60-41fe-ab5b-fcd22f33b5d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wide_media.field_text
+    - paragraphs.paragraphs_type.wide_media
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.wide_media.default
+targetEntityType: paragraph
+bundle: wide_media
+mode: default
+content:
+  field_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,30 @@
+uuid: 7b3f6402-531a-4854-935c-727ccbf0afbd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_cityrole
+field_name: field_cityrole
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'City Research Lead (CRL)'
+    -
+      value: '2'
+      label: 'City Impact Lead (CIL)'
+    -
+      value: '3'
+      label: 'UK Co-ordinator (UKC)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
