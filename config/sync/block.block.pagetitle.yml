@@ -1,0 +1,29 @@
+uuid: 11f50d50-9c84-4bca-aa94-94ada6b8189d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'pt-4 mb-3'
+id: pagetitle
+theme: tc_bootstrap_sass
+region: content
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/focus-cities/*\r\n/city/*"
+    negate: true
+    context_mapping: {  }

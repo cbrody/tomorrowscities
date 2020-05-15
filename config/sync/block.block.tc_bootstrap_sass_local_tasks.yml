@@ -9,7 +9,7 @@ _core:
 id: tc_bootstrap_sass_local_tasks
 theme: tc_bootstrap_sass
 region: content
-weight: -15
+weight: -14
 provider: null
 plugin: local_tasks_block
 settings:
