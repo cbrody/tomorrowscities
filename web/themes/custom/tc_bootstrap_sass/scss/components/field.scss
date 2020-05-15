@@ -111,3 +111,14 @@
 .field--label-inline .field__item {
     display: inline-block
 }
+
+.node--type-article {
+  .field-author {
+    @extend h6;
+    font-style: italic;
+    .field-label-inline {
+      float: left;
+      margin: 0 .5em .5em 0;
+    }
+  }
+}

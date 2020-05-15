@@ -1,0 +1,24 @@
+uuid: 52b51cd7-e082-4963-9697-6d2dbeed2a81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_s_
+    - node.type.article
+  module:
+    - label_help
+third_party_settings:
+  label_help:
+    label_help_description: 'Enter the blog author(s)'
+id: node.article.field_author_s_
+field_name: field_author_s_
+entity_type: node
+bundle: article
+label: Author(s)
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

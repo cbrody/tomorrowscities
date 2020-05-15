@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_article_type
+    - field.field.node.article.field_author_s_
     - field.field.node.article.field_image
     - field.field.node.article.field_paragraphs
     - field.field.node.article.field_tags
@@ -32,7 +33,7 @@ third_party_settings:
         wrappers:
           ds_content: div
         outer_wrapper: div
-        attributes: ''
+        attributes: 'data-tid|tid-[node:field_tags:0:target_id]'
         link_attribute: ''
         link_custom: ''
         classes:
@@ -40,14 +41,47 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - field_image
         - group_card
+        - field_image
         - node_post_date
         - node_title
+        - field_author_s_
     fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_post_date
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: card-footer
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
       node_title:
         plugin_id: node_title
-        weight: 0
+        weight: 3
         label: hidden
         formatter: default
         settings:
@@ -81,11 +115,44 @@ third_party_settings:
             fis-def-at: false
             fi: false
             fi-def-at: false
-      node_post_date:
-        plugin_id: node_post_date
-        weight: 0
-        label: hidden
-        formatter: ds_post_date_post_date
+  field_group:
+    group_card:
+      children:
+        - field_image
+        - node_post_date
+        - node_title
+        - field_author_s_
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: card
+      label: card
+      region: content
+_core:
+  default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
+id: node.article.card
+targetEntityType: node
+bundle: article
+mode: card
+content:
+  field_author_s_:
+    type: string
+    weight: 4
+    region: ds_content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
         ft:
           id: expert
           settings:
@@ -102,7 +169,7 @@ third_party_settings:
             fis-at: ''
             fi: true
             fi-el: div
-            fi-cl: card-footer
+            fi-cl: 'card-footer text-muted'
             fi-at: ''
             suffix: ''
             lbw: false
@@ -113,36 +180,9 @@ third_party_settings:
             fis: false
             fis-def-at: false
             fi-def-at: false
-  field_group:
-    group_card:
-      children:
-        - field_image
-        - node_title
-        - node_post_date
-      parent_name: ''
-      weight: 0
-      format_type: html_element
-      format_settings:
-        id: ''
-        classes: card
-        element: div
-        show_label: false
-        label_element: h3
-        attributes: ''
-        effect: none
-        speed: fast
-      label: card
-      region: content
-_core:
-  default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
-id: node.article.card
-targetEntityType: node
-bundle: article
-mode: card
-content:
   field_image:
     type: image
-    weight: -1
+    weight: 1
     region: ds_content
     settings:
       image_style: card_270x130_

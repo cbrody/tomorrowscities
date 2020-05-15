@@ -181,3 +181,12 @@ h4.card-title {
 .field--name-field-contact-form .field__label {
   @extend h2;
 }
+
+/* Covid-19 tag */
+
+div[data-tid="tid-10"] {
+  background-color: $jade-light !important;
+  * {
+    background-color: transparent;
+  }
+}
