@@ -1,0 +1,30 @@
+uuid: 02a555d7-f704-4475-b641-4f50ccaa57f8
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.nairobi
+  module:
+    - system
+  theme:
+    - tc_bootstrap_sass
+id: nairobi
+theme: tc_bootstrap_sass
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'system_menu_block:nairobi'
+settings:
+  id: 'system_menu_block:nairobi'
+  label: Nairobi
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/21\r\n*/nairobi/*"
+    negate: false
+    context_mapping: {  }

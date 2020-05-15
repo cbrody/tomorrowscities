@@ -1,0 +1,22 @@
+uuid: a3bb4a47-1cf4-4c22-bc3c-87868f240111
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.city_office
+  module:
+    - text
+id: node.city_office.body
+field_name: body
+entity_type: node
+bundle: city_office
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

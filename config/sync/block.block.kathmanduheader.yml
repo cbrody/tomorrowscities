@@ -1,0 +1,35 @@
+uuid: e281daa0-4bd9-47b9-9237-2acff3d6e943
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:84ef601a-9ba3-4d94-a646-06c67c9baaf3'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: bg-kathmandu
+id: kathmanduheader
+theme: tc_bootstrap_sass
+region: highlighted
+weight: -9
+provider: null
+plugin: 'block_content:84ef601a-9ba3-4d94-a646-06c67c9baaf3'
+settings:
+  id: 'block_content:84ef601a-9ba3-4d94-a646-06c67c9baaf3'
+  label: 'Kathmandu header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/22\r\n/*/kathmandu*"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,124 @@
+uuid: 6a23f5c6-e962-4149-b0ea-cead99b086a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.page.body
+    - field.field.node.page.field_card_header
+    - field.field.node.page.field_city
+    - field.field.node.page.field_contact_form
+    - field.field.node.page.field_image
+    - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_standfirst
+    - node.type.page
+  module:
+    - ds
+    - field_group
+    - field_layout
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  ds:
+    layout:
+      id: ds_1col_wrapper
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: content
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - group_card
+        - field_card_header
+        - body
+  field_group:
+    group_card:
+      children:
+        - field_card_header
+        - body
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'card h-100'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: card
+      region: content
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.card
+targetEntityType: node
+bundle: page
+mode: card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    region: ds_content
+    settings:
+      trim_length: 600
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: card-body
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_card_header:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+hidden:
+  addtoany: true
+  field_city: true
+  field_contact_form: true
+  field_image: true
+  field_paragraphs: true
+  field_standfirst: true
+  langcode: true
+  links: true

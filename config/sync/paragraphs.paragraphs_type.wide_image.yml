@@ -1,0 +1,11 @@
+uuid: 814a3bfd-b990-42a8-9060-6dfa5636c710
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:ec45839d-1e92-4ef5-96f4-c945fcbfb89c'
+id: wide_image
+label: 'Wide image'
+icon_uuid: ec45839d-1e92-4ef5-96f4-c945fcbfb89c
+description: 'Add wide image'
+behavior_plugins: {  }

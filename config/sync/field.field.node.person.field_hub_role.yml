@@ -1,0 +1,23 @@
+uuid: 208e7ebe-34cf-4c19-b4eb-93d7e53f6aad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hub_role
+    - node.type.person
+  module:
+    - options
+id: node.person.field_hub_role
+field_name: field_hub_role
+entity_type: node
+bundle: person
+label: 'Hub role'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Co-Investigator
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,45 @@
+uuid: 28f5a8dc-0297-4446-85c6-4df7ecbf2fa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.person
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.person.field_image
+field_name: field_image
+entity_type: node
+bundle: person
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 MB'
+  max_resolution: ''
+  min_resolution: 120x120
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ac9f7bc3-2165-4f46-81a2-3874902bec78
+    alt: 'Photo placeholder'
+    title: ''
+    width: 70
+    height: 70
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,25 @@
+uuid: 7e097d72-0f37-42d4-b158-da4d72b88ee6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_block:bf4cded7-cb39-4395-9002-1cfddfd3cdf4'
+  module:
+    - block_content
+  theme:
+    - tc_bootstrap_sass
+id: footerblock
+theme: tc_bootstrap_sass
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:bf4cded7-cb39-4395-9002-1cfddfd3cdf4'
+settings:
+  id: 'block_content:bf4cded7-cb39-4395-9002-1cfddfd3cdf4'
+  label: 'Footer block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

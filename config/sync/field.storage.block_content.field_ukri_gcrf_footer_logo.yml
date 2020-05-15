@@ -1,0 +1,19 @@
+uuid: 9c9b2e00-9003-40f6-a729-2f0f19394431
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_ukri_gcrf_footer_logo
+field_name: field_ukri_gcrf_footer_logo
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,32 @@
+uuid: 7317f594-c8cd-402d-8de7-7fdad6089e7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wide_image.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.wide_image
+  module:
+    - field_layout
+    - layout_discovery
+    - svg_image
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.wide_image.default
+targetEntityType: paragraph
+bundle: wide_image
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

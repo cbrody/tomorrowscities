@@ -1,0 +1,11 @@
+uuid: f64b4dec-e64f-4557-b977-1ed7a9ff15f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.city
+id: taxonomy_term.city
+target_entity_type_id: taxonomy_term
+target_bundle: city
+default_langcode: site_default
+language_alterable: false

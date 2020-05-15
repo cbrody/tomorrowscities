@@ -1,0 +1,52 @@
+uuid: c03e41da-4610-4d08-97fa-4cf317fd1e44
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+    - twitter_embed
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'col-lg-3 card mb-5 mx-3 mx-lg-0'
+id: twittertimeline
+theme: tc_bootstrap_sass
+region: featured_top
+weight: -14
+provider: null
+plugin: twitter_embed_timeline
+settings:
+  id: twitter_embed_timeline
+  label: 'Twitter Timeline'
+  provider: twitter_embed
+  label_display: '0'
+  username: Urbanriskhub
+  type: profile
+  type_value: ''
+  display_style: timeline
+  theme: light
+  chrome:
+    noheader: noheader
+    nofooter: nofooter
+    noborders: noborders
+    transparent: 0
+    noscrollbar: 0
+  width: '600'
+  height: '400'
+  link_color: '#2b7bb9'
+  border_color: '#000000'
+  tweet_limit: '0'
+  show_replies: 0
+  aria_polite: polite
+  language: ''
+  hide_username: false
+  hide_followers_count: false
+  size: null
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/home-slider"
+    negate: false
+    context_mapping: {  }

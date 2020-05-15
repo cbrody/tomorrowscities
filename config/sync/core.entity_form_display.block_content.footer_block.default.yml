@@ -1,0 +1,39 @@
+uuid: b46047d2-eeac-488b-9157-f701c1c7c4bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.field.block_content.footer_block.body
+    - field.field.block_content.footer_block.field_footer_info
+    - field.field.block_content.footer_block.field_footer_links_and_copyright
+    - field.field.block_content.footer_block.field_footer_logo
+    - field.field.block_content.footer_block.field_ukri_gcrf_footer_logo
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: block_content.footer_block.default
+targetEntityType: block_content
+bundle: footer_block
+mode: default
+content:
+  field_footer_info:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  body: true
+  field_footer_links_and_copyright: true
+  field_footer_logo: true
+  field_ukri_gcrf_footer_logo: true
+  info: true
+  langcode: true

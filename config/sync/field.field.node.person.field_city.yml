@@ -1,0 +1,34 @@
+uuid: c73ae762-b40b-4c70-a48c-3b1b8d5d758d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_city
+    - node.type.person
+    - taxonomy.vocabulary.city
+  module:
+    - label_help
+third_party_settings:
+  label_help:
+    label_help_description: 'Select city if any'
+id: node.person.field_city
+field_name: field_city
+entity_type: node
+bundle: person
+label: City
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      city: city
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

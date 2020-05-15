@@ -1,0 +1,23 @@
+uuid: 38ee5099-2e7e-4fcf-80e0-7b114a019762
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_local_research_partner_org
+    - node.type.organisation
+id: node.organisation.field_local_research_partner_org
+field_name: field_local_research_partner_org
+entity_type: node
+bundle: organisation
+label: 'Local Research Partner organisation'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

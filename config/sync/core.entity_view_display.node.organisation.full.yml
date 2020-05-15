@@ -1,0 +1,100 @@
+uuid: adea5120-2297-491a-aeca-5f7b5ee95dcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.organisation.body
+    - field.field.node.organisation.field_address
+    - field.field.node.organisation.field_city
+    - field.field.node.organisation.field_image
+    - field.field.node.organisation.field_local_research_partner_org
+    - field.field.node.organisation.field_url
+    - image.style.thumbnail
+    - node.type.organisation
+  module:
+    - ds
+    - field_layout
+    - link
+    - svg_image
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  ds:
+    layout:
+      id: bb_media
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          first: div
+          second: div
+        outer_wrapper: div
+        attributes: role|navigation
+        link_attribute: content
+        link_custom: '"[node:field_url:uri]"'
+        classes:
+          layout_class: {  }
+          first: {  }
+          second: {  }
+    regions:
+      first:
+        - field_image
+      second:
+        - body
+        - field_url
+id: node.organisation.full
+targetEntityType: node
+bundle: organisation
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: second
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: first
+  field_url:
+    type: link
+    weight: 2
+    region: second
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_address: true
+  field_city: true
+  field_local_research_partner_org: true
+  langcode: true
+  links: true

@@ -1,0 +1,224 @@
+uuid: 0f19687b-29a6-4b6c-baf1-0ef108dce784
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.resource.body
+    - field.field.node.resource.field_author_s_
+    - field.field.node.resource.field_city
+    - field.field.node.resource.field_file_upload
+    - field.field.node.resource.field_image
+    - field.field.node.resource.field_material_type
+    - field.field.node.resource.field_publication_date
+    - field.field.node.resource.field_publication_upload_or_link
+    - field.field.node.resource.field_publisher
+    - field.field.node.resource.field_research_area
+    - field.field.node.resource.field_theme
+    - field.field.node.resource.field_url
+    - image.style.card_cover_270x130_
+    - node.type.resource
+  module:
+    - ds
+    - field_group
+    - field_layout
+    - svg_image
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  ds:
+    layout:
+      id: ds_1col_wrapper
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: content
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - group_card
+        - field_image
+        - field_material_type
+        - node_title
+        - field_publisher
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 9
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h4
+          class: card-title
+          link: false
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: card-body
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_group:
+    group_card:
+      children:
+        - field_image
+        - field_material_type
+        - node_title
+        - field_publisher
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'card h-100'
+      label: card
+      region: content
+id: node.resource.card
+targetEntityType: node
+bundle: resource
+mode: card
+content:
+  field_image:
+    weight: 7
+    label: hidden
+    settings:
+      image_style: card_cover_270x130_
+      image_link: content
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            classes:
+              - img-fluid
+              - card-img-top
+            lb-col: false
+    type: image
+    region: ds_content
+  field_material_type:
+    weight: 8
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: 'badge badge-light'
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: entity_reference_label
+    region: ds_content
+  field_publisher:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: 'card-footer text-muted'
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: string
+    region: ds_content
+hidden:
+  addtoany: true
+  body: true
+  field_author_s_: true
+  field_city: true
+  field_file_upload: true
+  field_publication_date: true
+  field_publication_upload_or_link: true
+  field_research_area: true
+  field_theme: true
+  field_url: true
+  langcode: true
+  links: true

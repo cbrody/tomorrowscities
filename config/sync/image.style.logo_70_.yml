@@ -1,0 +1,15 @@
+uuid: 8234a347-2d56-4dae-9dbe-a4c5419fdf82
+langcode: en
+status: true
+dependencies: {  }
+name: logo_70_
+label: 'Logo (70)'
+effects:
+  7998593f-10c9-40ab-a179-2ba7691e50fd:
+    uuid: 7998593f-10c9-40ab-a179-2ba7691e50fd
+    id: image_scale
+    weight: 1
+    data:
+      width: 70
+      height: null
+      upscale: false

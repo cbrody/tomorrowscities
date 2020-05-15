@@ -1,0 +1,8 @@
+uuid: 7976151c-35d4-4d01-90ea-06d365a27d80
+langcode: en
+status: true
+dependencies: {  }
+id: nairobi
+label: Nairobi
+description: 'City focus: Nairobi'
+locked: false

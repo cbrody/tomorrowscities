@@ -1,0 +1,24 @@
+uuid: 29e58650-e8d4-43e2-8f4d-bd0e25488326
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.storage.block_content.field_footer_links_and_copyright
+  module:
+    - text
+id: block_content.footer_block.field_footer_links_and_copyright
+field_name: field_footer_links_and_copyright
+entity_type: block_content
+bundle: footer_block
+label: 'Footer links and copyright'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p><a class=\"footer-link mr-3\" href=\"/about-us#contact\">Contact us</a><a class=\"footer-link mr-3\" href=\"/partners\">Partners</a><a class=\"footer-link mr-3\" href=\"/node/9\">Privacy policy</a> ©&nbsp;Tomorrow's Cities project team</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

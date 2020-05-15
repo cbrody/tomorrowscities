@@ -1,0 +1,47 @@
+uuid: 782294ed-55f9-4004-a8b0-a51e547bce1c
+langcode: en
+status: true
+dependencies: {  }
+id: home
+label: home
+options:
+  animation: fade
+  animationSpeed: 1200
+  direction: horizontal
+  slideshow: true
+  easing: swing
+  smoothHeight: false
+  reverse: false
+  slideshowSpeed: 7000
+  animationLoop: true
+  randomize: true
+  startAt: 0
+  itemWidth: 0
+  itemMargin: 0
+  minItems: 1
+  maxItems: 1
+  move: 0
+  directionNav: false
+  controlNav: '0'
+  thumbCaptions: false
+  thumbCaptionsBoth: false
+  keyboard: false
+  multipleKeyboard: false
+  mousewheel: false
+  touch: false
+  prevText: Previous
+  nextText: Next
+  namespace: flex-
+  selector: '.slides > li'
+  sync: ''
+  asNavFor: ''
+  initDelay: 0
+  useCSS: true
+  video: false
+  pausePlay: false
+  pauseText: Pause
+  playText: Play
+  pauseOnAction: false
+  pauseOnHover: true
+  controlsContainer: ''
+  manualControls: ''

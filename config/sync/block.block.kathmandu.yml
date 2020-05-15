@@ -1,0 +1,30 @@
+uuid: 936ede72-0bd6-4cfb-885b-381d511803f8
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.kathmandu
+  module:
+    - system
+  theme:
+    - tc_bootstrap_sass
+id: kathmandu
+theme: tc_bootstrap_sass
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'system_menu_block:kathmandu'
+settings:
+  id: 'system_menu_block:kathmandu'
+  label: Kathmandu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/22\r\n*/kathmandu/*"
+    negate: false
+    context_mapping: {  }

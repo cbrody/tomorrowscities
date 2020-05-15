@@ -1,0 +1,11 @@
+uuid: 9010511e-b034-4eb3-93d0-d3f3aaf86113
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:5e1d37ea-b7b2-44d4-9ae9-cf3442430ba6'
+id: image
+label: Image
+icon_uuid: 5e1d37ea-b7b2-44d4-9ae9-cf3442430ba6
+description: 'Add regular image'
+behavior_plugins: {  }

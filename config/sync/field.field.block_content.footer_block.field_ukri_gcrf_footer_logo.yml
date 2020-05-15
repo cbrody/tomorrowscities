@@ -1,0 +1,24 @@
+uuid: e2ba447f-3dc6-4717-a8d1-ff503e0ebb63
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.storage.block_content.field_ukri_gcrf_footer_logo
+  module:
+    - text
+id: block_content.footer_block.field_ukri_gcrf_footer_logo
+field_name: field_ukri_gcrf_footer_logo
+entity_type: block_content
+bundle: footer_block
+label: 'UKRI-GCRF footer logo'
+description: 'Don''t edit this field'
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p><a href=\"https://www.ukri.org/research/global-challenges-research-fund/\"><img alt=\"ukri gcrf\" class=\"img-fluid mb-4\" height=\"\" src=\"/sites/default/files/2019-06/ukri-gcrf.svg\" typeof=\"foaf:Image\" width=\"\" /></a></p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

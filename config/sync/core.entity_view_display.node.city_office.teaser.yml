@@ -1,0 +1,32 @@
+uuid: de509a4f-f6ff-4f9e-98fe-2e2a1b74228d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.city_office.body
+    - node.type.city_office
+  module:
+    - text
+    - user
+id: node.city_office.teaser
+targetEntityType: node
+bundle: city_office
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

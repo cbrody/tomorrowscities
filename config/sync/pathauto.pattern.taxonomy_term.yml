@@ -1,0 +1,23 @@
+uuid: d3072164-463a-47e9-9db1-23dff3d72fd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_term
+label: 'Taxonomy term (city)'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:parent]/[term:name]'
+selection_criteria:
+  4dd2d4c1-3d9d-4373-8de4-af365746ed28:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      city: city
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 4dd2d4c1-3d9d-4373-8de4-af365746ed28
+selection_logic: and
+weight: -9
+relationships: {  }

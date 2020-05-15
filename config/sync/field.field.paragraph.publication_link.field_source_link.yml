@@ -1,0 +1,23 @@
+uuid: 2e2d67d8-8a16-4e00-ad7f-885865d6830a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_source_link
+    - paragraphs.paragraphs_type.publication_link
+  module:
+    - link
+id: paragraph.publication_link.field_source_link
+field_name: field_source_link
+entity_type: paragraph
+bundle: publication_link
+label: 'Source link'
+description: 'Link to content published elsewhere online'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

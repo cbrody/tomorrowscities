@@ -1,0 +1,21 @@
+uuid: 518a74fd-6b92-4d3a-b775-5cfc8765f57a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_card_header
+    - node.type.page
+  module:
+    - text
+id: node.page.field_card_header
+field_name: field_card_header
+entity_type: node
+bundle: page
+label: 'card header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,11 @@
+uuid: 935852a5-2495-4c21-a759-8de83cffb6ac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:484ef6b4-4d84-4bc7-86bd-714249ec581e'
+id: video
+label: Video
+icon_uuid: 484ef6b4-4d84-4bc7-86bd-714249ec581e
+description: 'Add embedded video'
+behavior_plugins: {  }

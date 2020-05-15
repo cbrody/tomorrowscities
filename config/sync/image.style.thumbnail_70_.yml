@@ -1,0 +1,23 @@
+uuid: b7ed89da-eb96-4dc9-b3d8-e51d3ab210b2
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_70_
+label: 'thumbnail (70x70)'
+effects:
+  e0fa92e0-a309-41e6-9434-4082a8046a17:
+    uuid: e0fa92e0-a309-41e6-9434-4082a8046a17
+    id: image_scale
+    weight: 2
+    data:
+      width: 70
+      height: null
+      upscale: false
+  4aa0255e-0e39-4886-87f0-a836fac53dc1:
+    uuid: 4aa0255e-0e39-4886-87f0-a836fac53dc1
+    id: image_crop
+    weight: 2
+    data:
+      width: 70
+      height: 70
+      anchor: center-center

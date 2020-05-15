@@ -1,0 +1,27 @@
+uuid: 10eeb195-6f8f-4de1-ab3d-ba8c152f0ffb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_upload
+    - node.type.resource
+  module:
+    - file
+id: node.resource.field_file_upload
+field_name: field_file_upload
+entity_type: node
+bundle: resource
+label: 'File upload'
+description: 'Upload source file only if it doesn''t exist online already.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'resources/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf txt doc docx xls xlsx ppt pptx rtf'
+  max_filesize: '6 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

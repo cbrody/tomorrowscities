@@ -1,0 +1,15 @@
+uuid: ddd758c9-4614-45a6-a216-9679f2aefeaf
+langcode: en
+status: true
+dependencies: {  }
+name: wide_1200x412_
+label: 'Wide (1200x412)'
+effects:
+  00576af8-83a3-4bad-8976-ed7155a5e29e:
+    uuid: 00576af8-83a3-4bad-8976-ed7155a5e29e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 412
+      anchor: center-center

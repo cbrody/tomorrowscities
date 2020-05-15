@@ -1,0 +1,8 @@
+uuid: fe2bb21e-75a6-4887-a48a-7841236decc8
+langcode: en
+status: true
+dependencies: {  }
+id: quito
+label: Quito
+description: 'City focus: Quito'
+locked: false

@@ -1,0 +1,15 @@
+uuid: b69fcbeb-da5b-4e80-9a28-99fb7db55097
+langcode: en
+status: true
+dependencies: {  }
+name: logo_170
+label: 'Logo (170)'
+effects:
+  92297652-7253-43b0-82e5-75bac9b32bc0:
+    uuid: 92297652-7253-43b0-82e5-75bac9b32bc0
+    id: image_scale
+    weight: 1
+    data:
+      width: 170
+      height: null
+      upscale: false

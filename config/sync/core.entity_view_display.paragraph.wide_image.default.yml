@@ -1,0 +1,28 @@
+uuid: ef1d11e3-0403-4bbe-89aa-cf1faeb38505
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wide_image.field_image
+    - paragraphs.paragraphs_type.wide_image
+  module:
+    - svg_image
+id: paragraph.wide_image.default
+targetEntityType: paragraph
+bundle: wide_image
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: above
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

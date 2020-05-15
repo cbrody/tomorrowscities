@@ -1,0 +1,62 @@
+uuid: 5a604232-7924-4e45-ae9e-85f64fc73bec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.basic_text.field_text
+    - paragraphs.paragraphs_type.basic_text
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_text
+id: paragraph.basic_text.default
+targetEntityType: paragraph
+bundle: basic_text
+mode: default
+content:
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: 'col-md-8 m-auto'
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: text_default
+    region: content
+hidden: {  }
