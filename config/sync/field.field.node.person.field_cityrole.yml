@@ -1,0 +1,25 @@
+uuid: bb80a661-cf4d-45fe-a777-6d611547c5d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cityrole
+    - node.type.person
+  module:
+    - label_help
+    - options
+third_party_settings:
+  label_help:
+    label_help_description: 'Select team role if any'
+id: node.person.field_cityrole
+field_name: field_cityrole
+entity_type: node
+bundle: person
+label: 'City role'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

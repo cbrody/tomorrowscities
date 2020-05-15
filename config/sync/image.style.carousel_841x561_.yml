@@ -1,0 +1,15 @@
+uuid: 9abc27b1-f996-453f-95a9-62a801315882
+langcode: en
+status: true
+dependencies: {  }
+name: carousel_841x561_
+label: 'Carousel (841x561)'
+effects:
+  72a0aef0-ef0a-4894-af3f-779a395d6ed2:
+    uuid: 72a0aef0-ef0a-4894-af3f-779a395d6ed2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 841
+      height: 561
+      anchor: center-center

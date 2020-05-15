@@ -1,0 +1,259 @@
+uuid: 0aa7c7cb-1175-427d-94e0-b9348c5055a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.field.block_content.footer_block.body
+    - field.field.block_content.footer_block.field_footer_info
+    - field.field.block_content.footer_block.field_footer_links_and_copyright
+    - field.field.block_content.footer_block.field_footer_logo
+    - field.field.block_content.footer_block.field_ukri_gcrf_footer_logo
+  module:
+    - ds
+    - field_group
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - group_footer
+        - group_footer_container
+        - group_footer_row
+        - group_footer_top
+        - field_footer_logo
+        - group_footer_info
+        - field_footer_links_and_copyright
+        - field_ukri_gcrf_footer_logo
+        - field_footer_info
+  field_group:
+    group_footer:
+      children:
+        - group_footer_top
+        - field_footer_links_and_copyright
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: ''
+        element: footer
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: footer
+      region: content
+    group_footer_info:
+      children:
+        - field_ukri_gcrf_footer_logo
+        - field_footer_info
+      parent_name: group_footer_row
+      weight: 4
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'footer-info col-md-6'
+      label: footer-info
+      region: content
+    group_footer_top:
+      children:
+        - group_footer_container
+      parent_name: group_footer
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: footer-top
+        classes: ''
+        element: section
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: footer-top
+      region: content
+    group_footer_container:
+      children:
+        - group_footer_row
+      parent_name: group_footer_top
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'footer container'
+      region: content
+    group_footer_row:
+      children:
+        - field_footer_logo
+        - group_footer_info
+      parent_name: group_footer_container
+      weight: 2
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'row py-5'
+      label: 'footer row'
+      region: content
+id: block_content.footer_block.default
+targetEntityType: block_content
+bundle: footer_block
+mode: default
+content:
+  field_footer_info:
+    type: text_trimmed
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_footer_links_and_copyright:
+    type: text_trimmed
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: section
+            ow-cl: py-4
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: container
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_footer_logo:
+    type: text_trimmed
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_ukri_gcrf_footer_logo:
+    type: text_trimmed
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+hidden:
+  body: true
+  langcode: true

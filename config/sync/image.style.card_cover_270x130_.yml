@@ -1,0 +1,23 @@
+uuid: 2b9526f9-ddbc-4e45-b1ef-43ca8dd2917c
+langcode: en
+status: true
+dependencies: {  }
+name: card_cover_270x130_
+label: 'Card cover (270x130)'
+effects:
+  c33ab539-4fbd-4aa5-9829-584963f6bfc5:
+    uuid: c33ab539-4fbd-4aa5-9829-584963f6bfc5
+    id: image_scale
+    weight: 2
+    data:
+      width: 270
+      height: null
+      upscale: false
+  7e1d22f5-b2c0-4cd1-a408-e10e3195ae60:
+    uuid: 7e1d22f5-b2c0-4cd1-a408-e10e3195ae60
+    id: image_crop
+    weight: 3
+    data:
+      width: 270
+      height: 130
+      anchor: center-top

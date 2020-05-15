@@ -1,0 +1,8 @@
+uuid: 3b84829d-0511-45a7-9e6a-de70483f99de
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article type'
+vid: article_type
+description: 'Type of article (blog, news, event)'
+weight: 0

@@ -1,0 +1,19 @@
+uuid: 25041fc7-e1cb-42cb-bb50-8bccaca6e4c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.city_office
+id: node.city_office.field_email
+field_name: field_email
+entity_type: node
+bundle: city_office
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

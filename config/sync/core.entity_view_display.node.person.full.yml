@@ -1,0 +1,143 @@
+uuid: be286684-b950-4ed8-99e1-004a5ac4dd5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.person.body
+    - field.field.node.person.field_city
+    - field.field.node.person.field_cityrole
+    - field.field.node.person.field_department
+    - field.field.node.person.field_email
+    - field.field.node.person.field_hub_role
+    - field.field.node.person.field_image
+    - field.field.node.person.field_organisation
+    - field.field.node.person.field_role
+    - field.field.node.person.field_role_within_hub
+    - field.field.node.person.field_sort_name
+    - field.field.node.person.field_webpage
+    - image.style.thumbnail_cropped_100_100_
+    - node.type.person
+  module:
+    - ds
+    - field_layout
+    - link
+    - svg_image
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  ds:
+    layout:
+      id: bb_media
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          first: div
+          second: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          first: {  }
+          second: {  }
+    regions:
+      first:
+        - field_image
+      second:
+        - field_role
+        - field_department
+        - field_organisation
+        - body
+        - field_email
+        - field_webpage
+id: node.person.full
+targetEntityType: node
+bundle: person
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: second
+  field_department:
+    type: string
+    weight: 2
+    region: second
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_email:
+    type: email_mailto
+    weight: 5
+    region: second
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    region: first
+    label: hidden
+    settings:
+      image_style: thumbnail_cropped_100_100_
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_organisation:
+    type: entity_reference_label
+    weight: 3
+    region: second
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_role:
+    type: string
+    weight: 1
+    region: second
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_webpage:
+    type: link
+    weight: 6
+    region: second
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_city: true
+  field_cityrole: true
+  field_hub_role: true
+  field_role_within_hub: true
+  field_sort_name: true
+  langcode: true
+  links: true

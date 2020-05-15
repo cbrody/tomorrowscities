@@ -1,0 +1,35 @@
+uuid: d1f563c3-f222-482b-b768-9dbe6d489820
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e903c2fb-804c-4e4b-93ac-22bff88fd276'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: container
+id: focuscities
+theme: tc_bootstrap_sass
+region: featured_bottom_first
+weight: -14
+provider: null
+plugin: 'block_content:e903c2fb-804c-4e4b-93ac-22bff88fd276'
+settings:
+  id: 'block_content:e903c2fb-804c-4e4b-93ac-22bff88fd276'
+  label: 'Focus cities'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,23 @@
+uuid: 445d2b21-8837-4e73-9088-df70a1d61c7c
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_cropped_100_100_
+label: 'Thumbnail photo (100×100)'
+effects:
+  bca72eb3-239d-4a10-8c7e-4857dd1131d6:
+    uuid: bca72eb3-239d-4a10-8c7e-4857dd1131d6
+    id: image_scale
+    weight: 1
+    data:
+      width: 100
+      height: null
+      upscale: true
+  5f35baf6-6f49-48ae-9a40-c3efb95193d6:
+    uuid: 5f35baf6-6f49-48ae-9a40-c3efb95193d6
+    id: image_crop
+    weight: 2
+    data:
+      width: 100
+      height: 100
+      anchor: center-center

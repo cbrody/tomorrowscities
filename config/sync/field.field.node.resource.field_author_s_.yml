@@ -1,0 +1,19 @@
+uuid: 21f5ccdb-abca-4f6f-b494-577283b23cf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_s_
+    - node.type.resource
+id: node.resource.field_author_s_
+field_name: field_author_s_
+entity_type: node
+bundle: resource
+label: Author(s)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

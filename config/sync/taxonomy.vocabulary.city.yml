@@ -1,0 +1,8 @@
+uuid: 6d065621-a09a-48c4-9c51-e3b6ff005452
+langcode: en
+status: true
+dependencies: {  }
+name: City
+vid: city
+description: 'Focus city'
+weight: 0

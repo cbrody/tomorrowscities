@@ -1,0 +1,22 @@
+uuid: 0659098e-7098-4b26-9479-ab608f13cee5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tc_bootstrap_sass
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: tc_bootstrap_sass_messages
+theme: tc_bootstrap_sass
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

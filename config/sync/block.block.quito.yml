@@ -1,0 +1,30 @@
+uuid: e56a3d71-c5d6-4103-b7f7-f330ea7dbcb6
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.quito
+  module:
+    - system
+  theme:
+    - tc_bootstrap_sass
+id: quito
+theme: tc_bootstrap_sass
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'system_menu_block:quito'
+settings:
+  id: 'system_menu_block:quito'
+  label: Quito
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/20\r\n*/quito/*"
+    negate: false
+    context_mapping: {  }

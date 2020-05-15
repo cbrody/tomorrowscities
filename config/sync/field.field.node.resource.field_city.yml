@@ -1,0 +1,34 @@
+uuid: 48dd2128-4760-4a42-9c1c-230e8b788bc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_city
+    - node.type.resource
+    - taxonomy.vocabulary.city
+  module:
+    - label_help
+third_party_settings:
+  label_help:
+    label_help_description: 'Associated city if any'
+id: node.resource.field_city
+field_name: field_city
+entity_type: node
+bundle: resource
+label: City
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      city: city
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

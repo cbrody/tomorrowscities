@@ -1,0 +1,11 @@
+uuid: c8188f7e-1056-468e-994f-a6196738f665
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:d128c807-396d-46b1-8010-faa1f19cdbd3'
+id: basic_text
+label: 'Basic text'
+icon_uuid: d128c807-396d-46b1-8010-faa1f19cdbd3
+description: 'Continue text'
+behavior_plugins: {  }

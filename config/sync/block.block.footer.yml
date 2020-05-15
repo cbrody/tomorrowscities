@@ -1,0 +1,31 @@
+uuid: 0230d58b-110d-4fbd-be8d-a4f646b227bb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ba9a77c-4a0e-45e1-9ddb-eea5d7560ad6'
+  module:
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+id: footer
+theme: tc_bootstrap_sass
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:6ba9a77c-4a0e-45e1-9ddb-eea5d7560ad6'
+settings:
+  id: 'block_content:6ba9a77c-4a0e-45e1-9ddb-eea5d7560ad6'
+  label: Footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /update-homepage-rotating-images
+    negate: false
+    context_mapping: {  }

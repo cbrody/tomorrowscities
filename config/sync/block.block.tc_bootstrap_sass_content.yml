@@ -1,0 +1,22 @@
+uuid: 98cab9b2-3a75-4ef2-bd95-5b2979f9fa3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tc_bootstrap_sass
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: tc_bootstrap_sass_content
+theme: tc_bootstrap_sass
+region: content
+weight: -12
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

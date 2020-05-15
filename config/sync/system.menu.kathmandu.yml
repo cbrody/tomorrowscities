@@ -1,0 +1,8 @@
+uuid: 25be4ddc-11b1-412d-b161-c04e57df4cd8
+langcode: en
+status: true
+dependencies: {  }
+id: kathmandu
+label: Kathmandu
+description: 'City focus: Kathmandu'
+locked: false

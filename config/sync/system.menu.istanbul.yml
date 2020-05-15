@@ -1,0 +1,8 @@
+uuid: c8eb38da-7809-4a80-b118-1afb0141ed46
+langcode: en
+status: true
+dependencies: {  }
+id: istanbul
+label: Istanbul
+description: 'City focus: Istanbul'
+locked: false

@@ -1,0 +1,8 @@
+uuid: d8e57717-7da7-448e-8f32-9f797db73c25
+langcode: en
+status: true
+dependencies: {  }
+name: Theme
+vid: theme
+description: 'Research theme'
+weight: 0
