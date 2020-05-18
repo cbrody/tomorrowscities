@@ -199,10 +199,3 @@ RewriteRule ^(.*)$ "https\:\/\/www\.tomorrowscities\.org\/city\/nairobi$1" [R=30
 RewriteCond %{HTTP_HOST} ^tomorrowsquito\.org$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.tomorrowsquito\.org$
 RewriteRule ^(.*)$ "https\:\/\/www\.tomorrowscities\.org\/city\/quito$1" [R=302,L]
-
-<<<<<<< HEAD
-=======
-# php -- BEGIN cPanel-generated handler, do not edit
-# This domain inherits the “PHP” package.
-# php -- END cPanel-generated handler, do not edit
->>>>>>> 7463d0bb540fdb7c72bde4865c88be6596233271
