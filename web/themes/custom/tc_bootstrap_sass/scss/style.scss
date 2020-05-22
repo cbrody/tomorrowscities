@@ -136,7 +136,7 @@ a {
 
 .card-footer {
     padding: 0.75rem 1.25rem;
-    background-color: #fff;
+    background-color: transparent;
     border-top: none;
 }
 
@@ -162,6 +162,11 @@ a {
     padding: 0.75rem 1rem;
   }
 
+.card-header {
+  background-color: transparent;
+  border-bottom: none;
+}
+
 h4.card-title {
   @extend h5;
 }
@@ -185,8 +190,18 @@ h4.card-title {
 /* Covid-19 tag */
 
 div[data-tid="tid-10"] {
-  background-color: $jade-light !important;
-  * {
-    background-color: transparent;
+  // .field-post-date {
+  //   background: url(../images/tid-10.png) no-repeat top right !important;
+  // }
+  .card {
+    border-color: $grass;
+  }
+  .meta.hidden {
+    display: block;
+    background-color: $grass;
+    padding: 0 1rem;
+    a {
+      color: $white;
+    }
   }
 }

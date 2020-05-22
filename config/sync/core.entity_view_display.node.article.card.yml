@@ -30,11 +30,12 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        label: ''
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: 'data-tid|tid-[node:field_tags:0:target_id]'
-        link_attribute: ''
+        link_attribute: content
         link_custom: ''
         classes:
           layout_class: {  }
@@ -46,6 +47,7 @@ third_party_settings:
         - node_post_date
         - node_title
         - field_author_s_
+        - field_tags
     fields:
       node_post_date:
         plugin_id: node_post_date
@@ -68,7 +70,7 @@ third_party_settings:
             fis-at: ''
             fi: true
             fi-el: div
-            fi-cl: card-footer
+            fi-cl: 'card-header field-post-date'
             fi-at: ''
             suffix: ''
             lbw: false
@@ -122,6 +124,7 @@ third_party_settings:
         - node_post_date
         - node_title
         - field_author_s_
+        - field_tags
       parent_name: ''
       weight: 0
       format_type: html_element
@@ -187,10 +190,10 @@ content:
     settings:
       image_style: card_270x130_
       image_link: content
-      svg_render_as_image: '1'
+      svg_render_as_image: true
       svg_attributes:
-        width: ''
-        height: ''
+        width: null
+        height: null
     third_party_settings:
       ds:
         ft:
@@ -202,12 +205,49 @@ content:
               - card-img-top
             lb-col: false
     label: hidden
+  field_tags:
+    type: entity_reference_label
+    weight: 5
+    region: ds_content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings:
+      ds:
+        ds_limit: '1'
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: div
+            fis-cl: 'meta hidden'
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
 hidden:
   addtoany: true
   body: true
   comment: true
   field_article_type: true
   field_paragraphs: true
-  field_tags: true
   langcode: true
   links: true
+  search_api_excerpt: true
