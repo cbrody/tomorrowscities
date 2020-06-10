@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
     - core.entity_view_mode.node.full
     - field.field.node.article.body
     - field.field.node.article.comment
@@ -15,7 +14,6 @@ dependencies:
     - image.style.max710
     - node.type.article
   module:
-    - comment
     - ds
     - field_layout
     - svg_image
@@ -39,7 +37,6 @@ third_party_settings:
         - field_author_s_
         - body
         - field_tags
-        - comment
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.full
@@ -82,15 +79,6 @@ content:
             fi: false
             fi-def-at: false
     label: hidden
-  comment:
-    type: comment_default
-    weight: 4
-    region: content
-    label: above
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
   field_author_s_:
     type: string
     weight: 1
@@ -179,6 +167,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  comment: true
   field_article_type: true
   field_paragraphs: true
   langcode: true
