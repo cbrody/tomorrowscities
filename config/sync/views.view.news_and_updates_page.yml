@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.card
     - node.type.article
+    - node.type.resource
     - taxonomy.vocabulary.tags
   content:
     - 'taxonomy_term:tags:62d366ae-0b85-4919-941e-c4a38a73bd1a'
@@ -325,6 +326,7 @@ display:
           operator: in
           value:
             article: article
+            resource: resource
           group: 1
           exposed: false
           expose:
@@ -333,6 +335,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -340,8 +344,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

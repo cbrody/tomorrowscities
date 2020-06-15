@@ -13,7 +13,7 @@ third_party_settings:
 id: pagetitle
 theme: tc_bootstrap_sass
 region: content
-weight: -15
+weight: -17
 provider: null
 plugin: page_title_block
 settings:

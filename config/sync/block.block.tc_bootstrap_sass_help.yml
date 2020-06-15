@@ -11,7 +11,7 @@ _core:
 id: tc_bootstrap_sass_help
 theme: tc_bootstrap_sass
 region: content
-weight: -13
+weight: -12
 provider: null
 plugin: help_block
 settings:

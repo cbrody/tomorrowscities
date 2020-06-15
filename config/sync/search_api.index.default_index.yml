@@ -8,7 +8,10 @@ dependencies:
     - search_api
   config:
     - field.storage.node.body
+    - field.storage.node.field_city
+    - field.storage.node.field_material_type
     - field.storage.node.field_tags
+    - field.storage.node.field_theme
     - search_api.server.default_server
     - core.entity_view_mode.node.search_index
 _core:
@@ -51,6 +54,22 @@ field_settings:
     dependencies:
       module:
         - node
+  field_city:
+    label: City
+    datasource_id: 'entity:node'
+    property_path: field_city
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_city
+  field_material_type:
+    label: 'Material type'
+    datasource_id: 'entity:node'
+    property_path: field_material_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_material_type
   field_tags:
     label: Tags
     datasource_id: 'entity:node'
@@ -59,6 +78,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_tags
+  field_theme:
+    label: Theme
+    datasource_id: 'entity:node'
+    property_path: field_theme
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_theme
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants

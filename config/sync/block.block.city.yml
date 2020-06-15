@@ -1,0 +1,23 @@
+uuid: be36a5a5-9970-40a2-92b4-ca7ac3410b90
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.city
+  module:
+    - facets
+  theme:
+    - tc_bootstrap_sass
+id: city
+theme: tc_bootstrap_sass
+region: content
+weight: -16
+provider: null
+plugin: 'facet_block:city'
+settings:
+  id: 'facet_block:city'
+  label: City
+  provider: facets
+  label_display: visible
+  block_id: city
+visibility: {  }

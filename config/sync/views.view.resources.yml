@@ -256,7 +256,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      path: resources
+      path: resources-old
       header:
         area:
           id: area

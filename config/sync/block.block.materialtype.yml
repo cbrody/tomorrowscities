@@ -1,0 +1,23 @@
+uuid: b747a3b4-a249-40dc-840a-d96ffc8885fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.material_type
+  module:
+    - facets
+  theme:
+    - tc_bootstrap_sass
+id: materialtype
+theme: tc_bootstrap_sass
+region: content
+weight: -14
+provider: null
+plugin: 'facet_block:material_type'
+settings:
+  id: 'facet_block:material_type'
+  label: 'Material type'
+  provider: facets
+  label_display: visible
+  block_id: materialtype
+visibility: {  }

@@ -60,3 +60,30 @@
     }
    }
 }
+
+/* Resource facets */
+
+.block-facets {
+    max-width: fit-content;
+    min-width: 15%;
+    float: left;
+    margin: 0 1.5em 1em 0;
+    h2 {
+      @extend h4;
+    }
+    .facets-dropdown {
+      @extend button;
+      @extend .btn;
+      @extend .btn-primary;
+
+    }
+}
+
+.path-resources {
+  .view-header {
+    clear: both;
+    button {
+      margin-bottom: 1em;
+    }
+  }
+}
