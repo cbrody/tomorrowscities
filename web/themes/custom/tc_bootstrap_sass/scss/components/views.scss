@@ -87,3 +87,17 @@
     }
   }
 }
+
+
+.bef-exposed-form label {
+  float: left;
+  margin-right: 1em;
+  line-height: 2.33em;
+}
+
+.bef-exposed-form .form-select {
+  float: left;
+  width: auto;
+  @extend .btn;
+  @extend .btn-primary;
+}

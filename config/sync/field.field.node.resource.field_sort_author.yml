@@ -1,0 +1,24 @@
+uuid: 9ee5a271-73d9-4c8a-8843-c84ecd01e17d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_author
+    - node.type.resource
+  module:
+    - label_help
+third_party_settings:
+  label_help:
+    label_help_description: 'Surname of lead author, for use in sorting resources'
+id: node.resource.field_sort_author
+field_name: field_sort_author
+entity_type: node
+bundle: resource
+label: 'Sort Author'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -5,6 +5,7 @@ dependencies:
   config:
     - search_api.index.default_index
   module:
+    - better_exposed_filters
     - search_api
 _core:
   default_config_hash: EeNNkLARDmftWehrk-ew_OW8srW2RgDKI1mZrWxZ-ao
@@ -34,7 +35,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: \f0c9
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -227,6 +228,7 @@ display:
         cache: false
         title: false
         header: false
+        exposed_form: false
       row:
         type: search_api
         options:
@@ -286,17 +288,29 @@ display:
         groups:
           1: AND
       sorts:
-        created:
-          id: created
+        field_publication_date:
+          id: field_publication_date
           table: search_api_index_default_index
-          field: created
+          field: field_publication_date
           relationship: none
           group_type: group
           admin_label: ''
           order: DESC
-          exposed: false
+          exposed: true
           expose:
-            label: ''
+            label: 'Publication date'
+          plugin_id: search_api
+        field_sort_author:
+          id: field_sort_author
+          table: search_api_index_default_index
+          field: field_sort_author
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: 'Lead Author'
           plugin_id: search_api
       cache:
         type: none
@@ -325,11 +339,44 @@ display:
           empty: true
           content: '<p>Displaying results @start - @end of @total</p>'
           plugin_id: result
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            sort:
+              plugin_id: default
+              advanced:
+                combine: false
+                combine_rewrite: ''
+                reset: false
+                reset_label: ''
+                collapsible: false
+                collapsible_label: 'Sort options'
+                is_secondary: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.default_index'

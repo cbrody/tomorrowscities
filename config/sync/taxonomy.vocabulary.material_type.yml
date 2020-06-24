@@ -2,7 +2,7 @@ uuid: bdc54584-d479-429f-82fd-2843575fd814
 langcode: en
 status: true
 dependencies: {  }
-name: 'Material type'
+name: 'Publication type'
 vid: material_type
 description: 'Type of resource'
 weight: 0
