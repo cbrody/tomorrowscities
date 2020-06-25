@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.resource.field_publication_date
     - field.field.node.resource.field_publication_upload_or_link
     - field.field.node.resource.field_publisher
-    - field.field.node.resource.field_research_area
     - field.field.node.resource.field_sort_author
     - field.field.node.resource.field_tags
     - field.field.node.resource.field_theme
@@ -40,7 +39,7 @@ third_party_settings:
         - field_file_upload
         - field_url
       parent_name: ''
-      weight: 17
+      weight: 16
       format_type: html_element
       format_settings:
         element: div
@@ -84,7 +83,7 @@ content:
     type: string_textfield
     region: content
   field_city:
-    weight: 15
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -97,7 +96,7 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
   field_image:
-    weight: 18
+    weight: 17
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -124,12 +123,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_research_area:
-    weight: 14
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_sort_author:
     weight: 8
     settings:
@@ -139,7 +132,7 @@ content:
     type: string_textfield
     region: content
   field_tags:
-    weight: 16
+    weight: 15
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -149,10 +142,10 @@ content:
     type: entity_reference_autocomplete_tags
     region: content
   field_theme:
-    weight: 13
+    weight: 14
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
+    type: options_select
     region: content
   field_url:
     type: link_default
@@ -179,7 +172,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 19
+    weight: 18
     region: content
     third_party_settings: {  }
   status:
@@ -215,7 +208,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 20
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }

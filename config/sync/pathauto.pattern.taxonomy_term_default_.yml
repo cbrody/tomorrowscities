@@ -10,18 +10,17 @@ label: 'Taxonomy term (default)'
 type: 'canonical_entities:taxonomy_term'
 pattern: '[term:name]'
 selection_criteria:
-  41e65e6f-aaa2-43f0-9216-f9f23ac3a3f6:
+  9a6c1b06-b887-4f0a-a85c-81d9e69d1fef:
     id: 'entity_bundle:taxonomy_term'
     bundles:
       article_type: article_type
       material_type: material_type
       research_area: research_area
-      tags: tags
       theme: theme
     negate: false
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: 41e65e6f-aaa2-43f0-9216-f9f23ac3a3f6
+    uuid: 9a6c1b06-b887-4f0a-a85c-81d9e69d1fef
 selection_logic: and
-weight: -8
+weight: -9
 relationships: {  }

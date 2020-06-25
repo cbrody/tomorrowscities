@@ -10,7 +10,7 @@ id: node.resource.field_material_type
 field_name: field_material_type
 entity_type: node
 bundle: resource
-label: 'Material type'
+label: 'Publication type'
 description: ''
 required: false
 translatable: false

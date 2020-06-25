@@ -13,20 +13,47 @@ dependencies:
     - field.field.node.resource.field_publication_date
     - field.field.node.resource.field_publication_upload_or_link
     - field.field.node.resource.field_publisher
-    - field.field.node.resource.field_research_area
     - field.field.node.resource.field_sort_author
     - field.field.node.resource.field_tags
     - field.field.node.resource.field_theme
     - field.field.node.resource.field_url
+    - image.style.thumbnail
     - node.type.resource
   module:
+    - ds
     - field_layout
+    - svg_image
     - text
     - user
 third_party_settings:
   field_layout:
     id: layout_onecol
     settings: {  }
+  ds:
+    layout:
+      id: bb_media
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          first: div
+          second: div
+        outer_wrapper: div
+        attributes: cursor|pointer
+        link_attribute: content
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          first: {  }
+          second: {  }
+    regions:
+      first:
+        - field_image
+      second:
+        - body
+        - links
 id: node.resource.teaser
 targetEntityType: node
 bundle: resource
@@ -35,27 +62,53 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
+      trim_length: 300
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: second
+  field_image:
+    type: image
+    weight: 0
+    region: first
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   links:
-    weight: 100
+    weight: 2
+    region: second
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   addtoany: true
   field_author_s_: true
   field_city: true
   field_file_upload: true
-  field_image: true
   field_material_type: true
   field_publication_date: true
   field_publication_upload_or_link: true
   field_publisher: true
-  field_research_area: true
   field_sort_author: true
   field_tags: true
   field_theme: true

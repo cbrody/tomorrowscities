@@ -6,18 +6,19 @@ dependencies:
     - ctools
     - taxonomy
 id: taxonomy_term
-label: 'Taxonomy term (city)'
+label: 'Taxonomy term (city, tags)'
 type: 'canonical_entities:taxonomy_term'
 pattern: '[term:parent]/[term:name]'
 selection_criteria:
-  4dd2d4c1-3d9d-4373-8de4-af365746ed28:
+  b194e4e5-79a2-42a4-ba37-46563abc5dac:
     id: 'entity_bundle:taxonomy_term'
     bundles:
       city: city
+      tags: tags
     negate: false
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: 4dd2d4c1-3d9d-4373-8de4-af365746ed28
+    uuid: b194e4e5-79a2-42a4-ba37-46563abc5dac
 selection_logic: and
-weight: -9
+weight: -10
 relationships: {  }

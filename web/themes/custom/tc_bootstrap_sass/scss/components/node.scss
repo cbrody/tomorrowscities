@@ -80,3 +80,20 @@
     border-left: $border-width solid #fff4f4;
     border-right: $border-width solid #fff4f4;
 }
+
+.meta {
+    .field-label-inline {
+        float: left;
+    }
+    span {
+        margin-left: .25rem;
+        float:left;
+        &:after {
+            content: ",";
+        }
+        &:last-of-type:after {
+               content: "";
+         }
+      }
+    @extend .clearfix;
+ }

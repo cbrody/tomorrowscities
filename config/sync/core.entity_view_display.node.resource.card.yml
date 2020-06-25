@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.resource.field_publication_date
     - field.field.node.resource.field_publication_upload_or_link
     - field.field.node.resource.field_publisher
-    - field.field.node.resource.field_research_area
     - field.field.node.resource.field_sort_author
     - field.field.node.resource.field_tags
     - field.field.node.resource.field_theme
@@ -296,7 +295,6 @@ hidden:
   field_file_upload: true
   field_publication_date: true
   field_publication_upload_or_link: true
-  field_research_area: true
   field_sort_author: true
   field_theme: true
   field_url: true
