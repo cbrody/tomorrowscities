@@ -3,22 +3,12 @@ langcode: en
 status: true
 dependencies:
   module:
-    - ctools
     - taxonomy
 id: taxonomy_term
-label: 'Taxonomy term (city, tags)'
+label: 'Taxonomy term'
 type: 'canonical_entities:taxonomy_term'
 pattern: '[term:parent]/[term:name]'
-selection_criteria:
-  b194e4e5-79a2-42a4-ba37-46563abc5dac:
-    id: 'entity_bundle:taxonomy_term'
-    bundles:
-      city: city
-      tags: tags
-    negate: false
-    context_mapping:
-      taxonomy_term: taxonomy_term
-    uuid: b194e4e5-79a2-42a4-ba37-46563abc5dac
+selection_criteria: {  }
 selection_logic: and
 weight: -10
 relationships: {  }
