@@ -109,3 +109,9 @@
   @extend .btn;
   @extend .btn-primary;
 }
+
+#edit-reset--2 {
+    @extend .btn-outline-primary;
+    background-color: transparent;
+    margin-top: -1.75rem;
+}

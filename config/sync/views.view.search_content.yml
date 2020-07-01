@@ -45,7 +45,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 12
+          items_per_page: 10
           offset: 0
           id: 0
           total_pages: null
@@ -356,19 +356,6 @@ display:
         type: none
       title: 'Browse resources'
       header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: '<button class="btn btn-outline-primary" onclick="window.location=''/resources'';">Clear search</button>'
-            format: full_html
-          plugin_id: text
         result:
           id: result
           table: views
@@ -383,8 +370,8 @@ display:
         type: bef
         options:
           submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
+          reset_button: true
+          reset_button_label: 'Clear search'
           exposed_sorts_label: 'Sort by'
           expose_sort_order: false
           sort_asc_label: Asc
@@ -394,7 +381,7 @@ display:
           bef:
             general:
               autosubmit: true
-              autosubmit_exclude_textfield: false
+              autosubmit_exclude_textfield: true
               autosubmit_textfield_delay: 500
               autosubmit_hide: true
               input_required: false
