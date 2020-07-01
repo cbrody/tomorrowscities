@@ -1,0 +1,29 @@
+uuid: 402d6c43-858c-4d74-bc4a-b8dbf40a0bc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_content
+  module:
+    - system
+    - views
+  theme:
+    - tc_bootstrap_sass
+id: exposedformsearch_contentpage_2
+theme: tc_bootstrap_sass
+region: content
+weight: -14
+provider: null
+plugin: 'views_exposed_filter_block:search_content-page_2'
+settings:
+  id: 'views_exposed_filter_block:search_content-page_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /resources
+    negate: false
+    context_mapping: {  }

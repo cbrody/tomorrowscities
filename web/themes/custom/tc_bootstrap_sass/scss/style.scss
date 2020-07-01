@@ -174,7 +174,7 @@ h4.card-title {
 
 /* Hover links */
 .view-display-id-page_1 .row,
-.card, {
+.card {
   cursor: pointer;
   &:hover {
     background: $gray-lighter !important;
@@ -196,13 +196,29 @@ div[data-tid="tid-10"] {
   // }
   .card {
     border-color: $grass;
+    .meta.hidden {
+      display: block;
+    }
   }
   .meta.hidden {
-    display: block;
     background-color: $grass;
     padding: 0 1rem;
     a {
       color: $white;
     }
+  }
+}
+
+
+
+/* Resources search results */
+.path-resources {
+  .main-content {
+    @extend .col-md-9;
+    float:left;
+  }
+  .sidebar {
+    float: right;
+    margin-top: 3rem;
   }
 }

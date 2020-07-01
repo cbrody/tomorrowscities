@@ -10,8 +10,8 @@ dependencies:
     - tc_bootstrap_sass
 id: theme
 theme: tc_bootstrap_sass
-region: content
-weight: -16
+region: sidebar_second
+weight: -15
 provider: null
 plugin: 'facet_block:theme'
 settings:

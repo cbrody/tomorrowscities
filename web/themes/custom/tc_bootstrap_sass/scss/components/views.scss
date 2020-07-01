@@ -64,11 +64,11 @@
 /* Resource facets */
 
 .block-facets {
-    max-width: fit-content;
-    min-width: 15%;
-    float: left;
+    width: 100%;
     margin: 0 1.5em 1em 0;
     z-index: 9;
+    border-radius: 1em;
+    border-color: $gray-lighter;
     h2 {
       @extend h4;
     }
@@ -76,7 +76,15 @@
       @extend button;
       @extend .btn;
       @extend .btn-primary;
-
+    }
+    li {
+      list-style-type: none;
+      .facets-checkbox {
+        margin-left: -2rem;
+      }
+      .facet-item__value {
+         padding-left: 1rem;
+      }
     }
 }
 
@@ -88,7 +96,6 @@
     }
   }
 }
-
 
 .bef-exposed-form label {
   float: left;

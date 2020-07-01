@@ -97,3 +97,22 @@
       }
     @extend .clearfix;
  }
+
+ span.meta {
+    display: inline-block;
+    border-radius: 1rem;
+  }
+
+/* Search results */
+
+ .node--view-mode-search-result {
+   cursor: pointer;
+   &:hover {
+     background: $gray-lighter !important;
+   }
+   margin: 1rem 0;
+   padding: .5rem;
+   .field--name-field-image {
+     width: 100px;
+   }
+ }

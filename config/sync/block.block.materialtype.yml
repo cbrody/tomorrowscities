@@ -10,8 +10,8 @@ dependencies:
     - tc_bootstrap_sass
 id: materialtype
 theme: tc_bootstrap_sass
-region: content
-weight: -15
+region: sidebar_second
+weight: -16
 provider: null
 plugin: 'facet_block:material_type'
 settings:

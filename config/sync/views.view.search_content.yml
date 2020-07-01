@@ -209,16 +209,11 @@ display:
       display_extenders: {  }
       path: resources
       style:
-        type: grid
+        type: default
         options:
+          row_class: ''
+          default_row_class: true
           uses_fields: false
-          columns: 4
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: false
-          col_class_custom: 'col-12 col-md-6 col-lg-3 mb-4'
-          row_class_default: false
-          row_class_custom: row
       defaults:
         style: false
         row: false
@@ -239,7 +234,7 @@ display:
               organisation: search_result
               page: search_result
               person: search_result
-              resource: card
+              resource: search_result
       display_description: ''
       filters:
         type:
@@ -283,6 +278,51 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: search_api_options
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_default_index
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: and
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search_api_fulltext
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              administrator: '0'
+            placeholder: 'Search resources'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: terms
+          min_length: null
+          fields: {  }
+          plugin_id: search_api_fulltext
       filter_groups:
         operator: AND
         groups:
@@ -326,7 +366,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<button class="btn btn-outline-primary" onclick="window.location=''/resources'';">Clear filters</button>'
+            value: '<button class="btn btn-outline-primary" onclick="window.location=''/resources'';">Clear search</button>'
             format: full_html
           plugin_id: text
         result:
@@ -371,10 +411,21 @@ display:
                 collapsible: false
                 collapsible_label: 'Sort options'
                 is_secondary: false
+            filter:
+              search_api_fulltext:
+                plugin_id: default
+                advanced:
+                  placeholder_text: 'Search resources'
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'url.query_args:sort_by'
         - 'user.node_grants:view'

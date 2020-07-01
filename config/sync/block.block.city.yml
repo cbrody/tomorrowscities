@@ -10,13 +10,13 @@ dependencies:
     - tc_bootstrap_sass
 id: city
 theme: tc_bootstrap_sass
-region: content
-weight: -14
+region: sidebar_second
+weight: -17
 provider: null
 plugin: 'facet_block:city'
 settings:
   id: 'facet_block:city'
-  label: City
+  label: 'Filter by City'
   provider: facets
   label_display: visible
   block_id: city
