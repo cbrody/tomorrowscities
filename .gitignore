@@ -28,7 +28,7 @@
 node_modules
 
 # Ignore error log
-/web/error_log
+error_log
 
 # Ignore stats
 /stats
