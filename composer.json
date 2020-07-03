@@ -117,6 +117,9 @@
         "patches": {
           "drupal/core": {
             "View titles do not have translation support": "https://www.drupal.org/files/issues/2019-04-30/2716019_62.patch"
+          },
+          "drupal/facets": {
+            "Display facets when there are no search results": "https://www.drupal.org/files/issues/2018-08-21/display_facets_when_minimum_count_0_and_no_search_results-2993101-6.patch"
           }
         }
     }

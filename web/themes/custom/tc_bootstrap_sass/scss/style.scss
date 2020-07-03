@@ -201,6 +201,7 @@ div[data-tid="tid-10"] {
     }
   }
   .meta.hidden {
+    display: inline-block !important;
     background-color: $grass;
     padding: 0 1rem;
     a {

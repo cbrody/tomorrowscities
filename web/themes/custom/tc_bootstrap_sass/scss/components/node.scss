@@ -99,10 +99,13 @@
  }
 
  span.meta {
-    display: inline-block;
-    border-radius: 1rem;
-  }
+   display: inline-block;
+   border-radius: 1rem;
+ }
 
+ .hidden {
+   display: none !important;
+ }
 /* Search results */
 
  .node--view-mode-search-result {
