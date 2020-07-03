@@ -115,3 +115,19 @@
     background-color: transparent;
     margin-top: -1.75rem;
 }
+
+#block-views-block-tags-block-1 {
+  @extend .block-facets;
+  overflow:auto;
+  .tag {
+    @extend .btn;
+    @extend .btn-primary;
+    float:left;
+    padding: 0 1rem;
+    margin: .5rem;
+    line-height: 1.75rem;
+    &:after {
+      clear:none;
+    }
+  }
+}

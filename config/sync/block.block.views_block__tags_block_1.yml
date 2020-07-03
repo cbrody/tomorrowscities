@@ -1,0 +1,30 @@
+uuid: 4e834cae-c991-46b0-bc5e-931c3ecfe622
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.tags
+  module:
+    - system
+    - views
+  theme:
+    - tc_bootstrap_sass
+id: views_block__tags_block_1
+theme: tc_bootstrap_sass
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:tags-block_1'
+settings:
+  id: 'views_block:tags-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /resources
+    negate: false
+    context_mapping: {  }

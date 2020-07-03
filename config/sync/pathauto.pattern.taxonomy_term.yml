@@ -3,12 +3,21 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ctools
     - taxonomy
 id: taxonomy_term
 label: 'Taxonomy term'
 type: 'canonical_entities:taxonomy_term'
-pattern: '[term:parent]/[term:name]'
-selection_criteria: {  }
+pattern: '[term:vocabulary]/[term:name]'
+selection_criteria:
+  cd2d9830-e213-463b-a476-3c2957e29680:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      tags: tags
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: cd2d9830-e213-463b-a476-3c2957e29680
 selection_logic: and
 weight: -10
 relationships: {  }
