@@ -268,7 +268,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      path: news_and_updates
+      path: news_and_events
       header:
         area:
           id: area
@@ -285,6 +285,8 @@ display:
           plugin_id: text
       defaults:
         header: false
+        title: false
+      title: 'News & events'
     cache_metadata:
       max-age: -1
       contexts:
