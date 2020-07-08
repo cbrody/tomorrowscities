@@ -10,14 +10,16 @@ label: 'Taxonomy term'
 type: 'canonical_entities:taxonomy_term'
 pattern: '[term:vocabulary]/[term:name]'
 selection_criteria:
-  cd2d9830-e213-463b-a476-3c2957e29680:
+  136247df-f453-4539-ba29-0f1f83cc208b:
     id: 'entity_bundle:taxonomy_term'
     bundles:
+      material_type: material_type
       tags: tags
+      theme: theme
     negate: false
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: cd2d9830-e213-463b-a476-3c2957e29680
+    uuid: 136247df-f453-4539-ba29-0f1f83cc208b
 selection_logic: and
 weight: -10
 relationships: {  }

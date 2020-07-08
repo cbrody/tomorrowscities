@@ -208,7 +208,7 @@ content:
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: '<div class=text-center my-1"><a class="my-2 btn btn-secondary" href=[node:field_file_upload:entity:url]>Download file</a></div>'
+            suffix: '<div class=text-center my-1"><a class="dl" href=[node:field_file_upload:entity:url] target="_blank">Download file</a></div>'
             lbw: false
             lb-col: false
             fis: false
@@ -355,10 +355,10 @@ content:
     label: hidden
     settings:
       trim_length: 100
+      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
-      target: '0'
     third_party_settings:
       ds:
         ft:

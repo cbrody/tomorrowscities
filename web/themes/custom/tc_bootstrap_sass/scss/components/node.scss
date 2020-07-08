@@ -119,3 +119,9 @@
      width: 100px;
    }
  }
+
+ .dl {
+   @extend .my-2;
+   @extend .btn;
+   @extend .btn-secondary;
+ }

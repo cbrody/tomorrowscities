@@ -11,7 +11,7 @@ id: material_type
 name: 'Material type'
 url_alias: material_type
 weight: 0
-min_count: 1
+min_count: 0
 show_only_one_result: false
 field_identifier: field_material_type
 facet_source_id: 'search_api:views_page__search_content__page_2'
