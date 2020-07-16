@@ -1,6 +1,6 @@
 ## Code for [Tomorrows Cities](https://tomorrowscities.org) website
 
-[![Build Status](https://travis-ci.org/cbrody/tomorrowscities.svg)](https://travis-ci.org/cbrody/tomorrowscities)
+//[![Build Status](https://travis-ci.org/cbrody/tomorrowscities.svg)](https://travis-ci.org/cbrody/tomorrowscities)
 
 ## Installation
 
