@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.wide_image.field_image
+    - image.style.wide_1200x412_
     - paragraphs.paragraphs_type.wide_image
   module:
+    - ds
     - svg_image
 id: paragraph.wide_image.default
 targetEntityType: paragraph
@@ -14,15 +16,23 @@ mode: default
 content:
   field_image:
     weight: 0
-    label: above
+    label: hidden
     settings:
-      svg_attributes:
-        width: ''
-        height: ''
-      svg_render_as_image: true
-      image_style: ''
+      image_style: wide_1200x412_
       image_link: ''
-    third_party_settings: {  }
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: image
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true
