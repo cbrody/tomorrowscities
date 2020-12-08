@@ -1,0 +1,22 @@
+uuid: 4d6a51f3-6045-484d-bab1-41f67d0fe71c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: city_subpage
+label: 'City subpage'
+type: 'canonical_entities:node'
+pattern: '/city/[node:field_city]/[node:field_page_type]'
+selection_criteria:
+  5622a805-0ad0-43cd-9b11-625565f1c76c:
+    id: node_type
+    bundles:
+      subpage: subpage
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5622a805-0ad0-43cd-9b11-625565f1c76c
+selection_logic: and
+weight: -8
+relationships: {  }

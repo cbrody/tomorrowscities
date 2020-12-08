@@ -12,11 +12,11 @@ dependencies:
     - tc_bootstrap_sass
 third_party_settings:
   block_class:
-    classes: bg-kathmandu
+    classes: 'bg-kathmandu col-12 col-lg-9 p-0 mr-0 mb-5'
 id: kathmanduheader
 theme: tc_bootstrap_sass
 region: highlighted
-weight: -9
+weight: -25
 provider: null
 plugin: 'block_content:84ef601a-9ba3-4d94-a646-06c67c9baaf3'
 settings:
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/node/22\r\n/*/kathmandu*"
+    pages: "/node/22\r\n/*/kathmandu"
     negate: false
     context_mapping: {  }

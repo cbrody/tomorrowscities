@@ -8,7 +8,20 @@ id: content
 label: Content
 type: 'canonical_entities:node'
 pattern: '[node:title]'
-selection_criteria: {  }
+selection_criteria:
+  46e6befd-a933-4c06-b3d3-1affa08af781:
+    id: node_type
+    bundles:
+      article: article
+      city_office: city_office
+      organisation: organisation
+      page: page
+      person: person
+      resource: resource
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 46e6befd-a933-4c06-b3d3-1affa08af781
 selection_logic: and
-weight: -8
+weight: -7
 relationships: {  }

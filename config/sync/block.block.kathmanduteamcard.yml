@@ -1,0 +1,35 @@
+uuid: 53218e46-71c1-4839-b1df-a978a65682b2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cc674ea6-c96a-44c1-bab7-deb2a1bca63d'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-md-6 col-lg-3 mb-4'
+id: kathmanduteamcard
+theme: tc_bootstrap_sass
+region: featured_top
+weight: -17
+provider: null
+plugin: 'block_content:cc674ea6-c96a-44c1-bab7-deb2a1bca63d'
+settings:
+  id: 'block_content:cc674ea6-c96a-44c1-bab7-deb2a1bca63d'
+  label: 'Kathmandu team card'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /city/kathmandu
+    negate: false
+    context_mapping: {  }

@@ -6,9 +6,12 @@ classes:
   region:
     - img-fluid
     - card-img-top
+    - col-md-10
+    - mx-auto
   field:
     - img-fluid
     - card-img-top
+    - mx-auto
 use_field_names: true
 _core:
   default_config_hash: xfB0qOeoAomOThclNNokdKTrVwXLcXz13SU3-4a5-FY

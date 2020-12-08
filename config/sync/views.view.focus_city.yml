@@ -1,6 +1,6 @@
 uuid: 0e296165-223c-448e-b64f-3a4d297d7837
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.full
@@ -193,10 +193,10 @@ display:
           settings:
             image_style: thumbnail
             image_link: content
-            svg_render_as_image: 1
+            svg_render_as_image: true
             svg_attributes:
-              width: '100'
-              height: ''
+              width: 100
+              height: null
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -654,10 +654,10 @@ display:
           settings:
             image_style: thumbnail
             image_link: content
-            svg_render_as_image: 1
+            svg_render_as_image: true
             svg_attributes:
-              width: '100'
-              height: ''
+              width: 100
+              height: null
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -898,10 +898,10 @@ display:
           settings:
             image_style: thumbnail
             image_link: ''
-            svg_render_as_image: 1
+            svg_render_as_image: true
             svg_attributes:
-              width: ''
-              height: ''
+              width: null
+              height: null
           group_column: ''
           group_columns: {  }
           group_rows: true

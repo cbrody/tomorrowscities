@@ -1,0 +1,52 @@
+uuid: f70f052b-d22d-4ddb-871b-c38bdf72b969
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+    - twitter_embed
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'mx-auto col-lg-3 mb-5 mx-3 mx-lg-0'
+id: twittertimeline_2
+theme: tc_bootstrap_sass
+region: highlighted
+weight: -27
+provider: null
+plugin: twitter_embed_timeline
+settings:
+  id: twitter_embed_timeline
+  label: 'Istanbul Twitter Timeline'
+  provider: twitter_embed
+  label_display: '0'
+  username: IstanbulRiskHub
+  type: profile
+  type_value: ''
+  display_style: timeline
+  theme: light
+  chrome:
+    noheader: noheader
+    nofooter: nofooter
+    noborders: noborders
+    transparent: 0
+    noscrollbar: 0
+  width: '400'
+  height: '500'
+  link_color: '#2b7bb9'
+  border_color: '#000000'
+  tweet_limit: '0'
+  show_replies: 0
+  aria_polite: polite
+  language: ''
+  hide_username: false
+  hide_followers_count: false
+  size: null
+visibility:
+  request_path:
+    id: request_path
+    pages: /city/istanbul
+    negate: false
+    context_mapping: {  }

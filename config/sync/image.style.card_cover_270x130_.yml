@@ -12,7 +12,7 @@ effects:
     data:
       width: 270
       height: null
-      upscale: false
+      upscale: true
   7e1d22f5-b2c0-4cd1-a408-e10e3195ae60:
     uuid: 7e1d22f5-b2c0-4cd1-a408-e10e3195ae60
     id: image_crop

@@ -1,0 +1,35 @@
+uuid: f94328a4-7c98-4954-818e-44b7b45fb014
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.focus_city_new
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-md-6 col-lg-3 mb-4'
+id: views_block__focus_city_new_block_4
+theme: tc_bootstrap_sass
+region: featured_top
+weight: -14
+provider: null
+plugin: 'views_block:focus_city_new-block_4'
+settings:
+  id: 'views_block:focus_city_new-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/city/istanbul\r\n/city/nairobi\r\n/city/quito\r\n/city/kathmandu"
+    negate: false
+    context_mapping: {  }

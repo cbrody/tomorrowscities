@@ -46,6 +46,10 @@ a {
     color: $accent-shade;
 }
 
+.text-white a {
+  color: $white;
+}
+
 .bg-inverse {
     background: $primary-shade !important;
 }
@@ -98,7 +102,7 @@ a {
 }
 
 .city-title {
-    min-height: 130px;
+    min-height: 110px;
 }
 
 .section .nav-tabs {
@@ -172,8 +176,12 @@ h4.card-title {
   @extend h5;
 }
 
+.path-city .card {
+  margin-bottom: 3rem;
+}
+
 /* Hover links */
-.view-id-search_content .row,
+.view-id-search_content.view-display-id-page_2 .row,
 .card {
   cursor: pointer;
   &:hover {
@@ -210,10 +218,9 @@ div[data-tid="tid-10"] {
   }
 }
 
-
-
 /* Resources search results */
-.path-resources {
+.path-publications,
+.path-news-events {
   .main-content {
     @extend .col-md-9;
     float:left;
@@ -221,5 +228,38 @@ div[data-tid="tid-10"] {
   .sidebar {
     float: right;
     margin-top: 3rem;
+  }
+}
+
+// Background colours
+
+.featured-bottom {
+  h2 {
+    color: $body-bg;
+    padding: 1rem 0;
+  }
+}
+.context-city-istanbul,
+.context-city-istanbul-research {
+  .featured-bottom {
+    @extend .bg-istanbul;
+  }
+}
+.context-city-nairobi,
+.context-city-nairobi-research {
+  .featured-bottom {
+    @extend .bg-nairobi;
+  }
+}
+.context-city-quito,
+.context-city-quito-research {
+  .featured-bottom {
+    @extend .bg-quito;
+  }
+}
+.context-city-kathmandu,
+.context-city-kathmandu-research {
+  .featured-bottom {
+    @extend .bg-kathmandu;
   }
 }

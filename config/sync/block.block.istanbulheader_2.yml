@@ -1,0 +1,35 @@
+uuid: e0626f8f-cf30-4625-b554-3a3a129865a3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:55995aa1-222b-4f30-ac28-43eac42f3b19'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: bg-istanbul
+id: istanbulheader_2
+theme: tc_bootstrap_sass
+region: highlighted
+weight: -26
+provider: null
+plugin: 'block_content:55995aa1-222b-4f30-ac28-43eac42f3b19'
+settings:
+  id: 'block_content:55995aa1-222b-4f30-ac28-43eac42f3b19'
+  label: 'Istanbul subpage header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/city/istanbul/*'
+    negate: false
+    context_mapping: {  }

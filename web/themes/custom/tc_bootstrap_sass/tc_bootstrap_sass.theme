@@ -16,6 +16,11 @@ use Drupal\Core\Form\FormStateInterface;
  * Replace Barrio setting options with subtheme ones.
  */
 
+ function tc_bootstrap_sass_preprocess_html(&$variables) {
+   $current_path = \Drupal::service('path.current')->getPath();
+   $variables['current_path'] = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+ }
+
 function tc_bootstrap_sass_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   if (in_array($form_id, ['search_block_form', 'search_form', 'views_exposed_form'])) {
     $form['keys']['#attributes']['placeholder'][] = t('Search');

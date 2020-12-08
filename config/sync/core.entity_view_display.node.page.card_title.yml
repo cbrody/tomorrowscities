@@ -1,0 +1,121 @@
+uuid: 5ca23272-598b-4e4c-a47b-48f5e2b3480c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_title
+    - field.field.node.page.body
+    - field.field.node.page.field_card_header
+    - field.field.node.page.field_city
+    - field.field.node.page.field_contact_form
+    - field.field.node.page.field_image
+    - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_standfirst
+    - image.style.card_270x130_
+    - node.type.page
+  module:
+    - ds
+    - field_group
+    - field_layout
+    - svg_image
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  ds:
+    layout:
+      id: ds_1col_wrapper
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: content
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - group_card
+        - field_image
+        - field_card_header
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+  field_group:
+    group_card:
+      children:
+        - field_image
+        - field_card_header
+        - node_title
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'card h-100'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: card
+      region: content
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.card_title
+targetEntityType: node
+bundle: page
+mode: card_title
+content:
+  field_card_header:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_image:
+    type: image
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: card_270x130_
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_city: true
+  field_contact_form: true
+  field_paragraphs: true
+  field_standfirst: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

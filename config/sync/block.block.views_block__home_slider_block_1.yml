@@ -16,7 +16,7 @@ third_party_settings:
 id: views_block__home_slider_block_1
 theme: tc_bootstrap_sass
 region: featured_top
-weight: -15
+weight: -26
 provider: null
 plugin: 'views_block:home_slider-block_1'
 settings:

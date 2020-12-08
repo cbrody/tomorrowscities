@@ -1,0 +1,35 @@
+uuid: 2a3e01d2-0c44-4468-8e8b-c54830f8fbb3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:77bea873-65e5-477b-a5bb-631820836927'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: bg-nairobi
+id: nairobiheader_2
+theme: tc_bootstrap_sass
+region: highlighted
+weight: -17
+provider: null
+plugin: 'block_content:77bea873-65e5-477b-a5bb-631820836927'
+settings:
+  id: 'block_content:77bea873-65e5-477b-a5bb-631820836927'
+  label: 'Nairobi subpage header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/city/nairobi/*'
+    negate: false
+    context_mapping: {  }

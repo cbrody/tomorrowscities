@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Resource
+name: Publication
 type: resource
 description: 'Document, publication, briefing, etc.'
 help: ''

@@ -1,0 +1,35 @@
+uuid: 85b4f426-8257-48d5-9426-a0cf0305f333
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0f697d00-64e9-4f0c-a072-a787c69baaf1'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-md-6 col-lg-3 mb-4'
+id: nairobiteamcard
+theme: tc_bootstrap_sass
+region: featured_top
+weight: -16
+provider: null
+plugin: 'block_content:0f697d00-64e9-4f0c-a072-a787c69baaf1'
+settings:
+  id: 'block_content:0f697d00-64e9-4f0c-a072-a787c69baaf1'
+  label: 'Nairobi team card'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /city/nairobi
+    negate: false
+    context_mapping: {  }
