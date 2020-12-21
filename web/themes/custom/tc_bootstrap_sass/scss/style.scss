@@ -233,12 +233,16 @@ div[data-tid="tid-10"] {
 
 // Background colours
 
-.featured-bottom {
-  h2 {
-    color: $body-bg;
-    padding: 1rem 0;
+
+body:not(.path-frontpage) {
+  .featured-bottom {
+    h2 {
+      color: $body-bg;
+      padding: 1rem 0;
+    }
   }
 }
+
 .context-city-istanbul,
 .context-city-istanbul-research {
   .featured-bottom {
