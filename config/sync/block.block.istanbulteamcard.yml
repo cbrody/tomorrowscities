@@ -1,0 +1,35 @@
+uuid: 541729bb-357e-433f-8226-3c5ca62d5913
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4721baa0-f681-4e9f-983c-e333423233e2'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-md-6 col-lg-3 mb-4'
+id: istanbulteamcard
+theme: tc_bootstrap_sass
+region: featured_top
+weight: -18
+provider: null
+plugin: 'block_content:4721baa0-f681-4e9f-983c-e333423233e2'
+settings:
+  id: 'block_content:4721baa0-f681-4e9f-983c-e333423233e2'
+  label: 'Istanbul team card'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /city/istanbul
+    negate: false
+    context_mapping: {  }

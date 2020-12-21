@@ -12,11 +12,11 @@ dependencies:
     - tc_bootstrap_sass
 third_party_settings:
   block_class:
-    classes: bg-quito
+    classes: 'bg-quito col-12 col-lg-9 p-0 mr-0 mb-5'
 id: quitoheader
 theme: tc_bootstrap_sass
 region: highlighted
-weight: -8
+weight: -22
 provider: null
 plugin: 'block_content:3588c4ea-f070-4c3f-ba70-8ed1dac97dc1'
 settings:
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/node/20\r\n*/quito*"
+    pages: "/node/20\r\n*/quito"
     negate: false
     context_mapping: {  }

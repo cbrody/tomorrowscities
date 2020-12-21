@@ -7,6 +7,8 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_article_type
+    - field.field.node.article.field_author_s_
+    - field.field.node.article.field_city
     - field.field.node.article.field_image
     - field.field.node.article.field_paragraphs
     - field.field.node.article.field_tags
@@ -90,8 +92,8 @@ content:
       image_style: thumbnail
       image_link: content
       svg_attributes:
-        width: ''
-        height: ''
+        width: null
+        height: null
       svg_render_as_image: true
     third_party_settings: {  }
     label: hidden
@@ -100,7 +102,10 @@ hidden:
   addtoany: true
   comment: true
   field_article_type: true
+  field_author_s_: true
+  field_city: true
   field_paragraphs: true
   field_tags: true
   langcode: true
   links: true
+  search_api_excerpt: true

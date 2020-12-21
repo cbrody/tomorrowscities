@@ -1,0 +1,35 @@
+uuid: 550f8d99-1a29-428f-8226-a57d02873367
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1939d364-c027-41fc-9632-f9880fac44e8'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-md-6 col-lg-3 mb-4'
+id: quitoteamcard
+theme: tc_bootstrap_sass
+region: featured_top
+weight: -15
+provider: null
+plugin: 'block_content:1939d364-c027-41fc-9632-f9880fac44e8'
+settings:
+  id: 'block_content:1939d364-c027-41fc-9632-f9880fac44e8'
+  label: 'Quito team card'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /city/quito
+    negate: false
+    context_mapping: {  }

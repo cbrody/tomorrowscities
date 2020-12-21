@@ -5,7 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_index
     - field.field.node.page.body
+    - field.field.node.page.field_card_header
     - field.field.node.page.field_city
+    - field.field.node.page.field_contact_form
     - field.field.node.page.field_image
     - field.field.node.page.field_paragraphs
     - field.field.node.page.field_standfirst
@@ -51,7 +53,10 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_card_header: true
   field_city: true
+  field_contact_form: true
   field_image: true
   langcode: true
   links: true
+  search_api_excerpt: true

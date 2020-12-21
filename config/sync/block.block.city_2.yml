@@ -1,0 +1,23 @@
+uuid: 5b346969-48dc-47fb-90b1-04a9d63037bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.city1
+  module:
+    - facets
+  theme:
+    - tc_bootstrap_sass
+id: city_2
+theme: tc_bootstrap_sass
+region: sidebar_second
+weight: -20
+provider: null
+plugin: 'facet_block:city1'
+settings:
+  id: 'facet_block:city1'
+  label: 'Filter by City'
+  provider: facets
+  label_display: visible
+  block_id: city_2
+visibility: {  }

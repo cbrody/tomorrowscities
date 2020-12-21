@@ -1,0 +1,8 @@
+uuid: d4d16365-244f-4567-9655-4f05fa9a9dde
+langcode: und
+status: true
+dependencies: {  }
+name: 'Page type'
+vid: page_type
+description: 'For city sub-pages'
+weight: 0

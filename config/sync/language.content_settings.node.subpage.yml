@@ -1,0 +1,11 @@
+uuid: f1af69c7-fceb-4785-a043-70f83322572d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.subpage
+id: node.subpage
+target_entity_type_id: node
+target_bundle: subpage
+default_langcode: und
+language_alterable: false

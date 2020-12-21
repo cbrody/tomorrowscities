@@ -5,7 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_result
     - field.field.node.page.body
+    - field.field.node.page.field_card_header
     - field.field.node.page.field_city
+    - field.field.node.page.field_contact_form
     - field.field.node.page.field_image
     - field.field.node.page.field_paragraphs
     - field.field.node.page.field_standfirst
@@ -76,10 +78,10 @@ content:
     settings:
       image_style: thumbnail
       image_link: ''
-      svg_render_as_image: '1'
+      svg_render_as_image: true
       svg_attributes:
-        width: ''
-        height: ''
+        width: null
+        height: null
     third_party_settings:
       ds:
         ft:
@@ -99,7 +101,10 @@ content:
 hidden:
   addtoany: true
   body: true
+  field_card_header: true
   field_city: true
+  field_contact_form: true
   field_paragraphs: true
   langcode: true
   links: true
+  search_api_excerpt: true

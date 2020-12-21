@@ -11,7 +11,7 @@ _core:
 id: tc_bootstrap_sass_messages
 theme: tc_bootstrap_sass
 region: highlighted
-weight: -6
+weight: -16
 provider: null
 plugin: system_messages_block
 settings:

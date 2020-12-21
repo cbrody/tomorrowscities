@@ -3,3 +3,32 @@
  * Styles for Bootstrap Barrio page.
  */
 
+ .city-title {
+  margin: 1rem 0 0 1rem;
+  h1, h1 a {
+     color: $body-bg;
+     line-height: 3rem;
+     margin-left: 1rem;
+   }
+   @include media-breakpoint-up(sm) {
+     margin-left: 5rem;
+   }
+  }
+
+.node--type-subpage,
+.path-city {
+  #block-pagetitle-2 {
+    h1.title {
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }
+    @include media-breakpoint-up(sm) {
+      position: relative;
+      top: -4rem;
+      margin: -1rem 0 0 5rem;
+      h1 {
+        color: $body-bg;
+      }
+    }
+  }
+}

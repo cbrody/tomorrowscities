@@ -14,7 +14,7 @@ third_party_settings:
 id: twittertimeline
 theme: tc_bootstrap_sass
 region: featured_top
-weight: -14
+weight: -25
 provider: null
 plugin: twitter_embed_timeline
 settings:

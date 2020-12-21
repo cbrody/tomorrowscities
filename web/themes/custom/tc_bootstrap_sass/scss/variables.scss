@@ -14,7 +14,7 @@ $green: #008931;
 $cyan: #17a2b8;
 $charcoal: #333333;
 $charcoal-dark: #212121;
-$gray-100: #f8f9fa !default;
+$gray-100: rgba(0,0,0,.1) !default;
 $gray-800: #343a40 !default;
 $gray-lighter: #dddddd;
 $jade: #21A696;
@@ -22,7 +22,7 @@ $jade-light: lighten($jade, 24%);
 $quito: #4796A8;
 $kathmandu: #995966;
 $nairobi: #BA5C0F;
-$istanbul: #9C8200;
+$istanbul: #865E9C;
 $grass: $green;
 
 $theme-colors: ( primary: $primary-shade, secondary: $accent-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);

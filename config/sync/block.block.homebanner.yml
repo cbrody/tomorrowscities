@@ -15,7 +15,7 @@ third_party_settings:
 id: homebanner
 theme: tc_bootstrap_sass
 region: featured_top
-weight: -11
+weight: -13
 provider: null
 plugin: 'block_content:204276b8-97fa-4d5d-adc3-8fadba1d402f'
 settings:

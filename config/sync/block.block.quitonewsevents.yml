@@ -1,0 +1,35 @@
+uuid: b535bf5a-028b-4c80-935a-85e5d9489437
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ae3dbfb1-0fe9-4228-b0a8-76532c1aad7e'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-md-6 col-lg-3 mb-4'
+id: quitonewsevents
+theme: tc_bootstrap_sass
+region: featured_top
+weight: -20
+provider: null
+plugin: 'block_content:ae3dbfb1-0fe9-4228-b0a8-76532c1aad7e'
+settings:
+  id: 'block_content:ae3dbfb1-0fe9-4228-b0a8-76532c1aad7e'
+  label: 'Quito News & events'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /city/quito
+    negate: false
+    context_mapping: {  }

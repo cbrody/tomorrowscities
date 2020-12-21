@@ -12,11 +12,11 @@ dependencies:
     - tc_bootstrap_sass
 third_party_settings:
   block_class:
-    classes: bg-nairobi
+    classes: 'bg-nairobi col-12 col-lg-9 p-0 mr-0 mb-5'
 id: nairobiheader
 theme: tc_bootstrap_sass
 region: highlighted
-weight: -7
+weight: -19
 provider: null
 plugin: 'block_content:77bea873-65e5-477b-a5bb-631820836927'
 settings:
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/node/21\r\n*/nairobi*"
+    pages: "/node/21\r\n*/nairobi"
     negate: false
     context_mapping: {  }

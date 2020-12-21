@@ -122,3 +122,4 @@ hidden:
   field_standfirst: true
   langcode: true
   links: true
+  search_api_excerpt: true

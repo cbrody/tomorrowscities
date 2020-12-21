@@ -12,7 +12,7 @@ dependencies:
 id: exposedformsearch_contentpage_2
 theme: tc_bootstrap_sass
 region: content
-weight: -14
+weight: -17
 provider: null
 plugin: 'views_exposed_filter_block:search_content-page_2'
 settings:

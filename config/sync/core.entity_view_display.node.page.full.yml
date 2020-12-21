@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.page.body
+    - field.field.node.page.field_card_header
     - field.field.node.page.field_city
     - field.field.node.page.field_contact_form
     - field.field.node.page.field_image
@@ -95,10 +96,10 @@ content:
     settings:
       image_style: wide_1200x412_
       image_link: ''
-      svg_render_as_image: '1'
+      svg_render_as_image: true
       svg_attributes:
-        width: ''
-        height: ''
+        width: null
+        height: null
     third_party_settings:
       ds:
         ft:
@@ -190,5 +191,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_card_header: true
   field_city: true
   langcode: true
+  search_api_excerpt: true

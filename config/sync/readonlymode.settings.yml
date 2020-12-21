@@ -1,4 +1,4 @@
-enabled: 0
+enabled: null
 url: ''
 messages:
   default: '[site:name] is currently in maintenance. During this maintenance it is not possible to change site content (like comments, pages and users).'
@@ -17,7 +17,7 @@ forms:
       - node_admin_content
       - comment_admin_overview
   additional:
-    edit: {  }
-    view: {  }
+    edit: ''
+    view: ''
 _core:
   default_config_hash: VxaCqdJsbhWNMsXd4T2aqdDqpAgIasry9-EIxPKlK-s

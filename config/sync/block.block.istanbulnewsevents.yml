@@ -1,0 +1,35 @@
+uuid: dc872020-a757-4b7a-8eae-b3446963ef85
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e71dce88-3c7d-4f28-ace3-3b80ed613f8d'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-md-6 col-lg-3 mb-4'
+id: istanbulnewsevents
+theme: tc_bootstrap_sass
+region: featured_top
+weight: -22
+provider: null
+plugin: 'block_content:e71dce88-3c7d-4f28-ace3-3b80ed613f8d'
+settings:
+  id: 'block_content:e71dce88-3c7d-4f28-ace3-3b80ed613f8d'
+  label: ' Istanbul News & events'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /city/istanbul
+    negate: false
+    context_mapping: {  }

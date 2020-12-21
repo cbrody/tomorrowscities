@@ -12,11 +12,11 @@ dependencies:
     - tc_bootstrap_sass
 third_party_settings:
   block_class:
-    classes: bg-istanbul
+    classes: 'bg-istanbul col-12 col-lg-9 p-0 mr-0 mb-5'
 id: istanbulheader
 theme: tc_bootstrap_sass
 region: highlighted
-weight: -10
+weight: -28
 provider: null
 plugin: 'block_content:55995aa1-222b-4f30-ac28-43eac42f3b19'
 settings:
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/node/19\r\n/*/istanbul*"
+    pages: "/node/19\r\n/*/istanbul"
     negate: false
     context_mapping: {  }

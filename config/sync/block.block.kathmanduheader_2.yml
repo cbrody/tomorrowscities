@@ -1,0 +1,35 @@
+uuid: d20b0396-8be5-45bf-8517-7517d0fc053c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:84ef601a-9ba3-4d94-a646-06c67c9baaf3'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: bg-kathmandu
+id: kathmanduheader_2
+theme: tc_bootstrap_sass
+region: highlighted
+weight: -23
+provider: null
+plugin: 'block_content:84ef601a-9ba3-4d94-a646-06c67c9baaf3'
+settings:
+  id: 'block_content:84ef601a-9ba3-4d94-a646-06c67c9baaf3'
+  label: 'Kathmandu subpage header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/city/kathmandu/*'
+    negate: false
+    context_mapping: {  }

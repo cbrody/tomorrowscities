@@ -1,0 +1,25 @@
+uuid: dc3ca550-52dc-48f6-806e-d438d7f3cce1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tc_bootstrap_sass
+id: pagetitle_2
+theme: tc_bootstrap_sass
+region: highlighted
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'City subpage title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/city/*/*'
+    negate: false
+    context_mapping: {  }

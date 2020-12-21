@@ -1,0 +1,52 @@
+uuid: d03e9b33-4bcb-4c55-8f14-958fe3ad50c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+    - twitter_embed
+  theme:
+    - tc_bootstrap_sass
+third_party_settings:
+  block_class:
+    classes: 'mx-auto col-12 col-lg-3 mb-2 mx-3 mx-lg-0'
+id: twittertimeline_4
+theme: tc_bootstrap_sass
+region: highlighted
+weight: -18
+provider: null
+plugin: twitter_embed_timeline
+settings:
+  id: twitter_embed_timeline
+  label: 'Nairobi Twitter Timeline'
+  provider: twitter_embed
+  label_display: '0'
+  username: NairobiRisk_hub
+  type: profile
+  type_value: ''
+  display_style: timeline
+  theme: light
+  chrome:
+    noheader: noheader
+    nofooter: nofooter
+    noborders: noborders
+    transparent: 0
+    noscrollbar: 0
+  width: '400'
+  height: '500'
+  link_color: '#2b7bb9'
+  border_color: '#000000'
+  tweet_limit: '0'
+  show_replies: 0
+  aria_polite: polite
+  language: ''
+  hide_username: false
+  hide_followers_count: false
+  size: null
+visibility:
+  request_path:
+    id: request_path
+    pages: /city/nairobi
+    negate: false
+    context_mapping: {  }
