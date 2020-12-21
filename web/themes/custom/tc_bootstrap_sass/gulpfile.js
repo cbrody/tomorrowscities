@@ -39,10 +39,10 @@ function styles () {
         'Android >= 4',
         'Opera >= 12']
     })]))
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write()) // Uncomment in dev
     .pipe(gulp.dest(paths.scss.dest))
     .pipe(cleanCss())
-    .pipe(rename({ suffix: '.min' }))
+    // .pipe(rename({ suffix: '.min' })) // Uncomment in dev
     .pipe(gulp.dest(paths.scss.dest))
     .pipe(browserSync.stream());
 }
