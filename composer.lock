@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccca376c88e4cdb9b29f71a121af78d2",
+    "content-hash": "7afb4995a14719657d1b9c1f2f6055f9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3262,6 +3262,9 @@
                 },
                 "branch-alias": {
                     "dev-8.x-1.x": "1.x-dev"
+                },
+                "patches_applied": {
+                    "Display facets when there are no search results": "https://www.drupal.org/files/issues/2018-08-21/display_facets_when_minimum_count_0_and_no_search_results-2993101-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5150,26 +5153,29 @@
         },
         {
             "name": "drupal/views_taxonomy_term_name_depth",
-            "version": "dev-6.x",
+            "version": "7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_taxonomy_term_name_depth.git",
-                "reference": "ab4619da78a4d54a9ab306072a05a9f2fe3408f5"
+                "reference": "7.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_taxonomy_term_name_depth-7.0.1.zip",
+                "reference": "7.0.1",
+                "shasum": "a9be67b7b5b4cff25f1e29ff71f1346d686ce507"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-6.x": "6.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-6.0-alpha2+2-dev",
-                    "datestamp": "1589021635",
+                    "version": "7.0.1",
+                    "datestamp": "1594339068",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -10685,7 +10691,6 @@
         "drupal/rabbit_hole": 10,
         "drupal/twitter_embed": 15,
         "drupal/views_field_view": 10,
-        "drupal/views_taxonomy_term_name_depth": 20,
         "drupal/xmlsitemap": 15
     },
     "prefer-stable": true,
@@ -10694,5 +10699,5 @@
         "php": ">=5.6"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "1.1.0"
 }

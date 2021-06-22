@@ -55,7 +55,7 @@
         "drupal/twitter_embed": "^1.0@alpha",
         "drupal/video_embed_field": "^2.1",
         "drupal/views_field_view": "^1.0@beta",
-        "drupal/views_taxonomy_term_name_depth": "6.x-dev",
+        "drupal/views_taxonomy_term_name_depth": "^7.0",
         "drupal/xmlsitemap": "^1.0@alpha",
         "drush/drush": "^10",
         "vlucas/phpdotenv": "^2.6"
