@@ -4,6 +4,7 @@ description: 'Based on bootstrap_sass starter kit'
 # version: VERSION
 # core: 8.x
 base theme: bootstrap_barrio
+core_version_requirement: ^8 || ^9
 
 libraries:
   - tc_bootstrap_sass/global-styling
