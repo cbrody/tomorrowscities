@@ -6,17 +6,12 @@ dependencies:
     - field.storage.node.field_city
     - node.type.resource
     - taxonomy.vocabulary.city
-  module:
-    - label_help
-third_party_settings:
-  label_help:
-    label_help_description: 'Associated city if any'
 id: node.resource.field_city
 field_name: field_city
 entity_type: node
 bundle: resource
 label: City
-description: ''
+description: 'Associated city if any'
 required: false
 translatable: true
 default_value: {  }

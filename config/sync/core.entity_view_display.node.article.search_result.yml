@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_author_s_
     - field.field.node.article.field_city
     - field.field.node.article.field_image
+    - field.field.node.article.field_image_caption
     - field.field.node.article.field_paragraphs
     - field.field.node.article.field_tags
     - image.style.thumbnail
@@ -104,6 +105,7 @@ hidden:
   field_article_type: true
   field_author_s_: true
   field_city: true
+  field_image_caption: true
   field_paragraphs: true
   field_tags: true
   langcode: true

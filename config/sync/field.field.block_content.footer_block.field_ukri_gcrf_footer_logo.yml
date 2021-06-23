@@ -17,7 +17,7 @@ required: false
 translatable: false
 default_value:
   -
-    value: "<p><a href=\"https://www.ukri.org/research/global-challenges-research-fund/\"><img alt=\"ukri gcrf\" class=\"img-fluid mb-4\" height=\"\" src=\"/sites/default/files/2019-06/ukri-gcrf.svg\" typeof=\"foaf:Image\" width=\"\" /></a></p>\r\n"
+    value: "<p><a href=\"https://www.ukri.org/research/global-challenges-research-fund/\"><img alt=\"UKRI GCRF\" data-entity-type=\"file\" data-entity-uuid=\"296e4462-864f-4c82-9d4e-a60eaafed96a\" src=\"/sites/default/files/inline-images/UKRI-GCRF.png\" /></a></p>\r\n"
     format: full_html
 default_value_callback: ''
 settings: {  }

@@ -270,7 +270,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: date
-      title: 'News and Updates'
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }
@@ -312,6 +312,68 @@ display:
     display_options:
       display_extenders: {  }
       block_description: 'News and Updates'
+      sorts:
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: standard
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: hour
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+        changed:
+          id: changed
+          table: node_field_data
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: changed
+          plugin_id: date
+      defaults:
+        sorts: false
+        header: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<div class="mb-4 mt-2 container"><h2 class="d-inline mr-2 align-middle">News and events</h2><button class="btn btn-outline-primary" onclick="window.location=''/news-events'';">See all</button></div>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       contexts:
         - 'languages:language_content'

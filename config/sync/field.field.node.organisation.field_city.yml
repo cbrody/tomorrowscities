@@ -6,11 +6,6 @@ dependencies:
     - field.storage.node.field_city
     - node.type.organisation
     - taxonomy.vocabulary.city
-  module:
-    - label_help
-third_party_settings:
-  label_help:
-    label_help_description: 'Select city as appropriate'
 id: node.organisation.field_city
 field_name: field_city
 entity_type: node

@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.video
     - paragraphs.paragraphs_type.wide_image
     - paragraphs.paragraphs_type.wide_media
+    - paragraphs.paragraphs_type.wide_text
   module:
     - entity_reference_revisions
 id: node.page.field_paragraphs
@@ -32,26 +33,30 @@ settings:
       basic_text: basic_text
       wide_image: wide_image
       wide_media: wide_media
+      wide_text: wide_text
     target_bundles_drag_drop:
-      image:
-        enabled: true
-        weight: -13
-      video:
-        enabled: true
-        weight: -12
       basic_text:
         enabled: true
         weight: -11
+      image:
+        enabled: true
+        weight: -13
       publication:
         weight: -10
         enabled: false
       publication_link:
         weight: -9
         enabled: false
+      video:
+        enabled: true
+        weight: -12
       wide_image:
         enabled: true
         weight: -8
       wide_media:
         enabled: true
         weight: 8
+      wide_text:
+        enabled: true
+        weight: 16
 field_type: entity_reference_revisions

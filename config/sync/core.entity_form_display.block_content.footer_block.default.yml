@@ -16,7 +16,8 @@ dependencies:
 third_party_settings:
   field_layout:
     id: layout_onecol
-    settings: {  }
+    settings:
+      label: ''
 id: block_content.footer_block.default
 targetEntityType: block_content
 bundle: footer_block
@@ -30,10 +31,24 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_footer_links_and_copyright:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ukri_gcrf_footer_logo:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   body: true
-  field_footer_links_and_copyright: true
   field_footer_logo: true
-  field_ukri_gcrf_footer_logo: true
   info: true
   langcode: true

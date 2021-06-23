@@ -6,11 +6,7 @@ dependencies:
     - field.storage.node.field_cityrole
     - node.type.person
   module:
-    - label_help
     - options
-third_party_settings:
-  label_help:
-    label_help_description: 'Select team role if any'
 id: node.person.field_cityrole
 field_name: field_cityrole
 entity_type: node

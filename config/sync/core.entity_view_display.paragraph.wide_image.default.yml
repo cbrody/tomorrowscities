@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.wide_image.field_image
+    - field.field.paragraph.wide_image.field_image_caption
     - image.style.wide_1200x412_
     - paragraphs.paragraphs_type.wide_image
   module:
     - ds
     - svg_image
+    - text
 id: paragraph.wide_image.default
 targetEntityType: paragraph
 bundle: wide_image
@@ -33,6 +35,13 @@ content:
             lb-col: false
             classes: {  }
     type: image
+    region: content
+  field_image_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
 hidden:
   search_api_excerpt: true

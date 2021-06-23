@@ -26,7 +26,6 @@ third_party_settings:
     group_card:
       children:
         - field_image
-        - field_image_caption
         - field_card_header
       parent_name: ''
       weight: 0
@@ -64,7 +63,6 @@ third_party_settings:
       ds_content:
         - group_card
         - field_image
-        - field_image_caption
         - field_card_header
 id: node.subpage.card
 targetEntityType: node
@@ -98,7 +96,7 @@ content:
         height: null
     third_party_settings:
       ds:
-        ds_limit: ''
+        ds_limit: '1'
         ft:
           id: expert
           settings:
@@ -121,53 +119,19 @@ content:
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: ''
+            suffix: '</figure>'
             lbw: false
             lb-col: false
             fi: false
             fi-def-at: false
     type: image
     region: ds_content
-  field_image_caption:
-    type: text_default
-    weight: 1
-    region: ds_content
-    label: hidden
-    settings: {  }
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis: true
-            fis-el: figcaption
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: '</figure>'
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis-def-at: false
-            fi: false
-            fi-def-at: false
 hidden:
   addtoany: true
   body: true
   field_city: true
   field_hero_video: true
+  field_image_caption: true
   field_page_type: true
   field_paragraphs: true
   field_standfirst: true

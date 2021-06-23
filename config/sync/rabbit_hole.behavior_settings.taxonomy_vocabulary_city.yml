@@ -5,7 +5,10 @@ dependencies:
   config:
     - taxonomy.vocabulary.city
 id: taxonomy_vocabulary_city
+entity_type_id: taxonomy_vocabulary
+entity_id: city
 action: page_redirect
 allow_override: 1
 redirect: '/city/[term:name]'
 redirect_code: 302
+redirect_fallback_action: access_denied

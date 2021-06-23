@@ -1,0 +1,10 @@
+uuid: 5a27ae85-7379-458e-a548-cd07a529986e
+langcode: en
+status: true
+dependencies: {  }
+id: wide_text
+label: 'Wide text'
+icon_uuid: null
+icon_default: null
+description: 'Full-width text'
+behavior_plugins: {  }

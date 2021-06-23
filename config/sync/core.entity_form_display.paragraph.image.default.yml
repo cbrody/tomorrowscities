@@ -4,16 +4,19 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.image.field_image
+    - field.field.paragraph.image.field_image_caption
     - image.style.thumbnail
     - paragraphs.paragraphs_type.image
   module:
     - field_layout
     - layout_discovery
     - svg_image
+    - text
 third_party_settings:
   field_layout:
     id: layout_onecol
-    settings: {  }
+    settings:
+      label: ''
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image
@@ -26,6 +29,14 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_image_caption:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
 hidden:
   created: true

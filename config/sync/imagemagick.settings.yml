@@ -1,4 +1,4 @@
-quality: 85
+quality: 90
 binaries: imagemagick
 path_to_binaries: /usr/local/bin/
 prepend: ''
@@ -18,7 +18,6 @@ image_formats:
   JPG:
     mime_type: image/jpeg
     weight: 10
-    enabled: false
   GIF:
     mime_type: image/gif
   GIF87:

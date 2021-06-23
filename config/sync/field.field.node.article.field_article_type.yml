@@ -6,17 +6,12 @@ dependencies:
     - field.storage.node.field_article_type
     - node.type.article
     - taxonomy.vocabulary.article_type
-  module:
-    - label_help
-third_party_settings:
-  label_help:
-    label_help_description: 'Select the article type'
 id: node.article.field_article_type
 field_name: field_article_type
 entity_type: node
 bundle: article
 label: 'Article type'
-description: ''
+description: 'Select the article type'
 required: true
 translatable: false
 default_value: {  }

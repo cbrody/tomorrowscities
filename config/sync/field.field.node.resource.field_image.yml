@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_image
     - node.type.resource
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.resource.field_image
 field_name: field_image
 entity_type: node
@@ -20,7 +27,7 @@ default_value_callback: ''
 settings:
   file_directory: 'covers/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '2 MB'
+  max_filesize: '8 MB'
   max_resolution: ''
   min_resolution: ''
   alt_field: true
