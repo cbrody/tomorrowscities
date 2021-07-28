@@ -16,7 +16,7 @@ third_party_settings:
 id: focuscities
 theme: tc_bootstrap_sass
 region: featured_bottom_first
-weight: -14
+weight: -26
 provider: null
 plugin: 'block_content:e903c2fb-804c-4e4b-93ac-22bff88fd276'
 settings:

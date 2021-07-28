@@ -16,7 +16,7 @@ third_party_settings:
 id: nairobinewsevents
 theme: tc_bootstrap_sass
 region: featured_top
-weight: -21
+weight: -24
 provider: null
 plugin: 'block_content:396f4f23-a4fb-4934-a11e-8301daaed463'
 settings:

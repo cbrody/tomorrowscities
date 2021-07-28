@@ -16,7 +16,7 @@ third_party_settings:
 id: nairobiteamcard
 theme: tc_bootstrap_sass
 region: featured_top
-weight: -16
+weight: -19
 provider: null
 plugin: 'block_content:0f697d00-64e9-4f0c-a072-a787c69baaf1'
 settings:

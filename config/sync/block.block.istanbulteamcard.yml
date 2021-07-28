@@ -16,7 +16,7 @@ third_party_settings:
 id: istanbulteamcard
 theme: tc_bootstrap_sass
 region: featured_top
-weight: -18
+weight: -21
 provider: null
 plugin: 'block_content:4721baa0-f681-4e9f-983c-e333423233e2'
 settings:

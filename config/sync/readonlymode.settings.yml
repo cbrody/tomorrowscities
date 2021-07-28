@@ -17,7 +17,7 @@ forms:
       - node_admin_content
       - comment_admin_overview
   additional:
-    edit: 'search*'
+    edit: 'views_exposed_form*'
     view: ''
 _core:
   default_config_hash: VxaCqdJsbhWNMsXd4T2aqdDqpAgIasry9-EIxPKlK-s

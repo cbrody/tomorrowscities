@@ -16,7 +16,7 @@ third_party_settings:
 id: kathmanduteamcard
 theme: tc_bootstrap_sass
 region: featured_top
-weight: -17
+weight: -20
 provider: null
 plugin: 'block_content:cc674ea6-c96a-44c1-bab7-deb2a1bca63d'
 settings:

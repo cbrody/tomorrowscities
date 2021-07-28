@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.resource.body
     - field.field.node.resource.field_author_s_
     - field.field.node.resource.field_city
+    - field.field.node.resource.field_doi
     - field.field.node.resource.field_file_upload
     - field.field.node.resource.field_image
     - field.field.node.resource.field_material_type
@@ -235,6 +236,7 @@ content:
 hidden:
   addtoany: true
   field_city: true
+  field_doi: true
   field_publication_upload_or_link: true
   field_sort_author: true
   field_tags: true

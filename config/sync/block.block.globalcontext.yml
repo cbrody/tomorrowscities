@@ -12,16 +12,16 @@ dependencies:
     - tc_bootstrap_sass
 third_party_settings:
   block_class:
-    classes: 'mb-4 pb-4'
+    classes: 'container mb-4 pb-4'
 id: globalcontext
 theme: tc_bootstrap_sass
 region: featured_bottom_first
-weight: -12
+weight: -27
 provider: null
 plugin: 'block_content:0ece8ba9-955d-4cd3-a51f-18eb3d1d1a53'
 settings:
   id: 'block_content:0ece8ba9-955d-4cd3-a51f-18eb3d1d1a53'
-  label: 'Global context'
+  label: 'Strategy and Plans'
   provider: block_content
   label_display: visible
   status: true
