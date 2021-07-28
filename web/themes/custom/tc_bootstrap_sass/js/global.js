@@ -9,6 +9,7 @@
 
   Drupal.behaviors.bootstrap_barrio_subtheme = {
     attach: function(context, settings) {
+      $('.path-node .data-image:eq(1)').hide();
       var position = $(window).scrollTop();
       $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {

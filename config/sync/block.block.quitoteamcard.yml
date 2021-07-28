@@ -16,7 +16,7 @@ third_party_settings:
 id: quitoteamcard
 theme: tc_bootstrap_sass
 region: featured_top
-weight: -15
+weight: -18
 provider: null
 plugin: 'block_content:1939d364-c027-41fc-9632-f9880fac44e8'
 settings:

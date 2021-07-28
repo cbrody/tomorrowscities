@@ -16,7 +16,7 @@ third_party_settings:
 id: kathmandunewsevents
 theme: tc_bootstrap_sass
 region: featured_top
-weight: -19
+weight: -22
 provider: null
 plugin: 'block_content:f8a996cf-d62d-4ae6-ade9-38abaedc11e2'
 settings:

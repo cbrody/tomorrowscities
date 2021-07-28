@@ -16,7 +16,7 @@ third_party_settings:
 id: istanbulnewsevents
 theme: tc_bootstrap_sass
 region: featured_top
-weight: -22
+weight: -25
 provider: null
 plugin: 'block_content:e71dce88-3c7d-4f28-ace3-3b80ed613f8d'
 settings:

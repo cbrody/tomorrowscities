@@ -139,3 +139,17 @@ figcaption {
     margin-bottom: 0;
   }
 }
+
+.node--view-mode-search-result {
+  img {
+    margin-right: $spacer;
+  }
+  .field--name-node-title h2 {
+    line-height: 2.5rem;
+  }
+}
+
+
+.node > .data-image:nth-child(2) {
+  display: none;
+}

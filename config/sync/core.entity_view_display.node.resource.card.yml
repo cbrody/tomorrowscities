@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.resource.body
     - field.field.node.resource.field_author_s_
     - field.field.node.resource.field_city
+    - field.field.node.resource.field_doi
     - field.field.node.resource.field_file_upload
     - field.field.node.resource.field_image
     - field.field.node.resource.field_material_type
@@ -23,6 +24,7 @@ dependencies:
     - ds
     - field_group
     - field_layout
+    - pdfpreview
     - svg_image
     - user
 third_party_settings:
@@ -49,6 +51,7 @@ third_party_settings:
     regions:
       ds_content:
         - group_card
+        - field_file_upload
         - field_image
         - field_material_type
         - node_title
@@ -58,7 +61,7 @@ third_party_settings:
     fields:
       node_title:
         plugin_id: node_title
-        weight: 9
+        weight: 3
         label: hidden
         formatter: default
         settings:
@@ -95,6 +98,7 @@ third_party_settings:
   field_group:
     group_card:
       children:
+        - field_file_upload
         - field_image
         - field_material_type
         - node_title
@@ -123,7 +127,7 @@ mode: card
 content:
   field_author_s_:
     type: string
-    weight: 10
+    weight: 4
     region: ds_content
     label: hidden
     settings:
@@ -157,8 +161,28 @@ content:
             fis-def-at: false
             fi: false
             fi-def-at: false
+  field_file_upload:
+    type: pdfpreview
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: card_cover_270x130_
+      image_link: ''
+      tag: div
+      fallback_formatter: file_default
+      show_description: 0
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            classes:
+              - data-image
+            lb-col: false
   field_image:
-    weight: 7
+    weight: 1
     label: hidden
     settings:
       image_style: card_cover_270x130_
@@ -169,6 +193,7 @@ content:
         height: null
     third_party_settings:
       ds:
+        ds_limit: ''
         ft:
           id: default
           settings:
@@ -176,11 +201,12 @@ content:
             classes:
               - img-fluid
               - card-img-top
+              - data-image
             lb-col: false
     type: image
     region: ds_content
   field_material_type:
-    weight: 8
+    weight: 2
     label: hidden
     settings:
       link: false
@@ -216,7 +242,7 @@ content:
     type: entity_reference_label
     region: ds_content
   field_publisher:
-    weight: 11
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false
@@ -253,7 +279,7 @@ content:
     region: ds_content
   field_tags:
     type: entity_reference_label
-    weight: 12
+    weight: 6
     region: ds_content
     label: hidden
     settings:
@@ -292,7 +318,7 @@ hidden:
   addtoany: true
   body: true
   field_city: true
-  field_file_upload: true
+  field_doi: true
   field_publication_date: true
   field_publication_upload_or_link: true
   field_sort_author: true

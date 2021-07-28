@@ -12,7 +12,7 @@ dependencies:
 id: views_block__focus_city_new_block_2
 theme: tc_bootstrap_sass
 region: featured_bottom_first
-weight: 0
+weight: -24
 provider: null
 plugin: 'views_block:focus_city_new-block_2'
 settings:
