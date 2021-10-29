@@ -149,7 +149,16 @@ figcaption {
   }
 }
 
-
 .node--view-mode-search-result > .data-image:nth-child(1) {
   display: none;
+}
+
+.node--type-resource img {
+  border: solid 1px $gray-100;
+}
+
+.field--name-dynamic-block-fieldnode-cover-image-ds img {
+  width: 100px;
+  height: auto;
+  @extend .node--type-resource;
 }

@@ -110,6 +110,9 @@
         "patches": {
           "drupal/facets": {
             "Display facets when there are no search results": "https://www.drupal.org/files/issues/2018-08-21/display_facets_when_minimum_count_0_and_no_search_results-2993101-6.patch"
+          },
+          "drupal/ds": {
+            "Provide entity context to DS block fields":"https://www.drupal.org/files/issues/2020-10-12/ds-content_entity-2939322-14.patch"
           }
         }
     }
