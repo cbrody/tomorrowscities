@@ -53,8 +53,8 @@ third_party_settings:
           second: {  }
     regions:
       first:
-        - field_file_upload
         - field_image
+        - field_file_upload
       second:
         - node_title
         - body
@@ -136,7 +136,7 @@ content:
             fi-def-at: false
   field_file_upload:
     type: pdfpreview
-    weight: 0
+    weight: 1
     region: first
     label: hidden
     settings:
@@ -156,7 +156,7 @@ content:
             lb-col: false
   field_image:
     type: image
-    weight: 1
+    weight: 0
     region: first
     label: hidden
     settings:

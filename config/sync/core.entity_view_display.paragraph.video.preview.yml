@@ -1,0 +1,36 @@
+uuid: bb28de60-848e-4244-ad1b-e1ae57796187
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.video.field_video
+    - image.style.card_cover_270x130_
+    - paragraphs.paragraphs_type.video
+  module:
+    - ds
+    - video_embed_field
+id: paragraph.video.preview
+targetEntityType: paragraph
+bundle: video
+mode: preview
+content:
+  field_video:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: card_cover_270x130_
+      link_image_to: content
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            classes:
+              - card-img-top
+            lb-col: false
+    type: video_embed_field_thumbnail
+    region: content
+hidden:
+  search_api_excerpt: true

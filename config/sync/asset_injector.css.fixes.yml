@@ -4,8 +4,128 @@ status: true
 dependencies: {  }
 id: fixes
 label: fixes
-code: ".image-style-wide-1200x412- {\r\n    max-width: 100%;\r\n    height: auto;\r\n}\r\n\r\n.path-resources h1.title {\r\n  display: block;\r\n}\r\n\r\n.sky-bgnd {\r\n    width: 100%;\r\n}\r\n\r\nblockquote {\r\n    font-weight: 400;\r\n    margin: 2rem 0;\r\n}\r\n\r\n.bg-istanbul {\r\n    background: #865E9C;\r\n}\r\n\r\n.logo-tab img {\r\n    /* max-width: 440px; */\r\n    max-width: 85%;\r\n}\r\n\r\n.card-title {\r\n    font-size: 1.2rem;\r\n}\r\n\r\n.image-style-logo-70-, .image-style-card-cover-270x130-, .image-style-card-270x130-, .image-style-max710 {\r\n    width: 100%;\r\n    height: auto;\r\n}\r\n\r\n.container-fluid, .view-id-partners_slider .views-view-grid, .block-views-blockpartners-slider-block-1 .col-auto {\r\n    padding-right: 0; \r\n    padding-left: 0;\r\n}\r\n\r\n.block-twitter-embed-timeline iframe {\r\n    overflow: hidden;\r\n    max-width: 100%;\r\n}\r\n\r\n.flexslider {\r\n    margin: 0;\r\n    border: 0;\r\n}\r\n\r\n.optionset-home img {\r\n    border-radius: 0.25rem;\r\n}\r\n\r\n.optionset-home {\r\n    background: #CCEBE7;\r\n    max-height: 440px;\r\n    overflow: hidden;\r\n}\r\n\r\n.navbar-brand img {\r\n  width: 300px;\r\n}\r\n\r\n/* fix spacing on cards */\r\n.image-style-card-cover-270x130- {  \r\n    margin-bottom: 0 !important;\r\n}\r\n\r\n/* country pages, adjust nav spacing  */\r\n.highlighted {\r\n    padding-bottom: 2px;\r\n}\r\n\r\nblockquote em {\r\n    font-style: normal;\r\n}\r\n\r\n.image-style-large {\r\n    max-width: 100%;\r\n    height: auto;\r\n}\r\n\r\n.view-focus-cities .col {\r\n    padding: 0;\r\n}\r\n\r\n.path-admin .action-links {\r\n    border-bottom: 1px solid #ccc;\r\n    margin-bottom: 2rem;\r\n}\r\n\r\n.admin-page .form-row .search-button {\r\n    display: none;\r\n}\r\n\r\n.admin-page .form-text {\r\n    margin-top: 0;\r\n}\r\n\r\n.page-node-8 .block-page-title-block {\r\n    display: none;\r\n}\r\n\r\n@media screen and (min-width: 768px) {\r\nh1.title {\r\n    line-height: 3rem;\r\n}\r\n}\r\n\r\n@media screen and (max-width: 807px) {\r\n.optionset-home img {\r\n    display: none !important;\r\n}\r\n.optionset-home .container {\r\n  position: relative !important;\r\n}\r\n}"
+code: |-
+  .image-style-wide-1200x412- {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .path-resources h1.title {
+    display: block;
+  }
+
+  .sky-bgnd {
+      width: 100%;
+  }
+
+  blockquote {
+      font-weight: 400;
+      margin: 2rem 0;
+  }
+
+  .bg-istanbul {
+      background: #865E9C;
+  }
+
+  .logo-tab img {
+      /* max-width: 440px; */
+      max-width: 85%;
+  }
+
+  .card-title {
+      font-size: 1.2rem;
+  }
+
+  .image-style-logo-70-, .image-style-card-cover-270x130-, .image-style-card-270x130-, .image-style-max710 {
+      width: 100%;
+      height: auto;
+  }
+
+  .container-fluid, .view-id-partners_slider .views-view-grid, .block-views-blockpartners-slider-block-1 .col-auto {
+      padding-right: 0; 
+      padding-left: 0;
+  }
+
+  .block-twitter-embed-timeline iframe {
+      overflow: hidden;
+      max-width: 100%;
+  }
+
+  .flexslider {
+      margin: 0;
+      border: 0;
+  }
+
+  .optionset-home img {
+      border-radius: 0.25rem;
+  }
+
+  .optionset-home {
+      background: #CCEBE7;
+      max-height: 440px;
+      overflow: hidden;
+  }
+
+  .navbar-brand img {
+    width: 300px;
+  }
+
+  /* fix spacing on cards */
+  .image-style-card-cover-270x130- {  
+      margin-bottom: 0 !important;
+  }
+
+  /* country pages, adjust nav spacing  */
+  .highlighted {
+      padding-bottom: 2px;
+  }
+
+  blockquote em {
+      font-style: normal;
+  }
+
+  .image-style-large {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .view-focus-cities .col {
+      padding: 0;
+  }
+
+  .path-admin .action-links {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 2rem;
+  }
+
+  .admin-page .form-row .search-button {
+      display: none;
+  }
+
+  .admin-page .form-text {
+      margin-top: 0;
+  }
+
+  .page-node-8 .block-page-title-block {
+      display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+  h1.title {
+      line-height: 3rem;
+  }
+  }
+
+  @media screen and (max-width: 807px) {
+  .optionset-home img {
+      display: none !important;
+  }
+  .optionset-home .container {
+    position: relative !important;
+  }
+  }
+conditions_require_all: true
+conditions: {  }
+contexts: {  }
 media: all
 preprocess: true
-conditions: {  }
-conditions_require_all: true

@@ -14,7 +14,7 @@ mode: default
 content:
   field_video:
     weight: 0
-    label: above
+    label: hidden
     settings:
       responsive: true
       width: 854
@@ -23,4 +23,5 @@ content:
     third_party_settings: {  }
     type: video_embed_field_video
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

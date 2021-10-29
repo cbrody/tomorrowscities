@@ -139,7 +139,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: card
+        classes: 'card h-100'
       label: card
       region: content
 _core:

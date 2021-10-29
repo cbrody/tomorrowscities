@@ -239,7 +239,22 @@ display:
       defaults:
         pager: false
         title: false
+        header: false
       title: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<div class="mb-4 mt-2 container"><h2 class="d-inline mr-2 align-middle">Resources</h2><button class="btn btn-outline-primary" onclick="window.location=''/publications'';">See all</button></div>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
