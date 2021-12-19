@@ -32,7 +32,7 @@
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/ds": "^3.3",
-        "drupal/facets": "^1.4",
+        "drupal/facets": "^2.0",
         "drupal/field_group": "^3.0",
         "drupal/flexslider": "^2.0@beta",
         "drupal/google_analytics": "^3.0",
