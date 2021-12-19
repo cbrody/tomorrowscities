@@ -22,14 +22,14 @@ plugin: 'block_content:3588c4ea-f070-4c3f-ba70-8ed1dac97dc1'
 settings:
   id: 'block_content:3588c4ea-f070-4c3f-ba70-8ed1dac97dc1'
   label: 'Quito header'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/node/20\r\n*/quito"
     negate: false
     context_mapping: {  }
+    pages: "/node/20\r\n*/quito"

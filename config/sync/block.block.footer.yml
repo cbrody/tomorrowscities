@@ -18,14 +18,14 @@ plugin: 'block_content:6ba9a77c-4a0e-45e1-9ddb-eea5d7560ad6'
 settings:
   id: 'block_content:6ba9a77c-4a0e-45e1-9ddb-eea5d7560ad6'
   label: Footer
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /update-homepage-rotating-images
     negate: false
     context_mapping: {  }
+    pages: /update-homepage-rotating-images

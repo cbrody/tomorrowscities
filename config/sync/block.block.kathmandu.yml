@@ -17,14 +17,14 @@ plugin: 'system_menu_block:kathmandu'
 settings:
   id: 'system_menu_block:kathmandu'
   label: Kathmandu
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: "/node/22\r\n*/kathmandu/*"
     negate: false
     context_mapping: {  }
+    pages: "/node/22\r\n*/kathmandu/*"

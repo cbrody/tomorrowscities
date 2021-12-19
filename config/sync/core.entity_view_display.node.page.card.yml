@@ -29,15 +29,15 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: content
         link_custom: ''
-        classes:
-          layout_class: {  }
-          ds_content: {  }
     regions:
       ds_content:
         - group_card
@@ -48,12 +48,14 @@ third_party_settings:
       children:
         - field_card_header
         - body
+      label: card
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: 'card h-100'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -61,8 +63,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: card
-      region: content
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.card
@@ -71,10 +71,8 @@ bundle: page
 mode: card
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 2
-    region: ds_content
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings:
@@ -83,35 +81,37 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
             ow: true
             ow-el: div
             ow-cl: card-body
             ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
             ow-def-at: false
             ow-def-cl: false
             fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
             fis-def-at: false
             fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
             fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 2
+    region: ds_content
   field_card_header:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: ds_content
 hidden:
   addtoany: true

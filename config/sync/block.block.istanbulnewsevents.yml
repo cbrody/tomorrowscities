@@ -22,14 +22,14 @@ plugin: 'block_content:e71dce88-3c7d-4f28-ace3-3b80ed613f8d'
 settings:
   id: 'block_content:e71dce88-3c7d-4f28-ace3-3b80ed613f8d'
   label: ' Istanbul News & events'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /city/istanbul
     negate: false
     context_mapping: {  }
+    pages: /city/istanbul

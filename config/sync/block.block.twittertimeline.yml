@@ -20,8 +20,8 @@ plugin: twitter_embed_timeline
 settings:
   id: twitter_embed_timeline
   label: 'Twitter Timeline'
-  provider: twitter_embed
   label_display: '0'
+  provider: twitter_embed
   username: Urbanriskhub
   type: profile
   type_value: ''
@@ -47,6 +47,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/home-slider"
     negate: false
     context_mapping: {  }
+    pages: "<front>\r\n/home-slider"

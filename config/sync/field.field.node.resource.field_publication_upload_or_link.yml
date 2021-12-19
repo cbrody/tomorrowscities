@@ -22,15 +22,15 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       publication: publication
       publication_link: publication_link
+    negate: 0
     target_bundles_drag_drop:
       publication:
-        enabled: true
         weight: 3
-      publication_link:
         enabled: true
+      publication_link:
         weight: 4
+        enabled: true
 field_type: entity_reference_revisions

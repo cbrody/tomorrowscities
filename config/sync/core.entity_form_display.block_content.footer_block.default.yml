@@ -24,13 +24,13 @@ bundle: footer_block
 mode: default
 content:
   field_footer_info:
+    type: text_textarea
     weight: 0
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_footer_links_and_copyright:
     type: text_textarea
     weight: 2

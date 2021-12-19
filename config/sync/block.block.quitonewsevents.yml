@@ -22,14 +22,14 @@ plugin: 'block_content:ae3dbfb1-0fe9-4228-b0a8-76532c1aad7e'
 settings:
   id: 'block_content:ae3dbfb1-0fe9-4228-b0a8-76532c1aad7e'
   label: 'Quito News & events'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /city/quito
     negate: false
     context_mapping: {  }
+    pages: /city/quito

@@ -17,7 +17,7 @@ plugin: 'facet_block:city'
 settings:
   id: 'facet_block:city'
   label: 'Filter by City'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: city
 visibility: {  }

@@ -30,6 +30,10 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        classes:
+          layout_class: {  }
+          first: {  }
+          second: {  }
         wrappers:
           first: div
           second: div
@@ -37,10 +41,6 @@ third_party_settings:
         attributes: role|navigation
         link_attribute: content
         link_custom: '"[node:field_url:uri]"'
-        classes:
-          layout_class: {  }
-          first: {  }
-          second: {  }
     regions:
       first:
         - field_image
@@ -53,22 +53,22 @@ bundle: organisation
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: second
   field_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: ''
-      svg_render_as_image: '1'
+      image_style: thumbnail
       svg_attributes:
-        width: ''
-        height: ''
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings:
       ds:
         ft:
@@ -77,12 +77,10 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: image
+    weight: 0
     region: first
   field_url:
     type: link
-    weight: 2
-    region: second
     label: hidden
     settings:
       trim_length: 80
@@ -91,6 +89,8 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 2
+    region: second
 hidden:
   addtoany: true
   field_address: true

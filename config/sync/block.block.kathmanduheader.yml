@@ -22,14 +22,14 @@ plugin: 'block_content:84ef601a-9ba3-4d94-a646-06c67c9baaf3'
 settings:
   id: 'block_content:84ef601a-9ba3-4d94-a646-06c67c9baaf3'
   label: 'Kathmandu header'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/node/22\r\n/*/kathmandu"
     negate: false
     context_mapping: {  }
+    pages: "/node/22\r\n/*/kathmandu"

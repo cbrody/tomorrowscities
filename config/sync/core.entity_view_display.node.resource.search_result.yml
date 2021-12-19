@@ -36,7 +36,10 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          first: {  }
+          second: {  }
         wrappers:
           first: div
           second: div
@@ -44,10 +47,7 @@ third_party_settings:
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
-          first: {  }
-          second: {  }
+        label: ''
     regions:
       first:
         - 'dynamic_block_field:node-cover_image_ds'
@@ -68,9 +68,9 @@ third_party_settings:
           id: default
           settings:
             lb: ''
+            lb-col: false
             classes:
               - ''
-            lb-col: false
       node_title:
         plugin_id: node_title
         weight: 1
@@ -93,8 +93,6 @@ mode: search_result
 content:
   body:
     type: text_summary_or_trimmed
-    weight: 2
-    region: second
     label: hidden
     settings:
       trim_length: 300
@@ -106,10 +104,10 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 2
+    region: second
   field_author_s_:
     type: string
-    weight: 3
-    region: second
     label: hidden
     settings:
       link_to_entity: false
@@ -119,33 +117,33 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
+            ow: false
             ow-el: ''
             ow-cl: ''
             ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
             fis: true
             fis-el: span
             fis-cl: 'meta field-authors'
             fis-at: ''
             fis-def-at: true
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: ' | '
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fi: false
             fi-def-at: false
+            prefix: ''
+            suffix: ' | '
+    weight: 3
+    region: second
   field_material_type:
     type: entity_reference_label
-    weight: 4
-    region: second
     label: hidden
     settings:
       link: false
@@ -155,33 +153,33 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
+            ow: false
             ow-el: ''
             ow-cl: ''
             ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
             fis: true
             fis-el: span
             fis-cl: 'meta field-material-type'
             fis-at: ''
+            fis-def-at: false
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: ' | '
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis-def-at: false
-            fi: false
             fi-def-at: false
+            prefix: ''
+            suffix: ' | '
+    weight: 4
+    region: second
   field_publication_date:
     type: datetime_custom
-    weight: 5
-    region: second
     label: hidden
     settings:
       timezone_override: ''
@@ -192,33 +190,33 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
+            ow: false
             ow-el: ''
             ow-cl: ''
             ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
             fis: true
             fis-el: span
             fis-cl: 'meta field-pubdate'
             fis-at: ''
+            fis-def-at: false
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: ' | '
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis-def-at: false
-            fi: false
             fi-def-at: false
+            prefix: ''
+            suffix: ' | '
+    weight: 5
+    region: second
   field_publisher:
     type: string
-    weight: 6
-    region: second
     label: hidden
     settings:
       link_to_entity: false
@@ -228,29 +226,31 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
+            ow: false
             ow-el: ''
             ow-cl: ''
             ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
             fis: true
             fis-el: span
             fis-cl: 'meta field-publisher'
             fis-at: ''
+            fis-def-at: false
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis-def-at: false
-            fi: false
             fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 6
+    region: second
 hidden:
   addtoany: true
   field_city: true

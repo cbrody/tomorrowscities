@@ -37,7 +37,10 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          first: {  }
+          second: {  }
         wrappers:
           first: div
           second: div
@@ -45,10 +48,7 @@ third_party_settings:
         attributes: cursor|pointer
         link_attribute: content
         link_custom: ''
-        classes:
-          layout_class: {  }
-          first: {  }
-          second: {  }
+        label: ''
     regions:
       first:
         - field_image
@@ -61,9 +61,8 @@ bundle: resource
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 1
+    label: hidden
     settings:
       trim_length: 300
     third_party_settings:
@@ -74,19 +73,18 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 1
     region: second
   field_image:
     type: image
-    weight: 0
-    region: first
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: ''
-      svg_render_as_image: true
+      image_style: thumbnail
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
     third_party_settings:
       ds:
         ds_limit: ''
@@ -96,11 +94,13 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 0
+    region: first
   links:
-    weight: 2
-    region: second
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: second
 hidden:
   addtoany: true
   field_author_s_: true

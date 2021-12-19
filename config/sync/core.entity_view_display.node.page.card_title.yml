@@ -31,16 +31,16 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: content
         link_custom: ''
-        classes:
-          layout_class: {  }
-          ds_content: {  }
+        label: ''
     regions:
       ds_content:
         - group_card
@@ -59,12 +59,14 @@ third_party_settings:
         - field_image
         - field_card_header
         - node_title
+      label: card
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: 'card h-100'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -72,8 +74,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: card
-      region: content
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.card_title
@@ -82,24 +82,22 @@ bundle: page
 mode: card_title
 content:
   field_card_header:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: ds_content
   field_image:
     type: image
-    weight: 0
-    region: ds_content
     label: hidden
     settings:
-      image_style: card_270x130_
       image_link: ''
-      svg_render_as_image: true
+      image_style: card_270x130_
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
     third_party_settings:
       ds:
         ds_limit: ''
@@ -109,6 +107,8 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 0
+    region: ds_content
 hidden:
   addtoany: true
   body: true

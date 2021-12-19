@@ -59,23 +59,21 @@ mode: search_index
 content:
   body:
     type: text_default
-    weight: 8
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 8
+    region: content
   field_author_s_:
     type: string
-    weight: 4
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 4
+    region: content
   field_file_upload:
     type: pdfpreview
-    weight: 1
-    region: content
     label: hidden
     settings:
       image_style: large
@@ -89,37 +87,37 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
             ow: true
             ow-el: div
             ow-cl: 'clearfix text-center'
             ow-at: ''
             ow-def-at: true
             ow-def-cl: true
+            fis: false
             fis-el: div
             fis-cl: ''
             fis-at: ''
+            fis-def-at: false
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: '<div class=text-center my-1"><a class="my-2 btn btn-secondary" href=[node:field_file_upload:entity:url]>Download file</a></div>'
-            lbw: false
-            lb-col: false
-            fis: false
-            fis-def-at: false
-            fi: false
             fi-def-at: false
+            prefix: ''
+            suffix: '<div class=text-center my-1"><a class="my-2 btn btn-secondary" href=[node:field_file_upload:entity:url]>Download file</a></div>'
+    weight: 1
+    region: content
   field_image:
     type: image
-    weight: 2
-    region: content
     label: hidden
     settings:
-      image_style: large
       image_link: ''
+      image_style: large
       svg_attributes:
         width: null
         height: null
@@ -130,41 +128,41 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
             ow: true
             ow-el: div
             ow-cl: ''
             ow-at: ''
+            ow-def-at: false
             ow-def-cl: true
             fis: true
             fis-el: div
             fis-cl: 'd-block mx-auto clearfix'
             fis-at: ''
+            fis-def-at: false
             fi: true
             fi-el: a
             fi-cl: my-2
             fi-at: 'href=[node:field_file_upload:entity:url]'
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow-def-at: false
-            fis-def-at: false
             fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 2
+    region: content
   field_material_type:
     type: entity_reference_label
-    weight: 5
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 5
+    region: content
   field_publication_date:
     type: datetime_custom
-    weight: 6
-    region: content
     label: hidden
     settings:
       timezone_override: ''
@@ -177,26 +175,26 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 6
+    region: content
   field_publisher:
     type: string
-    weight: 7
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 7
+    region: content
   field_theme:
     type: entity_reference_label
-    weight: 10
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 10
+    region: content
   field_url:
     type: link
-    weight: 3
-    region: content
     label: hidden
     settings:
       trim_length: 100
@@ -210,29 +208,31 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
             ow: true
             ow-el: button
             ow-cl: 'btn btn-secondary d-block mx-auto my-2'
             ow-at: ''
             ow-def-at: true
             ow-def-cl: true
+            fis: false
             fis-el: ''
             fis-cl: ''
             fis-at: ''
+            fis-def-at: false
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            fis: false
-            fis-def-at: false
-            fi: false
             fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 3
+    region: content
 hidden:
   addtoany: true
   field_city: true

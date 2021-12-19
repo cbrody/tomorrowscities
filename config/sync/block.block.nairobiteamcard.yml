@@ -22,14 +22,14 @@ plugin: 'block_content:0f697d00-64e9-4f0c-a072-a787c69baaf1'
 settings:
   id: 'block_content:0f697d00-64e9-4f0c-a072-a787c69baaf1'
   label: 'Nairobi team card'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /city/nairobi
     negate: false
     context_mapping: {  }
+    pages: /city/nairobi

@@ -30,6 +30,10 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        classes:
+          layout_class: {  }
+          first: {  }
+          second: {  }
         wrappers:
           first: div
           second: div
@@ -37,10 +41,6 @@ third_party_settings:
         attributes: ''
         link_attribute: content
         link_custom: ''
-        classes:
-          layout_class: {  }
-          first: {  }
-          second: {  }
     regions:
       first:
         - field_image
@@ -54,9 +54,9 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
+          link: false
           wrapper: h4
           class: ''
-          link: false
         ft:
           id: default
           settings:
@@ -72,16 +72,14 @@ mode: search_result
 content:
   field_image:
     type: image
-    weight: 0
-    region: first
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: ''
-      svg_render_as_image: true
+      image_style: thumbnail
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
     third_party_settings:
       ds:
         ft:
@@ -90,14 +88,16 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 0
+    region: first
   field_standfirst:
     type: text_trimmed
-    weight: 2
-    region: second
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 2
+    region: second
 hidden:
   addtoany: true
   body: true

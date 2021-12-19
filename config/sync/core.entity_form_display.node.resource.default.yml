@@ -40,21 +40,21 @@ third_party_settings:
         - field_file_upload
         - field_url
         - field_doi
+      label: 'Upload or link'
+      region: content
       parent_name: ''
       weight: 16
       format_type: html_element
       format_settings:
+        classes: ''
+        id: ''
         element: div
         show_label: true
         label_element: h3
-        required_fields: true
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: ''
-      label: 'Upload or link'
-      region: content
+        required_fields: true
 id: node.resource.default
 targetEntityType: node
 bundle: resource
@@ -63,13 +63,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 12
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 3
@@ -77,27 +77,27 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_author_s_:
+    type: string_textfield
     weight: 7
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_city:
+    type: options_select
     weight: 13
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_doi:
+    type: link_default
     weight: 16
+    region: content
     settings:
       placeholder_url: 'https://doi.org/'
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_file_upload:
     type: file_generic
     weight: 14
@@ -106,57 +106,57 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
   field_image:
+    type: image_image
     weight: 17
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_material_type:
-    weight: 9
-    settings: {  }
-    third_party_settings: {  }
     type: options_select
+    weight: 9
     region: content
-  field_publication_date:
-    weight: 11
     settings: {  }
     third_party_settings: {  }
+  field_publication_date:
     type: datetime_default
+    weight: 11
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_publisher:
+    type: string_textfield
     weight: 10
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_sort_author:
+    type: string_textfield
     weight: 8
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_tags:
+    type: entity_reference_autocomplete_tags
     weight: 15
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
   field_theme:
+    type: options_select
     weight: 14
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_url:
     type: link_default
     weight: 15
@@ -180,24 +180,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 18
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 6
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 4
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -210,12 +210,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 1
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   url_redirects:
     weight: 19

@@ -27,11 +27,14 @@ third_party_settings:
       children:
         - field_image
         - field_card_header
+      label: card
       parent_name: ''
+      region: ds_content
       weight: 0
       format_type: html_element
-      region: ds_content
       format_settings:
+        classes: card
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -39,9 +42,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: card
-      label: card
   ds:
     layout:
       id: ds_1col_wrapper
@@ -49,16 +49,16 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: content
         link_custom: ''
-        classes:
-          layout_class: {  }
-          ds_content: {  }
+        label: ''
     regions:
       ds_content:
         - group_card
@@ -71,8 +71,6 @@ mode: card
 content:
   field_card_header:
     type: text_default
-    weight: 2
-    region: ds_content
     label: hidden
     settings: {  }
     third_party_settings:
@@ -81,19 +79,21 @@ content:
           id: default
           settings:
             lb: ''
+            lb-col: false
             classes:
               - mx-auto
-            lb-col: false
+    weight: 2
+    region: ds_content
   field_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: card_cover_270x130_
       image_link: ''
-      svg_render_as_image: true
+      image_style: card_cover_270x130_
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
     third_party_settings:
       ds:
         ds_limit: '1'
@@ -101,10 +101,11 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: '<figure>'
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
             ow: true
             ow-el: div
             ow-cl: ''
@@ -116,15 +117,14 @@ content:
             fis-cl: ''
             fis-at: ''
             fis-def-at: true
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: '</figure>'
-            lbw: false
-            lb-col: false
-            fi: false
             fi-def-at: false
-    type: image
+            prefix: '<figure>'
+            suffix: '</figure>'
+    weight: 0
     region: ds_content
 hidden:
   addtoany: true

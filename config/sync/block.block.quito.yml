@@ -17,14 +17,14 @@ plugin: 'system_menu_block:quito'
 settings:
   id: 'system_menu_block:quito'
   label: Quito
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: "/node/20\r\n*/quito/*"
     negate: false
     context_mapping: {  }
+    pages: "/node/20\r\n*/quito/*"

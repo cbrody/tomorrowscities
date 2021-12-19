@@ -11,12 +11,12 @@ pattern: '/city/[node:field_city]/[node:field_page_type]'
 selection_criteria:
   5622a805-0ad0-43cd-9b11-625565f1c76c:
     id: node_type
-    bundles:
-      subpage: subpage
     negate: false
+    uuid: 5622a805-0ad0-43cd-9b11-625565f1c76c
     context_mapping:
       node: node
-    uuid: 5622a805-0ad0-43cd-9b11-625565f1c76c
+    bundles:
+      subpage: subpage
 selection_logic: and
 weight: -8
 relationships: {  }

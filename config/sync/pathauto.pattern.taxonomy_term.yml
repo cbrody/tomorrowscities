@@ -12,14 +12,14 @@ pattern: '[term:vocabulary]/[term:name]'
 selection_criteria:
   136247df-f453-4539-ba29-0f1f83cc208b:
     id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 136247df-f453-4539-ba29-0f1f83cc208b
+    context_mapping:
+      taxonomy_term: taxonomy_term
     bundles:
       material_type: material_type
       tags: tags
       theme: theme
-    negate: false
-    context_mapping:
-      taxonomy_term: taxonomy_term
-    uuid: 136247df-f453-4539-ba29-0f1f83cc208b
 selection_logic: and
 weight: -10
 relationships: {  }

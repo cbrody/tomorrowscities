@@ -17,7 +17,7 @@ bundle: video
 mode: preview
 content:
   field_video:
-    weight: 0
+    type: video_embed_field_thumbnail
     label: hidden
     settings:
       image_style: card_cover_270x130_
@@ -28,10 +28,10 @@ content:
           id: default
           settings:
             lb: ''
+            lb-col: false
             classes:
               - card-img-top
-            lb-col: false
-    type: video_embed_field_thumbnail
+    weight: 0
     region: content
 hidden:
   field_video_upload: true

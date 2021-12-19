@@ -38,16 +38,16 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: 'data-tid|tid-[node:field_tags:0:target_id]'
         link_attribute: content
         link_custom: ''
-        classes:
-          layout_class: {  }
-          ds_content: {  }
+        label: ''
     regions:
       ds_content:
         - group_card
@@ -65,36 +65,36 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
+          link: false
           wrapper: h4
           class: card-title
-          link: false
         ft:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
             ow: true
             ow-el: div
             ow-cl: card-body
             ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
             ow-def-at: false
             ow-def-cl: false
             fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
             fis-def-at: false
             fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
             fi-def-at: false
+            prefix: ''
+            suffix: ''
   field_group:
     group_card:
       children:
@@ -105,10 +105,14 @@ third_party_settings:
         - field_author_s_
         - field_publisher
         - field_tags
+      label: card
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
+        classes: 'card h-100'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -116,10 +120,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'card h-100'
-      label: card
-      region: content
 id: node.resource.card
 targetEntityType: node
 bundle: resource
@@ -127,8 +127,6 @@ mode: card
 content:
   field_author_s_:
     type: string
-    weight: 4
-    region: ds_content
     label: hidden
     settings:
       link_to_entity: false
@@ -138,33 +136,33 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
+            ow: false
             ow-el: ''
             ow-cl: ''
             ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
             fis: true
             fis-el: div
             fis-cl: 'card-footer field-authors text-muted'
             fis-at: ''
+            fis-def-at: false
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis-def-at: false
-            fi: false
             fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 4
+    region: ds_content
   field_file_upload:
     type: pdfpreview
-    weight: 0
-    region: ds_content
     label: hidden
     settings:
       image_style: card_cover_270x130_
@@ -178,19 +176,21 @@ content:
           id: default
           settings:
             lb: ''
+            lb-col: false
             classes:
               - data-image
-            lb-col: false
+    weight: 0
+    region: ds_content
   field_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: card_cover_270x130_
       image_link: content
-      svg_render_as_image: true
+      image_style: card_cover_270x130_
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
     third_party_settings:
       ds:
         ds_limit: ''
@@ -198,15 +198,15 @@ content:
           id: default
           settings:
             lb: ''
+            lb-col: false
             classes:
               - img-fluid
               - card-img-top
               - data-image
-            lb-col: false
-    type: image
+    weight: 1
     region: ds_content
   field_material_type:
-    weight: 2
+    type: entity_reference_label
     label: hidden
     settings:
       link: false
@@ -216,33 +216,33 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
+            ow: false
             ow-el: ''
             ow-cl: ''
             ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
             fis-el: ''
             fis-cl: ''
             fis-at: ''
+            fis-def-at: false
             fi: true
             fi-el: div
             fi-cl: 'badge badge-light'
             fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
             fi-def-at: false
-    type: entity_reference_label
+            prefix: ''
+            suffix: ''
+    weight: 2
     region: ds_content
   field_publisher:
-    weight: 5
+    type: string
     label: hidden
     settings:
       link_to_entity: false
@@ -252,35 +252,33 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
+            ow: false
             ow-el: ''
             ow-cl: ''
             ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
             fis-el: ''
             fis-cl: ''
             fis-at: ''
+            fis-def-at: false
             fi: true
             fi-el: div
             fi-cl: 'card-footer text-muted'
             fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
             fi-def-at: false
-    type: string
+            prefix: ''
+            suffix: ''
+    weight: 5
     region: ds_content
   field_tags:
     type: entity_reference_label
-    weight: 6
-    region: ds_content
     label: hidden
     settings:
       link: true
@@ -291,29 +289,31 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
+            ow: false
             ow-el: ''
             ow-cl: ''
             ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
             fis: true
             fis-el: div
             fis-cl: 'meta hidden'
             fis-at: ''
+            fis-def-at: false
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis-def-at: false
-            fi: false
             fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 6
+    region: ds_content
 hidden:
   addtoany: true
   body: true

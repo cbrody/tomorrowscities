@@ -13,11 +13,11 @@ bundle: publication
 mode: default
 content:
   field_file_upload:
-    weight: 0
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 0
     region: content
 hidden: {  }

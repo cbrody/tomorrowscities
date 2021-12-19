@@ -12,13 +12,13 @@ pattern: '[term:name]'
 selection_criteria:
   a96f979a-939c-4b4d-a907-6d819d086690:
     id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: a96f979a-939c-4b4d-a907-6d819d086690
+    context_mapping:
+      taxonomy_term: taxonomy_term
     bundles:
       article_type: article_type
       research_area: research_area
-    negate: false
-    context_mapping:
-      taxonomy_term: taxonomy_term
-    uuid: a96f979a-939c-4b4d-a907-6d819d086690
 selection_logic: and
 weight: -9
 relationships: {  }

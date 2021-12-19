@@ -124,8 +124,8 @@ code: |-
     position: relative !important;
   }
   }
-conditions_require_all: true
-conditions: {  }
-contexts: {  }
 media: all
 preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

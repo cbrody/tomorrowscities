@@ -18,40 +18,22 @@ base_table: search_api_index_default_index
 base_field: search_api_id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: none
-        options: {  }
-      cache:
-        type: none
-        options: {  }
-      query:
-        type: search_api_query
-        options: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: false
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+      title: 'Search results'
       pager:
         type: full
         options:
-          items_per_page: 10
           offset: 0
-          id: 0
+          items_per_page: 10
           total_pages: null
+          id: 0
           tags:
-            previous: '‹ Previous'
             next: 'Next ›'
+            previous: '‹ Previous'
             first: '« First'
             last: 'Last »'
           expose:
@@ -63,6 +45,71 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: none
+        options: {  }
+      empty: {  }
+      sorts: {  }
+      arguments: {  }
+      filters:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_default_index
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_fulltext
+          operator: and
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_op
+            label: Search
+            description: ''
+            use_operator: false
+            operator: search_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: k
+            required: true
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              administrator: '0'
+            placeholder: Search
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: terms
+          min_length: 2
+          fields: {  }
       style:
         type: default
         options:
@@ -80,54 +127,11 @@ display:
               page: search_result
               person: search_result
               resource: search_result
-      filters:
-        search_api_fulltext:
-          id: search_api_fulltext
-          table: search_api_index_default_index
-          field: search_api_fulltext
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: and
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: search_op
-            label: Search
-            description: ''
-            use_operator: false
-            operator: search_op
-            identifier: k
-            required: true
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              administrator: '0'
-            placeholder: Search
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          parse_mode: terms
-          min_length: 2
-          fields: {  }
-          plugin_id: search_api_fulltext
-      sorts: {  }
-      title: 'Search results'
+      query:
+        type: search_api_query
+        options: {  }
+      relationships: {  }
+      use_ajax: true
       header:
         result:
           id: result
@@ -136,49 +140,38 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: result
           empty: true
           content: 'Displaying results @start - @end of @total'
-          plugin_id: result
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
-      use_ajax: true
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - url.query_args
         - 'user.node_grants:view'
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:search_api.index.default_index'
+      cacheable: false
   page_1:
-    display_plugin: page
     id: page_1
     display_title: 'Search page'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: search
-      exposed_block: true
       title: 'Search results'
-      defaults:
-        title: false
-        pager: false
-      display_description: ''
       pager:
         type: full
         options:
-          items_per_page: 10
           offset: 0
-          id: 0
+          items_per_page: 10
           total_pages: null
+          id: 0
           tags:
-            previous: '‹ previous'
             next: 'next ›'
+            previous: '‹ previous'
             first: '« First'
             last: 'Last »'
           expose:
@@ -190,52 +183,107 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      defaults:
+        title: false
+        pager: false
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      path: search
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - url.query_args
         - 'user.node_grants:view'
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:search_api.index.default_index'
+      cacheable: false
   page_2:
-    display_plugin: page
     id: page_2
     display_title: 'Publications (facets)'
+    display_plugin: page
     position: 2
     display_options:
-      display_extenders: {  }
-      path: publications
-      style:
-        type: default
+      title: 'Browse publications'
+      exposed_form:
+        type: bef
         options:
-          row_class: ''
-          default_row_class: true
-          uses_fields: false
-      defaults:
-        style: false
-        row: false
-        filters: false
-        filter_groups: false
-        sorts: false
-        cache: false
-        title: false
-        header: false
-        exposed_form: false
-      row:
-        type: search_api
-        options:
-          view_modes:
-            'entity:node':
-              article: search_result
-              city_office: search_result
-              organisation: search_result
-              page: search_result
-              person: search_result
-              resource: search_result
-      display_description: ''
+          submit_button: Apply
+          reset_button: true
+          reset_button_label: 'Clear search'
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: true
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            sort:
+              plugin_id: default
+              advanced:
+                combine: false
+                combine_rewrite: ''
+                reset: false
+                reset_label: ''
+                collapsible: false
+                collapsible_label: 'Sort options'
+                is_secondary: false
+            filter:
+              search_api_fulltext:
+                plugin_id: default
+                advanced:
+                  placeholder_text: 'Search resources'
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_publication_date:
+                plugin_id: default
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+      cache:
+        type: none
+      sorts:
+        field_publication_date:
+          id: field_publication_date
+          table: search_api_index_default_index
+          field: field_publication_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: Date
+            field_identifier: field_publication_date
+          exposed: true
+        field_sort_author:
+          id: field_sort_author
+          table: search_api_index_default_index
+          field: field_sort_author
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: 'Lead author'
+            field_identifier: field_sort_author
+          exposed: true
       filters:
         type:
           id: type
@@ -244,6 +292,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_options
           operator: or
           value:
             resource: resource
@@ -277,7 +326,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: search_api_options
         search_api_fulltext:
           id: search_api_fulltext
           table: search_api_index_default_index
@@ -285,6 +333,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_fulltext
           operator: and
           value: ''
           group: 1
@@ -322,7 +371,6 @@ display:
           parse_mode: terms
           min_length: null
           fields: {  }
-          plugin_id: search_api_fulltext
         field_publication_date:
           id: field_publication_date
           table: search_api_index_default_index
@@ -330,6 +378,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_date
           operator: between
           value:
             min: '2020-01-01'
@@ -352,9 +401,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            placeholder: null
             min_placeholder: null
             max_placeholder: null
+            placeholder: null
           is_grouped: true
           group_info:
             label: 'Publication date'
@@ -371,27 +420,26 @@ display:
                 title: '2020'
                 operator: between
                 value:
-                  type: date
-                  value: ''
                   min: '2020-01-01'
                   max: '2020-12-31'
+                  value: ''
+                  type: date
               2:
                 title: '2019'
                 operator: between
                 value:
-                  type: date
-                  value: ''
                   min: '2019-01-01'
                   max: '2019-12-31'
+                  value: ''
+                  type: date
               3:
                 title: 2010-2018
                 operator: between
                 value:
-                  type: date
-                  value: ''
                   min: '2010-01-01'
                   max: '2018-12-31'
-          plugin_id: search_api_date
+                  value: ''
+                  type: date
         status:
           id: status
           table: search_api_index_default_index
@@ -399,6 +447,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_boolean
           operator: '='
           value: '1'
           group: 1
@@ -429,39 +478,38 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: search_api_boolean
       filter_groups:
         operator: AND
         groups:
           1: AND
-      sorts:
-        field_publication_date:
-          id: field_publication_date
-          table: search_api_index_default_index
-          field: field_publication_date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: true
-          expose:
-            label: Date
-          plugin_id: search_api
-        field_sort_author:
-          id: field_sort_author
-          table: search_api_index_default_index
-          field: field_sort_author
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: true
-          expose:
-            label: 'Lead author'
-          plugin_id: search_api
-      cache:
-        type: none
-      title: 'Browse publications'
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              article: search_result
+              city_office: search_result
+              organisation: search_result
+              page: search_result
+              person: search_result
+              resource: search_result
+      defaults:
+        cache: false
+        title: false
+        exposed_form: false
+        style: false
+        row: false
+        sorts: false
+        filters: false
+        filter_groups: false
+        header: false
+      display_description: ''
       header:
         result:
           id: result
@@ -470,9 +518,50 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: result
           empty: true
           content: '<p>Displaying results @start - @end of @total</p>'
-          plugin_id: result
+      exposed_block: true
+      display_extenders: {  }
+      path: publications
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'url.query_args:sort_by'
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.default_index'
+  page_3:
+    id: page_3
+    display_title: 'News and Events (facets)'
+    display_plugin: page
+    position: 2
+    display_options:
+      title: 'News & events'
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 12
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       exposed_form:
         type: bef
         options:
@@ -521,60 +610,22 @@ display:
                     filter_rewrite_values: ''
                   collapsible: false
                   is_secondary: false
-      exposed_block: true
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - url
-        - url.query_args
-        - 'url.query_args:sort_by'
-        - 'user.node_grants:view'
-      tags:
-        - 'config:search_api.index.default_index'
-  page_3:
-    display_plugin: page
-    id: page_3
-    display_title: 'News and Events (facets)'
-    position: 2
-    display_options:
-      display_extenders: {  }
-      path: news-events
-      style:
-        type: grid
-        options:
-          uses_fields: false
-          columns: 3
-          automatic_width: false
-          alignment: horizontal
-          col_class_default: false
-          col_class_custom: 'col-lg-4 col-md-6 col-sm-12 mb-4'
-          row_class_default: false
-          row_class_custom: row
-      defaults:
-        style: false
-        row: false
-        filters: false
-        filter_groups: false
-        sorts: false
-        cache: false
-        title: false
-        header: false
-        exposed_form: false
-        pager: false
-      row:
-        type: search_api
-        options:
-          view_modes:
-            'entity:node':
-              article: card
-              city_office: search_result
-              organisation: search_result
-              page: search_result
-              person: search_result
-              resource: search_result
-              subpage: default
-      display_description: ''
+      cache:
+        type: none
+      sorts:
+        created:
+          id: created
+          table: search_api_index_default_index
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
       filters:
         type:
           id: type
@@ -583,6 +634,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_options
           operator: or
           value:
             article: article
@@ -616,7 +668,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: search_api_options
         status:
           id: status
           table: search_api_index_default_index
@@ -624,6 +675,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_boolean
           operator: '='
           value: '1'
           group: 1
@@ -654,98 +706,49 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: search_api_boolean
       filter_groups:
         operator: AND
         groups:
           1: AND
-      sorts:
-        created:
-          id: created
-          table: search_api_index_default_index
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: search_api
-      cache:
-        type: none
-      title: 'News & events'
+      style:
+        type: grid
+        options:
+          uses_fields: false
+          columns: 3
+          automatic_width: false
+          alignment: horizontal
+          row_class_custom: row
+          row_class_default: false
+          col_class_custom: 'col-lg-4 col-md-6 col-sm-12 mb-4'
+          col_class_default: false
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              article: card
+              city_office: search_result
+              organisation: search_result
+              page: search_result
+              person: search_result
+              resource: search_result
+              subpage: default
+      defaults:
+        cache: false
+        title: false
+        pager: false
+        exposed_form: false
+        style: false
+        row: false
+        sorts: false
+        filters: false
+        filter_groups: false
+        header: false
+      display_description: ''
       header: {  }
-      exposed_form:
-        type: bef
-        options:
-          submit_button: Apply
-          reset_button: true
-          reset_button_label: 'Clear search'
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: false
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-          text_input_required: 'Select any filter and click on Apply to see results'
-          text_input_required_format: basic_html
-          bef:
-            general:
-              autosubmit: true
-              autosubmit_exclude_textfield: true
-              autosubmit_textfield_delay: 500
-              autosubmit_hide: true
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
-              secondary_open: false
-            sort:
-              plugin_id: default
-              advanced:
-                combine: false
-                combine_rewrite: ''
-                reset: false
-                reset_label: ''
-                collapsible: false
-                collapsible_label: 'Sort options'
-                is_secondary: false
-            filter:
-              search_api_fulltext:
-                plugin_id: default
-                advanced:
-                  placeholder_text: 'Search resources'
-                  rewrite:
-                    filter_rewrite_values: ''
-                  collapsible: false
-                  is_secondary: false
-              field_publication_date:
-                plugin_id: default
-                advanced:
-                  rewrite:
-                    filter_rewrite_values: ''
-                  collapsible: false
-                  is_secondary: false
       exposed_block: true
-      pager:
-        type: full
-        options:
-          items_per_page: 12
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
+      display_extenders: {  }
+      path: news-events
     cache_metadata:
       max-age: -1
       contexts:

@@ -20,8 +20,8 @@ plugin: twitter_embed_timeline
 settings:
   id: twitter_embed_timeline
   label: 'Kathmandu Twitter Timeline'
-  provider: twitter_embed
   label_display: '0'
+  provider: twitter_embed
   username: KTMRiskHub
   type: profile
   type_value: ''
@@ -47,6 +47,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /city/kathmandu
     negate: false
     context_mapping: {  }
+    pages: /city/kathmandu

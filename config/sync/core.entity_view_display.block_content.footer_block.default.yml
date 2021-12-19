@@ -37,12 +37,14 @@ third_party_settings:
       children:
         - group_footer_top
         - field_footer_links_and_copyright
+      label: footer
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         element: footer
         show_label: false
         label_element: h3
@@ -50,16 +52,18 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: footer
-      region: content
     group_footer_info:
       children:
         - field_ukri_gcrf_footer_logo
         - field_footer_info
+      label: footer-info
       parent_name: group_footer_row
+      region: content
       weight: 4
       format_type: html_element
       format_settings:
+        classes: 'footer-info col-md-6'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -67,19 +71,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'footer-info col-md-6'
-      label: footer-info
-      region: content
     group_footer_top:
       children:
         - group_footer_container
+      label: footer-top
       parent_name: group_footer
+      region: content
       weight: 3
       format_type: html_element
       format_settings:
-        id: footer-top
         classes: ''
+        id: footer-top
         element: section
         show_label: false
         label_element: h3
@@ -87,17 +89,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: footer-top
-      region: content
     group_footer_container:
       children:
         - group_footer_row
+      label: 'footer container'
       parent_name: group_footer_top
+      region: content
       weight: 1
       format_type: html_element
       format_settings:
-        id: ''
         classes: container
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -105,16 +107,18 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'footer container'
-      region: content
     group_footer_row:
       children:
         - field_footer_logo
         - group_footer_info
+      label: 'footer row'
       parent_name: group_footer_container
+      region: content
       weight: 2
       format_type: html_element
       format_settings:
+        classes: 'row py-5'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -122,10 +126,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'row py-5'
-      label: 'footer row'
-      region: content
 id: block_content.footer_block.default
 targetEntityType: block_content
 bundle: footer_block
@@ -133,8 +133,6 @@ mode: default
 content:
   field_footer_info:
     type: text_trimmed
-    weight: 7
-    region: content
     label: hidden
     settings:
       trim_length: 600
@@ -146,10 +144,10 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 7
+    region: content
   field_footer_links_and_copyright:
     type: text_trimmed
-    weight: 4
-    region: content
     label: hidden
     settings:
       trim_length: 600
@@ -159,69 +157,69 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
             ow: true
             ow-el: section
             ow-cl: py-4
             ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
             fis: true
             fis-el: div
             fis-cl: container
             fis-at: ''
+            fis-def-at: false
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis-def-at: false
-            fi: false
             fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 4
+    region: content
   field_footer_logo:
     type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
     weight: 3
     region: content
-    label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi: false
-            fi-def-at: false
   field_ukri_gcrf_footer_logo:
     type: text_trimmed
-    weight: 6
-    region: content
     label: hidden
     settings:
       trim_length: 600
@@ -231,29 +229,31 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: ''
+            lbw: false
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
+            lb-col: false
+            ow: false
             ow-el: ''
             ow-cl: ''
             ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
             ow-def-at: false
             ow-def-cl: false
             fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
             fis-def-at: false
             fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
             fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 6
+    region: content
 hidden:
   body: true
   langcode: true

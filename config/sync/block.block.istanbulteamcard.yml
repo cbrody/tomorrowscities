@@ -22,14 +22,14 @@ plugin: 'block_content:4721baa0-f681-4e9f-983c-e333423233e2'
 settings:
   id: 'block_content:4721baa0-f681-4e9f-983c-e333423233e2'
   label: 'Istanbul team card'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /city/istanbul
     negate: false
     context_mapping: {  }
+    pages: /city/istanbul

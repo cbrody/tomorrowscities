@@ -29,16 +29,16 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
-          ds_content: {  }
+        label: ''
     regions:
       ds_content:
         - field_hero_video
@@ -51,11 +51,14 @@ third_party_settings:
       children:
         - field_standfirst
         - body
+      label: 'Main content'
       parent_name: ''
+      region: ds_content
       weight: 1
       format_type: html_element
-      region: ds_content
       format_settings:
+        classes: 'col-md-8 mx-auto'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -63,33 +66,28 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'col-md-8 mx-auto'
-      label: 'Main content'
 id: node.subpage.full
 targetEntityType: node
 bundle: subpage
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: ds_content
   field_hero_video:
     type: video_embed_field_lazyload
-    weight: 0
-    region: ds_content
     label: hidden
     settings:
-      image_style: ''
-      link_image_to: ''
       autoplay: true
       responsive: true
       width: 854
       height: 480
+      image_style: ''
+      link_image_to: ''
     third_party_settings:
       ds:
         ft:
@@ -98,21 +96,23 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    weight: 0
+    region: ds_content
   field_paragraphs:
-    weight: 2
+    type: entity_reference_revisions_entity_view
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    weight: 2
     region: ds_content
   field_standfirst:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: ds_content
 hidden:
   addtoany: true

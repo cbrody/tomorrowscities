@@ -20,8 +20,8 @@ plugin: twitter_embed_timeline
 settings:
   id: twitter_embed_timeline
   label: 'Nairobi Twitter Timeline'
-  provider: twitter_embed
   label_display: '0'
+  provider: twitter_embed
   username: NairobiRisk_hub
   type: profile
   type_value: ''
@@ -47,6 +47,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /city/nairobi
     negate: false
     context_mapping: {  }
+    pages: /city/nairobi

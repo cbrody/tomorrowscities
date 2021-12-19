@@ -21,8 +21,8 @@ plugin: 'block_content:204276b8-97fa-4d5d-adc3-8fadba1d402f'
 settings:
   id: 'block_content:204276b8-97fa-4d5d-adc3-8fadba1d402f'
   label: 'Home banner'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

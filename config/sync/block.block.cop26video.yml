@@ -22,13 +22,13 @@ plugin: 'block_content:04d8b9d2-3bb1-43b5-bd2e-d9858497df05'
 settings:
   id: 'block_content:04d8b9d2-3bb1-43b5-bd2e-d9858497df05'
   label: 'Climate change adaptation through multi-hazard risk sensitive urbanisation'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

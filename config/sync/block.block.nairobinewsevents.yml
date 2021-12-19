@@ -22,14 +22,14 @@ plugin: 'block_content:396f4f23-a4fb-4934-a11e-8301daaed463'
 settings:
   id: 'block_content:396f4f23-a4fb-4934-a11e-8301daaed463'
   label: 'Nairobi News & events'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /city/nairobi
     negate: false
     context_mapping: {  }
+    pages: /city/nairobi

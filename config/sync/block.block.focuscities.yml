@@ -22,14 +22,14 @@ plugin: 'block_content:e903c2fb-804c-4e4b-93ac-22bff88fd276'
 settings:
   id: 'block_content:e903c2fb-804c-4e4b-93ac-22bff88fd276'
   label: 'Focus cities'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

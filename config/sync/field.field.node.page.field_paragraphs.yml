@@ -26,7 +26,6 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       image: image
       video: video
@@ -34,13 +33,14 @@ settings:
       wide_image: wide_image
       wide_media: wide_media
       wide_text: wide_text
+    negate: 0
     target_bundles_drag_drop:
       basic_text:
-        enabled: true
         weight: -11
-      image:
         enabled: true
+      image:
         weight: -13
+        enabled: true
       publication:
         weight: -10
         enabled: false
@@ -48,15 +48,15 @@ settings:
         weight: -9
         enabled: false
       video:
-        enabled: true
         weight: -12
+        enabled: true
       wide_image:
-        enabled: true
         weight: -8
+        enabled: true
       wide_media:
-        enabled: true
         weight: 8
-      wide_text:
         enabled: true
+      wide_text:
         weight: 16
+        enabled: true
 field_type: entity_reference_revisions

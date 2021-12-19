@@ -22,14 +22,14 @@ plugin: 'block_content:1939d364-c027-41fc-9632-f9880fac44e8'
 settings:
   id: 'block_content:1939d364-c027-41fc-9632-f9880fac44e8'
   label: 'Quito team card'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /city/quito
     negate: false
     context_mapping: {  }
+    pages: /city/quito
