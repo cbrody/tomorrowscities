@@ -12,7 +12,7 @@ dependencies:
 id: views_block__news_and_updates_block_1
 theme: tc_bootstrap_sass
 region: featured_bottom_first
-weight: -28
+weight: -29
 provider: null
 plugin: 'views_block:news_and_updates-block_1'
 settings:

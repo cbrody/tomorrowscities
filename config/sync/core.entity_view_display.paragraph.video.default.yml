@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.video.field_video
+    - field.field.paragraph.video.field_video_upload
     - paragraphs.paragraphs_type.video
   module:
     - video_embed_field
@@ -22,6 +23,15 @@ content:
       autoplay: true
     third_party_settings: {  }
     type: video_embed_field_video
+    region: content
+  field_video_upload:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
 hidden:
   search_api_excerpt: true

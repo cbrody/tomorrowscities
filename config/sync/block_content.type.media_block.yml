@@ -1,0 +1,8 @@
+uuid: b4202d69-02e7-4fe7-a093-61007197396b
+langcode: en
+status: true
+dependencies: {  }
+id: media_block
+label: 'Media block'
+revision: 1
+description: ''

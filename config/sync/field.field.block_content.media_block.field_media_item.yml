@@ -1,0 +1,37 @@
+uuid: 1825575d-3256-4cc7-aba6-85582b8cdfd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media_block
+    - field.storage.block_content.field_media_item
+    - media.type.audio
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+id: block_content.media_block.field_media_item
+field_name: field_media_item
+entity_type: block_content
+bundle: media_block
+label: 'Media item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      file: file
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: remote_video
+field_type: entity_reference

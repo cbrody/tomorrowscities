@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_image
     - field.storage.node.field_role
     - field.storage.node.field_url
+    - field.storage.node.field_webpage
     - image.style.thumbnail
     - image.style.thumbnail_70_
     - node.type.organisation
@@ -187,10 +188,10 @@ display:
           settings:
             image_style: thumbnail
             image_link: content
-            svg_render_as_image: 1
+            svg_render_as_image: true
             svg_attributes:
-              width: '100'
-              height: ''
+              width: 100
+              height: null
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -373,10 +374,10 @@ display:
           settings:
             image_style: thumbnail
             image_link: content
-            svg_render_as_image: 1
+            svg_render_as_image: true
             svg_attributes:
-              width: '100'
-              height: ''
+              width: 100
+              height: null
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -617,10 +618,10 @@ display:
           settings:
             image_style: thumbnail
             image_link: ''
-            svg_render_as_image: 1
+            svg_render_as_image: true
             svg_attributes:
-              width: ''
-              height: ''
+              width: null
+              height: null
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1206,10 +1207,10 @@ display:
           settings:
             image_style: thumbnail
             image_link: content
-            svg_render_as_image: 1
+            svg_render_as_image: true
             svg_attributes:
-              width: '100'
-              height: ''
+              width: 100
+              height: null
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1464,6 +1465,73 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
+        field_webpage:
+          id: field_webpage
+          table: node__field_webpage
+          field: field_webpage
+          relationship: reverse__node__field_organisation
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: true
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_image_1:
           id: field_image_1
           table: node__field_image
@@ -1539,10 +1607,10 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '{{ field_webpage }}'
             absolute: false
-            external: false
+            external: true
             replace_spaces: false
             path_case: none
             trim_whitespace: false
@@ -1956,6 +2024,7 @@ display:
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_role'
         - 'config:field.storage.node.field_url'
+        - 'config:field.storage.node.field_webpage'
   page_1:
     display_plugin: page
     id: page_1

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.video.field_video
+    - field.field.paragraph.video.field_video_upload
     - paragraphs.paragraphs_type.video
   module:
     - field_layout
@@ -12,7 +13,8 @@ dependencies:
 third_party_settings:
   field_layout:
     id: layout_onecol
-    settings: {  }
+    settings:
+      label: ''
 id: paragraph.video.default
 targetEntityType: paragraph
 bundle: video
@@ -23,6 +25,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
+    region: content
+  field_video_upload:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
 hidden:
   created: true

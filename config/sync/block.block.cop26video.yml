@@ -1,9 +1,9 @@
-uuid: d1f563c3-f222-482b-b768-9dbe6d489820
+uuid: 54659f65-f340-4174-b0ef-ab2b64b9635f
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:e903c2fb-804c-4e4b-93ac-22bff88fd276'
+    - 'block_content:media_block:04d8b9d2-3bb1-43b5-bd2e-d9858497df05'
   module:
     - block_class
     - block_content
@@ -12,18 +12,18 @@ dependencies:
     - tc_bootstrap_sass
 third_party_settings:
   block_class:
-    classes: container
-id: focuscities
+    classes: 'container mb-4 pb-4'
+id: cop26video
 theme: tc_bootstrap_sass
 region: featured_bottom_first
-weight: -27
+weight: -28
 provider: null
-plugin: 'block_content:e903c2fb-804c-4e4b-93ac-22bff88fd276'
+plugin: 'block_content:04d8b9d2-3bb1-43b5-bd2e-d9858497df05'
 settings:
-  id: 'block_content:e903c2fb-804c-4e4b-93ac-22bff88fd276'
-  label: 'Focus cities'
+  id: 'block_content:04d8b9d2-3bb1-43b5-bd2e-d9858497df05'
+  label: 'Climate change adaptation through multi-hazard risk sensitive urbanisation'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
@@ -32,4 +32,3 @@ visibility:
     id: request_path
     pages: '<front>'
     negate: false
-    context_mapping: {  }

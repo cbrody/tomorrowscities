@@ -1,6 +1,6 @@
 uuid: 01f1f7e1-b89e-4560-a07f-f2cb57fc3b40
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:0ece8ba9-955d-4cd3-a51f-18eb3d1d1a53'
@@ -16,12 +16,12 @@ third_party_settings:
 id: globalcontext
 theme: tc_bootstrap_sass
 region: featured_bottom_first
-weight: -27
+weight: -24
 provider: null
 plugin: 'block_content:0ece8ba9-955d-4cd3-a51f-18eb3d1d1a53'
 settings:
   id: 'block_content:0ece8ba9-955d-4cd3-a51f-18eb3d1d1a53'
-  label: 'Strategy and Plans'
+  label: 'Climate change adaptation through multi-hazard risk sensitive urbanisation'
   provider: block_content
   label_display: visible
   status: true

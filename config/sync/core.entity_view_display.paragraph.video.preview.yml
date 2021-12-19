@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.video.field_video
+    - field.field.paragraph.video.field_video_upload
     - image.style.card_cover_270x130_
     - paragraphs.paragraphs_type.video
   module:
@@ -33,4 +34,5 @@ content:
     type: video_embed_field_thumbnail
     region: content
 hidden:
+  field_video_upload: true
   search_api_excerpt: true
